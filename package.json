@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/mukhammadxuja/html-starter#readme",
   "dependencies": {
-    "gsap": "3.9.0",
     "postcss": "^8.4.23",
     "postcss-cli": "^10.1.0",
     "smooth-scrollbar": "8.7.0",

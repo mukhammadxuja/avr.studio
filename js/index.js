@@ -1,4 +1,3 @@
-console.log('working');
 // Get
 const canvas = document.querySelector("canvas");
 const audio = document.querySelector("#audio");
@@ -80,3 +79,5 @@ canvas.addEventListener("click", () => {
     });
   }
 });
+
+
