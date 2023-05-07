@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Anvarov</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="flex flex-col" id="root">
+      <!-- This navbar s layout -->
+      <nav></nav>
+      
+      <canvas title="Music"></canvas>
+
+      <div id="main-page" class="bg-white"></div>
+      <!-- This footer s layout -->
+      <footer></footer>
+    </div>
+
+    <audio src="./assets/music/track.mp3" id="audio"></audio>
+
+    <script src="js/index.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/fetch-components.js"></script>
+    <script src="./js/gsap.min.js"></script>
+  </body>
+</html>

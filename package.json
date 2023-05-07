@@ -1,0 +1,29 @@
+{
+  "name": "html-routing",
+  "version": "1.0.0",
+  "description": "A vanilla js solution to routing for a single-page application",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "tw": "tailwindcss -i ./css/tailwind.css -o ./dist/output.css",
+    "tw:watch": "tailwindcss -i ./css/tailwind.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mukhammadxuja/html-starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mukhammadxuja/html-starter/issues"
+  },
+  "homepage": "https://github.com/mukhammadxuja/html-starter#readme",
+  "dependencies": {
+    "gsap": "3.9.0",
+    "postcss": "^8.4.23",
+    "postcss-cli": "^10.1.0",
+    "smooth-scrollbar": "8.7.0",
+    "webpack": "^5.81.0",
+    "webpack-cli": "^5.0.2"
+  }
+}

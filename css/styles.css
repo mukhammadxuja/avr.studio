@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+}
+
+body::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: '';
+  opacity: 0.04;
+  z-index: 1500;
+  pointer-events: none;
+  background: url(/assets/gif/noise.gif);
+}
+
+canvas {
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.text-animation {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
