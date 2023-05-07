@@ -656,10 +656,6 @@ video {
   top: 1rem;
 }
 
-.top-0 {
-  top: 0px;
-}
-
 .z-50 {
   z-index: 50;
 }
@@ -690,10 +686,6 @@ video {
   height: 100vh;
 }
 
-.h-\[60px\] {
-  height: 60px;
-}
-
 .w-8 {
   width: 2rem;
 }
@@ -709,10 +701,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[60px\] {
-  width: 60px;
 }
 
 .-translate-y-1\/2 {
@@ -793,14 +781,6 @@ video {
 
 .bg-opacity-60 {
   --tw-bg-opacity: 0.6;
-}
-
-.bg-opacity-10 {
-  --tw-bg-opacity: 0.1;
-}
-
-.bg-opacity-90 {
-  --tw-bg-opacity: 0.9;
 }
 
 .bg-opacity-80 {

@@ -15,7 +15,7 @@ body::before {
   left: 0;
   width: 100vw;
   height: 100vh;
-  content: '';
+  content: "";
   opacity: 0.04;
   z-index: 1500;
   pointer-events: none;
@@ -31,6 +31,36 @@ canvas {
   height: 50px;
   cursor: pointer;
   background: transparent;
+}
+
+@media (max-width: 0px) {
+  canvas {
+    right: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  canvas {
+    right: 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  canvas {
+    right: 3rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  canvas {
+    right: 4rem;
+  }
+}
+
+@media (max-width: 1536px) {
+  canvas {
+    right: 5rem;
+  }
 }
 
 .text-animation {
@@ -50,4 +80,3 @@ canvas {
     background-position: 100% 50%;
   }
 }
-
