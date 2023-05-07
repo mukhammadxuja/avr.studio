@@ -1,7 +1,7 @@
 {
-  "name": "html-routing",
+  "name": "personal-website",
   "version": "1.0.0",
-  "description": "A vanilla js solution to routing for a single-page application",
+  "description": "Anvarov Muhammad's personal website - Frontend development",
   "main": "tailwind.config.js",
   "scripts": {
     "tw": "tailwindcss -i ./css/tailwind.css -o ./dist/output.css",
@@ -9,15 +9,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mukhammadxuja/html-starter.git"
+    "url": "git+https://github.com/mukhammadxuja/anvarov.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mukhammadxuja/html-starter/issues"
-  },
-  "homepage": "https://github.com/mukhammadxuja/html-starter#readme",
+  "author": "Anvarov Muhammad",
+  "license": "MIT",
   "dependencies": {
     "postcss": "^8.4.23",
     "postcss-cli": "^10.1.0",
