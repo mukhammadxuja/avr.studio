@@ -1,3 +1,14 @@
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector("#navbar").style.top = "1.5rem";
+  } else {
+    document.querySelector("#navbar").style.top = "-70px";
+  }
+  prevScrollpos = currentScrollPos;
+};
+
 // Get
 const canvas = document.querySelector("canvas");
 const audio = document.querySelector("#audio");
@@ -79,5 +90,3 @@ canvas.addEventListener("click", () => {
     });
   }
 });
-
-

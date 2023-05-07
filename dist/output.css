@@ -1195,6 +1195,10 @@ video {
   transition-duration: 200ms;
 }
 
+.duration-300 {
+  transition-duration: 300ms;
+}
+
 .placeholder\:text-\[\#ccc\]\/80::-moz-placeholder {
   color: rgb(204 204 204 / 0.8);
 }
