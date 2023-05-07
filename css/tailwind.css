@@ -7,11 +7,19 @@
     @apply my-[10px] mx-[3px] py-[6px] px-[17px] hover:bg-[#AC90D9] hover:text-white duration-200 font-[500] leading-[22px] rounded-[7px] text-[14px] text-[#765DA2];
   }
 
+  .footer-link {
+    @apply text-[21px] font-[500] leading-[158%] tracking-[-1] hover:text-[#AC90D9] duration-200;
+  }
+
   .btn {
-    @apply text-[12px] bg-[#AC90D9]  hover:bg-[#866CB0] duration-200 font-[400] text-white py-[17px] px-[25px] rounded-[9px] whitespace-nowrap text-center
+    @apply text-[12px] bg-[#AC90D9] hover:bg-[#866CB0] duration-200 font-[400] text-white py-[17px] px-[25px] rounded-[9px] whitespace-nowrap text-center;
+  }
+
+  .btn-outline {
+    @apply bg-white border-2 border-[#AC90D9] text-[#AC90D9] hover:text-white;
   }
 
   .badge {
-    @apply rounded-full bg-white shadow-sm py-1 px-2 text-black
+    @apply rounded-full bg-white shadow-sm py-1 px-2 text-black;
   }
 }

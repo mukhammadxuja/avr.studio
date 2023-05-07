@@ -9,6 +9,11 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+::selection {
+  color: #AC90D9;
+  background: #FAEAFF;
+}
+
 body::before {
   position: fixed;
   top: 0;
