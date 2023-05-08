@@ -1,0 +1,62 @@
+canvas {
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background: none;
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+}
+
+@media (width <= 0) {
+  canvas {
+    right: 1rem;
+  }
+}
+
+@media (width <= 640px) {
+  canvas {
+    right: 2rem;
+  }
+}
+
+@media (width <= 1024px) {
+  canvas {
+    right: 3rem;
+  }
+}
+
+@media (width <= 1280px) {
+  canvas {
+    right: 4rem;
+  }
+}
+
+@media (width <= 1536px) {
+  canvas {
+    right: 5rem;
+  }
+}
+
+.text-animation {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 500%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: 5s ease-in-out infinite alternate textShine;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.748ad148.css.map */

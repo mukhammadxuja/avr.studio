@@ -3,24 +3,24 @@
   <head>
     <title>Anvarov</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
 
   <body>
-    <div class="flex flex-col" id="root">
+    <div class="smooth-scroll-wrapper flex flex-col" id="root">
       <!-- This navbar s layout -->
       <nav></nav>
 
       <canvas title="Music"></canvas>
 
+      <!-- Main home -->
       <div id="main-page" class="bg-white"></div>
 
       <!-- This footer s layout -->
@@ -29,11 +29,11 @@
 
     <audio src="./assets/music/track.mp3" id="audio"></audio>
 
-    <script src="js/index.js"></script>
     <script src="js/gsap/scrollTigger.min.js"></script>
     <script src="js/gsap/gsap.min.js"></script>
     <script src="js/router.js"></script>
     <script src="js/fetch-components.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
 
