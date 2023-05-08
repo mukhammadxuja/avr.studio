@@ -1,0 +1,39 @@
+@tailwind base;
+
+@layer base {
+  :root {
+    --primary: #AC90D9;
+    --secondary: #FAEAFF;
+    --black: #120E0E;
+    --grayscale: #ccc;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    font-family: "Inter", sans-serif;
+  }
+
+  ::selection {
+    color: var(--primary);
+    background: var(--secondary);
+  }
+
+  body::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    content: "";
+    opacity: 0.04;
+    z-index: 1500;
+    pointer-events: none;
+    background: url(/assets/gif/noise.gif);
+  }
+}

@@ -16,6 +16,12 @@ module.exports = {
           "2xl": "5rem",
         },
       },
+      colors: {
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        black: "var(--black)",
+        grayscale: "var(--grayscale)",
+      },
       animation: {
         handAnimation: "handAnimation 2s linear infinite",
       },

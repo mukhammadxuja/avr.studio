@@ -1,0 +1,23 @@
+@tailwind components;
+
+@layer components {
+  .link {
+    @apply my-[10px] mx-[3px] py-[6px] px-[17px] hover:bg-primary hover:text-white duration-200 font-[500] leading-[22px] rounded-[7px] text-[14px] text-primary;
+  }
+
+  .footer-link {
+    @apply text-[21px] font-[500] leading-[158%] tracking-[-1] hover:text-primary duration-200;
+  }
+
+  .btn {
+    @apply text-[12px] bg-primary hover:bg-[#866CB0] duration-200 font-[400] text-white py-[17px] px-[25px] rounded-[9px] whitespace-nowrap text-center;
+  }
+
+  .btn-outline {
+    @apply btn bg-white hover:bg-primary border-2 border-primary text-primary hover:text-white;
+  }
+
+  .badge {
+    @apply rounded-full bg-white shadow-sm py-1 px-2 text-black;
+  }
+}
