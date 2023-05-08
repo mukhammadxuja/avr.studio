@@ -804,6 +804,14 @@ body::before {
   height: 40px;
 }
 
+.h-\[80px\]{
+  height: 80px;
+}
+
+.h-\[80vh\]{
+  height: 80vh;
+}
+
 .h-full{
   height: 100%;
 }
@@ -830,6 +838,10 @@ body::before {
 
 .w-\[70\%\]{
   width: 70%;
+}
+
+.w-\[80px\]{
+  width: 80px;
 }
 
 .w-fit{
@@ -963,6 +975,10 @@ body::before {
   border-color: rgb(18 14 14 / var(--tw-border-opacity));
 }
 
+.border-black{
+  border-color: var(--black);
+}
+
 .bg-\[\#AC90D9\]{
   --tw-bg-opacity: 1;
   background-color: rgb(172 144 217 / var(--tw-bg-opacity));
@@ -1054,6 +1070,21 @@ body::before {
   padding-bottom: 0.5rem;
 }
 
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .py-\[20px\]{
   padding-top: 20px;
   padding-bottom: 20px;
@@ -1067,6 +1098,14 @@ body::before {
 .py-\[90px\]{
   padding-top: 90px;
   padding-bottom: 90px;
+}
+
+.pb-20{
+  padding-bottom: 5rem;
+}
+
+.pr-\[80px\]{
+  padding-right: 80px;
 }
 
 .pt-\[175px\]{
@@ -1090,6 +1129,10 @@ body::before {
   font-size: 18px;
 }
 
+.text-\[20px\]{
+  font-size: 20px;
+}
+
 .text-\[30px\]{
   font-size: 30px;
 }
@@ -1105,6 +1148,10 @@ body::before {
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.font-\[500\]{
+  font-weight: 500;
 }
 
 .font-\[600\]{
@@ -1135,12 +1182,20 @@ body::before {
   text-transform: uppercase;
 }
 
+.leading-\[150\%\]{
+  line-height: 150%;
+}
+
 .leading-\[158\%\]{
   line-height: 158%;
 }
 
 .leading-\[22px\]{
   line-height: 22px;
+}
+
+.leading-\[250\%\]{
+  line-height: 250%;
 }
 
 .leading-none{
@@ -1173,6 +1228,10 @@ body::before {
   color: transparent;
 }
 
+.mix-blend-luminosity{
+  mix-blend-mode: luminosity;
+}
+
 .outline-none{
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1195,6 +1254,12 @@ body::before {
 
 .duration-300{
   transition-duration: 300ms;
+}
+
+.hover\:scale-105:hover{
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:border-\[\#AC90D9\]:hover{
@@ -1225,6 +1290,11 @@ body::before {
 }
 
 @media (min-width: 768px){
+  .md\:my-\[120px\]{
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+
   .md\:w-36{
     width: 9rem;
   }
@@ -1237,5 +1307,19 @@ body::before {
     --tw-space-y-reverse: 0;
     margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+  }
+
+  .md\:py-10{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .md\:py-32{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .md\:pb-32{
+    padding-bottom: 8rem;
   }
 }
