@@ -90,5 +90,3 @@ canvas.addEventListener("click", () => {
     });
   }
 });
-
-

@@ -11,6 +11,7 @@
     />
     <link rel="icon" type="image/x-icon" href="./assets/svg/avr.svg" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.js"></script>
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
 
@@ -29,6 +30,28 @@
     </div>
 
     <audio src="./assets/music/track.mp3" id="audio"></audio>
+
+    <script>
+      const tl = gsap.timeline();
+      tl.to(".logo", {
+        fontSize: "30px",
+        position: "absolute",
+        height: "100px",
+        width: "150px",
+        duration: 3,
+        delay: 2,
+      });
+      tl.to(".txt", {
+        opacity: 1,
+        duration: 1,
+        stagger: 0.25,
+      });
+      tl.to(".ul", {
+        opacity: 1,
+        duration: 1,
+        stagger: 0.25,
+      });
+    </script>
 
     <script src="js/gsap/gsap.min.js"></script>
     <script src="js/gsap/scrollTigger.min.js"></script>
