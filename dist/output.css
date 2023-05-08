@@ -812,6 +812,10 @@ body::before {
   height: 100vh;
 }
 
+.w-28{
+  width: 7rem;
+}
+
 .w-8{
   width: 2rem;
 }
@@ -837,24 +841,12 @@ body::before {
   width: 100%;
 }
 
-.w-\[50\%\]{
-  width: 50%;
-}
-
-.w-\[45\%\]{
-  width: 45%;
-}
-
 .max-w-\[95rem\]{
   max-width: 95rem;
 }
 
 .-translate-y-1\/2{
   --tw-translate-y: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -976,11 +968,6 @@ body::before {
   background-color: rgb(172 144 217 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#FAEAFF\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 234 255 / var(--tw-bg-opacity));
-}
-
 .bg-secondary{
   background-color: var(--secondary);
 }
@@ -1002,27 +989,9 @@ body::before {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
-.from-\[\#FAEAFF\]{
-  --tw-gradient-from: #FAEAFF var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(250 234 255 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
 .from-\[\#ac90d9\]{
   --tw-gradient-from: #ac90d9 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(172 144 217 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-white{
-  --tw-gradient-from: #fff var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-\[\#FAEAFF\]\/50{
-  --tw-gradient-from: rgb(250 234 255 / 0.5) var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(250 234 255 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -1032,24 +1001,9 @@ body::before {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.via-\[\#FAEAFF\]\/50{
-  --tw-gradient-to: rgb(250 234 255 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), rgb(250 234 255 / 0.5) var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-
 .via-white{
   --tw-gradient-to: rgb(255 255 255 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), #fff var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-
-.via-\[\#FAEAFF\]\/30{
-  --tw-gradient-to: rgb(250 234 255 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), rgb(250 234 255 / 0.3) var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-
-.via-inherit{
-  --tw-gradient-to: rgb(255 255 255 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), inherit var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
 .to-\[\#C8BCDC\]{
@@ -1235,12 +1189,12 @@ body::before {
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
-.duration-100{
-  transition-duration: 100ms;
-}
-
 .duration-200{
   transition-duration: 200ms;
+}
+
+.duration-300{
+  transition-duration: 300ms;
 }
 
 .hover\:border-\[\#AC90D9\]:hover{
@@ -1271,6 +1225,10 @@ body::before {
 }
 
 @media (min-width: 768px){
+  .md\:w-36{
+    width: 9rem;
+  }
+
   .md\:w-\[50\%\]{
     width: 50%;
   }
