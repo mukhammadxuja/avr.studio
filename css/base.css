@@ -2,9 +2,9 @@
 
 @layer base {
   :root {
-    --primary: #AC90D9;
-    --secondary: #FAEAFF;
-    --black: #120E0E;
+    --primary: #ac90d9;
+    --secondary: #faeaff;
+    --black: #120e0e;
     --grayscale: #ccc;
   }
 
@@ -17,6 +17,7 @@
   html,
   body {
     font-family: "Inter", sans-serif;
+    overflow-x: hidden;
   }
 
   ::selection {

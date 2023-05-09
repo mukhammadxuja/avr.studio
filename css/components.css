@@ -10,7 +10,7 @@
   }
 
   .btn {
-    @apply text-[12px] bg-primary hover:bg-[#866CB0] duration-200 font-[400] text-white py-[17px] px-[25px] rounded-[9px] whitespace-nowrap text-center;
+    @apply text-[12px] bg-primary hover:bg-[#866CB0] duration-200 font-[400] text-white py-[12px] px-[18px] md:py-[17px] md:px-[25px] rounded-[9px] whitespace-nowrap text-center;
   }
 
   .btn-outline {

@@ -1,14 +1,14 @@
 <div class="container mx-auto">
   <header class="relative h-screen flex items-center justify-center w-full">
     <video
-      class="w-[70%] md:w-[50%]"
+      class="w-[100%] md:w-[50%]"
       src="../assets/videos/high.mp4"
       autoplay
       loop
       muted
     ></video>
     <h1
-      class="text-animation absolute top-1/2 -translate-y-1/2 text-[6rem] bg-gradient-to-r from-[#ac90d9] via-white to-[#C8BCDC] inline-block text-transparent bg-clip-text bg-opacity-60 leading-none text-center font-extrabold"
+      class="text-animation absolute top-1/2 -translate-y-1/2 text-[3.5rem] sm:text-[4.5rem] md:text-[6rem] bg-gradient-to-r from-[#ac90d9] via-white to-[#C8BCDC] inline-block text-transparent bg-clip-text bg-opacity-60 leading-none text-center font-extrabold"
     >
       new playgrounds <br />
       new ideas
@@ -17,12 +17,14 @@
 
   <!-- About me -->
   <section
-    class="my-10 rounded-[30px] py-[70px] px-[120px] bg-secondary backdrop-filter backdrop-blur-sm bg-opacity-80 space-y-4"
+    class="my-10 rounded-[30px] py-[30px] px-[30px] md:py-[70px] md:px-[120px] bg-secondary backdrop-filter backdrop-blur-sm bg-opacity-80 space-y-2 md:space-y-4"
   >
     <h5 class="text-[12px] leading-[22px] font-[700] uppercase text-black">
       /Who am I?
     </h5>
-    <h2 class="text-[30px] font-[600] leading-[158%] tracking-[-1] text-black">
+    <h2
+      class="text-[20px] md:text-[30px] font-[600] leading-[145%] md:leading-[158%] tracking-[-1] text-black"
+    >
       We are <span class="badge">creative</span> and
       <span class="badge">strategic</span> thinkers, <br />
       building for the <span class="badge">metaverse</span>. <br />
@@ -37,130 +39,68 @@
 
   <!-- Blog -->
   <section>
-    <div class="flex justify-between border-y border-black py-5 md:py-10">
-      <div class="flex">
+    <h5
+      class="my-2 md:my-4 text-[12px] leading-[22px] font-[700] uppercase text-black"
+    >
+      /Blogs?
+    </h5>
+    <div
+      class="flex flex-col md:flex-row justify-between border-y border-black py-5 md:py-10"
+    >
+      <div class="relative flex flex-col md:flex-row">
         <img
           class="w-[200px] h-[140px] rounded-[10px] mr-10"
           src="../assets/images/blog/example.avif"
           alt="blog image"
         />
-        <div class="text-[30px] font-[600] leading-[33px] tracking-[-1px]">
-          <h2>
-            20 definitions of th <br />
+        <div
+          class="text-[20px] md:text-[30px] font-[600] leading-[145%] md:leading-[33px] tracking-[-1px]"
+        >
+          <h2 class="my-3 md:my-0">
+            20 definitions of th <br class="hidden md:block" />
             metaverse
           </h2>
-          <span class="bg-secondary text-primary text-lg rounded-full py-1 px-3"
+          <span
+            class="absolute top-0 right-0 md:static bg-secondary text-primary text-lg rounded-full py-1 px-3"
             >Medium</span
           >
         </div>
       </div>
-      <div class="space-y-2 md:space-y-3">
-        <p class="font-semibold text-lg text-black text-right">
+      <div>
+        <p class="font-semibold text-lg text-black md:text-right">
           Inspired by Jaron Lanier who created 52 definitions for Virtual <br />
           Reality more than 30 years ago, this list explores the indefinite
           <br />
           aspect of this concept.
         </p>
-        <button class="btn-outline py-2 px-4 float-right">Read more</button>
-      </div>
-    </div>
-    <div class="flex justify-between py-5 md:py-10">
-      <div class="flex">
-        <img
-          class="w-[200px] h-[140px] rounded-[10px] mr-10"
-          src="../assets/images/blog/example.avif"
-          alt="blog image"
-        />
-        <div class="text-[30px] font-[600] leading-[33px] tracking-[-1px]">
-          <h2>
-            20 definitions of th <br />
-            metaverse
-          </h2>
-          <span class="bg-secondary text-primary text-lg rounded-full py-1 px-3"
-            >Medium</span
+        <button class="float-right`">
+          <a
+            href="/coming-soon"
+            class="btn-outline py-[12px] px-[18px] my-4 md:float-right"
+            onclick="route()"
+            >Read more</a
           >
-        </div>
-      </div>
-      <div class="space-y-2 md:space-y-3">
-        <p class="font-semibold text-lg text-black text-right">
-          Inspired by Jaron Lanier who created 52 definitions for Virtual <br />
-          Reality more than 30 years ago, this list explores the indefinite
-          <br />
-          aspect of this concept.
-        </p>
-        <button class="btn-outline py-2 px-4 float-right">Read more</button>
-      </div>
-    </div>
-    <div class="flex justify-between border-y border-black py-5 md:py-10">
-      <div class="flex">
-        <img
-          class="w-[200px] h-[140px] rounded-[10px] mr-10"
-          src="../assets/images/blog/example.avif"
-          alt="blog image"
-        />
-        <div class="text-[30px] font-[600] leading-[33px] tracking-[-1px]">
-          <h2>
-            20 definitions of th <br />
-            metaverse
-          </h2>
-          <span class="bg-secondary text-primary text-lg rounded-full py-1 px-3"
-            >Medium</span
-          >
-        </div>
-      </div>
-      <div class="space-y-2 md:space-y-3">
-        <p class="font-semibold text-lg text-black text-right">
-          Inspired by Jaron Lanier who created 52 definitions for Virtual <br />
-          Reality more than 30 years ago, this list explores the indefinite
-          <br />
-          aspect of this concept.
-        </p>
-        <button class="btn-outline py-2 px-4 float-right">Read more</button>
-      </div>
-    </div>
-    <div class="flex justify-between border-b border-black py-5 md:py-10">
-      <div class="flex">
-        <img
-          class="w-[200px] h-[140px] rounded-[10px] mr-10"
-          src="../assets/images/blog/example.avif"
-          alt="blog image"
-        />
-        <div class="text-[30px] font-[600] leading-[33px] tracking-[-1px]">
-          <h2>
-            20 definitions of th <br />
-            metaverse
-          </h2>
-          <span class="bg-secondary text-primary text-lg rounded-full py-1 px-3"
-            >Medium</span
-          >
-        </div>
-      </div>
-      <div class="space-y-2 md:space-y-3">
-        <p class="font-semibold text-lg text-black text-right">
-          Inspired by Jaron Lanier who created 52 definitions for Virtual <br />
-          Reality more than 30 years ago, this list explores the indefinite
-          <br />
-          aspect of this concept.
-        </p>
-        <button class="btn-outline py-2 px-4 float-right">Read more</button>
+        </button>
       </div>
     </div>
   </section>
 
   <!-- Contact me -->
   <section
-    class="relative my-10 overflow-hidden rounded-[30px] py-[70px] px-[120px] bg-secondary backdrop-filter backdrop-blur-sm bg-opacity-80 space-y-4"
+    class="relative my-10 overflow-hidden rounded-[30px] py-[30px] px-[30px] md:py-[70px] md:px-[120px] bg-secondary backdrop-filter backdrop-blur-sm bg-opacity-80 space-y-2 md:space-y-4"
   >
     <h5 class="text-[12px] leading-[22px] font-[700] uppercase text-black">
       /Contact me
     </h5>
-    <h2 class="text-[30px] font-[600] leading-[158%] tracking-[-1] text-black">
+    <h2
+      class="text-[20px] md:text-[30px] font-[600] leading-[145%] md:leading-[158%] tracking-[-1] text-black"
+    >
       When was the last time you tried something <br />
       new with your brand? Let’s get in touch, <br />
       we can think and build together.
     </h2>
     <button class="btn">mukhammadxuja@gmail.com</button>
-    <div class="">
+    <div class="hidden md:block">
       <img
         class="absolute z-0 top-0 right-0 h-full w-[40%] object-cover rounded-[30px]"
         src="../assets/images/pattern.png"
@@ -170,5 +110,16 @@
         class="absolute top-0 right-0 z-0 h-full w-[40%] bg-gradient-to-r from-secondary to-transparent"
       ></div>
     </div>
+  </section>
+
+  <!-- section contact man -->
+  <section class="man">
+    <video
+      class="w-[60px] h-[60px] md:w-[80px] md:h-[80px] rounded-full cursor-pointer hover:scale-105 duration-200"
+      src="../assets/videos/man.mp4"
+      autoplay
+      loop
+      muted
+    ></video>
   </section>
 </div>

@@ -1,9 +1,8 @@
 <nav
   id="navbar"
-  class="fixed top-4 left-0 right-0 z-50 flex items-center justify-between container mx-auto duration-300"
+  class="fixed top-4 left-0 right-0 mx-8 z-50 flex items-center justify-between duration-300"
 >
   <div>
-    <!-- <a class="font-bold text-3xl text-black" href="/">avr.studio</a> -->
     <a href="/">
       <img
         title="logo avr.studio - logo"
@@ -13,25 +12,35 @@
       />
     </a>
   </div>
-  <div class="flex items-center space-x-1">
+  <div class="hidden  md:inline-flex items-center space-x-1">
     <ul
-      class="ul flex items-center space-x-2 bg-secondary backdrop-filter backdrop-blur-sm bg-opacity-80 w-fit rounded-[9px] py-0 px-[27px]"
+      class="flex items-center space-x-2 bg-secondary backdrop-filter backdrop-blur-sm bg-opacity-80 w-fit rounded-[9px] py-0 px-[27px]"
     >
-      <li title="Who am I?" class="link"><a href="/project/dotsoft" onclick="route()">Who am I?</a></li>
-      <li title="Works" class="link"><a href="/work" onclick="route()">Works</a></li>
-      <li title="What i do?" class="link"><a href="/about" onclick="route()">What I do?</a></li>
-      <li title="Blog" class="link"><a href="/blog" onclick="route()">Blog</a></li>
+      <li title="Who am I?" class="link">
+        <a href="/project/dotsoft" onclick="route()">Who am I?</a>
+      </li>
+      <li title="Works" class="link">
+        <a href="/work" onclick="route()">Works</a>
+      </li>
+      <li title="What i do?" class="link">
+        <a href="/about" onclick="route()">What I do?</a>
+      </li>
+      <li title="Blog" class="link">
+        <a href="/blog" onclick="route()">Blog</a>
+      </li>
       <!-- <li class="link"><a href="/blog" onclick="route()">Contact</a></li> -->
     </ul>
-    <a title="Contact me" href="/contact" onclick="route()" class="btn">Contact me</a>
-    <!-- <div
-      class="bg-[#AC90D9] hover:bg-[#866CB0] w-fit rounded-[9px] py-[20px] px-[20px] cursor-pointer duration-200"
+    <a title="Contact me" href="/contact" onclick="route()" class="btn"
+      >Contact me</a
     >
-      <div class="space-y-1">
-        <div class="w-8 h-[.20rem] bg-white rounded-full"></div>
-        <div class="w-8 h-[.20rem] bg-white rounded-full"></div>
-        <div class="w-8 h-[.20rem] bg-white rounded-full"></div>
-      </div>
-    </div> -->
+  </div>
+  <div
+    class="block md:hidden bg-[#AC90D9] hover:bg-[#866CB0] w-fit rounded-[9px] py-[20px] px-[18px] cursor-pointer duration-200"
+  >
+    <div class="space-y-1">
+      <div class="w-8 h-[.20rem] bg-white rounded-full"></div>
+      <div class="w-8 h-[.20rem] bg-white rounded-full"></div>
+      <div class="w-8 h-[.20rem] bg-white rounded-full"></div>
+    </div>
   </div>
 </nav>
