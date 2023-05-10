@@ -20,25 +20,10 @@ header.reveal {
   z-index: 100 ;
 }
 
-@media only screen and (max-width: 0px) {
+@media (max-width: 640px) {
   canvas {
-    right: 1rem;
+    display: none;
   }
-
-  .man {
-    right: 1rem;
-  }
-}
-
-@media only screen and (max-width: 640px) {
-  canvas {
-    left: 2rem;
-  }
-
-  .man {
-    right: 2rem;
-  }
-}
 
 @media only screen and (max-width: 1024px) {
   canvas {

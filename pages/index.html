@@ -1,37 +1,33 @@
 <div class="container mx-auto overflow-hidden">
-  <header class="sticky top-0 h-screen flex items-center justify-center w-full">
+  <header class="relative h-screen flex items-center justify-center w-full">
     <video
-      class="w-[70%] md:w-[50%]"
+      class="hidden md:block w-[70%] md:w-[50%]"
       src="../assets/videos/medium.mp4"
       autoplay
       loop
       muted
     ></video>
-    <h1
-      class="text-animation absolute top-1/2 -translate-y-1/2 text-[3.5rem] sm:text-[4.5rem] md:text-[6rem] bg-gradient-to-r from-[#ac90d9] via-white to-[#C8BCDC] inline-block text-transparent bg-clip-text bg-opacity-60 leading-none text-center font-extrabold"
-    >
+    <h1 class="text-animation heading">
       new playgrounds <br class="hidden md:block" />
       new ideas
     </h1>
   </header>
 
   <!-- About me -->
-  <section
-    class="my-10 rounded-[30px] py-[30px] px-[30px] md:py-[70px] md:px-[120px] bg-secondary backdrop-filter backdrop-blur-sm bg-opacity-80 space-y-2 md:space-y-4"
-  >
-    <h5 class="text-[12px] leading-[22px] font-[700] uppercase text-black">
-      /Who am I?
-    </h5>
+  <section class="my-10 card">
+    <h5 class="title">/Who am I?</h5>
     <h2
       class="text-[20px] md:text-[30px] font-[600] leading-[145%] md:leading-[158%] tracking-[-1] text-black"
     >
       We are <span class="badge">creative</span> and
-      <span class="badge">strategic</span> thinkers, <br />
-      building for the <span class="badge">metaverse</span>. <br />
-      We help brands to explore new playgrounds, <br />
+      <span class="badge">strategic</span> thinkers,
+      <br class="hidden md:block" />
+      building for the <span class="badge">metaverse</span>.
+      <br class="hidden md:block" />
+      We help brands to explore new playgrounds, <br class="hidden md:block" />
       connect with
       <span class="badge"><span class="badge">strategic</span></span> and craft
-      <br />
+      <br class="hidden md:block" />
       cool experiences.
     </h2>
     <button class="btn">Contact me</button>
@@ -39,59 +35,50 @@
 
   <!-- Blog -->
   <section>
-    <h5
-      class="my-2 md:my-4 text-[12px] leading-[22px] font-[700] uppercase text-black"
-    >
-      /Blogs?
-    </h5>
-    <div
-      class="flex flex-col md:flex-row justify-between border-y border-black py-5 md:py-10"
-    >
+    <h5 class="my-2 md:my-4 title">/Blogs?</h5>
+    <div class="blog-wrapper">
       <div class="relative flex flex-col md:flex-row">
         <img
-          class="w-[200px] h-[140px] rounded-[10px] mr-10"
+          class="w-[140px] h-[90px] md:w-[200px] md:h-[140px] rounded-[10px] mr-10"
           src="../assets/images/blog/example.avif"
           alt="blog image"
         />
-        <div
-          class="text-[20px] md:text-[30px] font-[600] leading-[145%] md:leading-[33px] tracking-[-1px]"
-        >
-          <h2 class="my-3 md:my-0">
+        <div>
+          <h2 class="blog-title">
             20 definitions of th <br class="hidden md:block" />
             metaverse
           </h2>
           <span
-            class="absolute top-0 right-0 md:static bg-secondary text-primary text-lg rounded-full py-1 px-3"
+            class="blog-badge"
             >Medium</span
           >
         </div>
       </div>
-      <div>
-        <p class="font-semibold text-lg text-black md:text-right">
-          Inspired by Jaron Lanier who created 52 definitions for Virtual <br />
+      <div class="space-y-5">
+        <p
+          class="blog-parag"
+        >
+          Inspired by Jaron Lanier who created 52 definitions for Virtual
+          <br class="hidden md:block" />
           Reality more than 30 years ago, this list explores the indefinite
-          <br />
+          <br class="hidden md:block" />
           aspect of this concept.
         </p>
-        <button class="float-right`">
+        <div class="md:float-right">
           <a
             href="/coming-soon"
             class="btn-outline py-[12px] px-[18px] my-4 md:float-right"
             onclick="route()"
             >Read more</a
           >
-        </button>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Contact me -->
-  <section
-    class="relative my-10 overflow-hidden rounded-[30px] py-[30px] px-[30px] md:py-[70px] md:px-[120px] bg-secondary backdrop-filter backdrop-blur-sm bg-opacity-80 space-y-2 md:space-y-4"
-  >
-    <h5 class="text-[12px] leading-[22px] font-[700] uppercase text-black">
-      /Contact me
-    </h5>
+  <section class="relative my-10 overflow-hidden card">
+    <h5 class="title">/Contact me</h5>
     <h2
       class="text-[20px] md:text-[30px] font-[600] leading-[145%] md:leading-[158%] tracking-[-1] text-black"
     >
@@ -113,7 +100,7 @@
   </section>
 
   <!-- section contact man -->
-  <section class="man">
+  <section class="hidden md:block man">
     <video
       class="w-[60px] h-[60px] md:w-[80px] md:h-[80px] rounded-full cursor-pointer hover:scale-105 duration-200"
       src="../assets/videos/man.mp4"

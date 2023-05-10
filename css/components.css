@@ -1,6 +1,34 @@
 @tailwind components;
 
 @layer components {
+  .heading {
+    @apply absolute top-1/2 -translate-y-1/2 text-[3rem] sm:text-[4.5rem] md:text-[6rem] bg-gradient-to-r from-[#AC90D9] via-[#EC8FCE] to-[#688FDD] md:from-[#ac90d9] md:via-white md:to-[#C8BCDC] inline-block text-transparent bg-clip-text bg-opacity-60 leading-none text-center font-bold md:font-extrabold;
+  }
+
+  .card {
+    @apply rounded-[30px] py-[30px] px-[30px] md:py-[70px] md:px-[120px] bg-secondary backdrop-filter backdrop-blur-sm bg-opacity-80 space-y-2 md:space-y-4;
+  }
+
+  .title {
+    @apply text-[10px] leading-[22px] font-semibold md:font-[700] uppercase text-black;
+  }
+
+  .blog-wrapper {
+    @apply flex flex-col md:flex-row justify-between border-y border-black pt-5 pb-8 md:p-0 md:py-10
+  }
+
+  .blog-title {
+    @apply my-3 md:my-0 text-[20px] md:text-[30px] font-[600] leading-[145%] md:leading-[33px] tracking-[-1px]
+  }
+
+  .blog-parag {
+    @apply font-semibold text-[14px] md:text-lg text-black md:text-right
+  }
+
+  .blog-badge {
+    @apply absolute top-0 right-0 md:static bg-secondary text-primary text-[12px] md:text-lg rounded-[30px] py-[5px] px-[8px] md:py-1 md:px-3
+  }
+
   .link {
     @apply my-[10px] mx-[3px] py-[6px] px-[17px] hover:bg-primary hover:text-white duration-200 font-[500] leading-[22px] rounded-[7px] text-[14px] text-primary;
   }
@@ -10,7 +38,7 @@
   }
 
   .btn {
-    @apply text-[12px] bg-primary hover:bg-[#866CB0] duration-200 font-[400] text-white py-[12px] px-[18px] md:py-[17px] md:px-[25px] rounded-[9px] whitespace-nowrap text-center;
+    @apply text-[12px] bg-primary hover:bg-[#866CB0] duration-200 font-medium text-white py-[12px] px-[18px] md:py-[17px] md:px-[25px] rounded-[9px] whitespace-nowrap text-center;
   }
 
   .btn-outline {
