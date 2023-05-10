@@ -1,11 +1,11 @@
-fetch("../components/header.html")
-  .then((response) => {
-    console.log(response.text);
-    return response.text();
-  })
-  .then((data) => {
-    document.querySelector("header").innerHTML = data;
-  });
+// fetch("../components/header.html")
+//   .then((response) => {
+//     console.log(response.text);
+//     return response.text();
+//   })
+//   .then((data) => {
+//     document.querySelector("header").innerHTML = data;
+//   });
 
 fetch("../components/navbar.html")
   .then((response) => {

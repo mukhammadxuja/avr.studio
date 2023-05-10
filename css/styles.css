@@ -9,6 +9,10 @@ canvas {
   background: transparent;
 }
 
+header.reveal {
+  transform: none;
+}
+
 .man {
   position: fixed;
   bottom: 30px;
