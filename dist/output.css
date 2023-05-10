@@ -574,6 +574,44 @@ body::before {
   padding-left: 2rem;
 }
 
+@media (min-width: 640px){
+  .container{
+    max-width: 640px;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+@media (min-width: 768px){
+  .container{
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px){
+  .container{
+    max-width: 1024px;
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
+
+@media (min-width: 1280px){
+  .container{
+    max-width: 1280px;
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+}
+
+@media (min-width: 1536px){
+  .container{
+    max-width: 1536px;
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+}
+
 .link{
   margin-top: 10px;
   margin-bottom: 10px;
@@ -630,7 +668,7 @@ body::before {
   background-color: rgb(134 108 176 / var(--tw-bg-opacity));
 }
 
-@media (max-width: 767px){
+@media (min-width: 768px){
   .btn{
     padding-top: 17px;
     padding-bottom: 17px;
@@ -660,7 +698,7 @@ body::before {
   background-color: rgb(134 108 176 / var(--tw-bg-opacity));
 }
 
-@media (max-width: 767px){
+@media (min-width: 768px){
   .btn-outline{
     padding-top: 17px;
     padding-bottom: 17px;
@@ -844,10 +882,6 @@ body::before {
   width: 2rem;
 }
 
-.w-\[100\%\]{
-  width: 100%;
-}
-
 .w-\[200px\]{
   width: 200px;
 }
@@ -862,6 +896,10 @@ body::before {
 
 .w-\[60px\]{
   width: 60px;
+}
+
+.w-\[70\%\]{
+  width: 70%;
 }
 
 .w-fit{
@@ -1355,13 +1393,13 @@ body::before {
   border-color: var(--primary);
 }
 
-@media (max-width: 639px){
+@media (min-width: 640px){
   .sm\:text-\[4\.5rem\]{
     font-size: 4.5rem;
   }
 }
 
-@media (max-width: 767px){
+@media (min-width: 768px){
   .md\:static{
     position: static;
   }
