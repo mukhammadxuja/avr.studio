@@ -433,6 +433,14 @@ video {
   --grayscale: #ccc;
 }
 
+@font-face {
+  font-family: 'Gotham';
+
+  font-weight: 900;
+
+  src: url('../assets/fonts/GothamBold.woff2') format('woff2');
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -941,6 +949,10 @@ body::before {
   z-index: 50;
 }
 
+.z-\[9999\]{
+  z-index: 9999;
+}
+
 .mx-8{
   margin-left: 2rem;
   margin-right: 2rem;
@@ -1013,6 +1025,10 @@ body::before {
 
 .hidden{
   display: none;
+}
+
+.h-16{
+  height: 4rem;
 }
 
 .h-\[\.20rem\]{
@@ -1091,6 +1107,10 @@ body::before {
   width: 70%;
 }
 
+.w-\[90\%\]{
+  width: 90%;
+}
+
 .w-fit{
   width: -moz-fit-content;
   width: fit-content;
@@ -1098,10 +1118,6 @@ body::before {
 
 .w-full{
   width: 100%;
-}
-
-.w-\[90\%\]{
-  width: 90%;
 }
 
 .max-w-\[95rem\]{
@@ -1149,6 +1165,48 @@ body::before {
 
 .animate-handAnimation{
   animation: handAnimation 2s linear infinite;
+}
+
+@keyframes spinWord{
+  10%{
+    transform: translateY(0%);
+  }
+
+  20%{
+    transform: translateY(-100%);
+  }
+
+  30%{
+    transform: translateY(-100%);
+  }
+
+  40%{
+    transform: translateY(-200%);
+  }
+
+  50%{
+    transform: translateY(-200%);
+  }
+
+  60%{
+    transform: translateY(-300%);
+  }
+
+  70%{
+    transform: translateY(-300%);
+  }
+
+  80%{
+    transform: translateY(-0%);
+  }
+
+  100%{
+    transform: translateY(-0%);
+  }
+}
+
+.animate-spinWord{
+  animation: spinWord 7s infinite;
 }
 
 .cursor-pointer{
@@ -1289,6 +1347,11 @@ body::before {
   padding: 0.75rem;
 }
 
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .px-\[18px\]{
   padding-left: 18px;
   padding-right: 18px;
@@ -1368,6 +1431,14 @@ body::before {
   text-align: center;
 }
 
+.font-gotham{
+  font-family: Gotham, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.font-serif{
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1393,6 +1464,10 @@ body::before {
   font-size: 30px;
 }
 
+.text-\[34px\]{
+  font-size: 34px;
+}
+
 .text-\[3rem\]{
   font-size: 3rem;
 }
@@ -1412,6 +1487,10 @@ body::before {
 
 .font-\[600\]{
   font-weight: 600;
+}
+
+.font-bold{
+  font-weight: 700;
 }
 
 .font-medium{
@@ -1444,6 +1523,10 @@ body::before {
 
 .leading-none{
   line-height: 1;
+}
+
+.tracking-\[-\.099em\]{
+  letter-spacing: -.099em;
 }
 
 .tracking-\[-1\]{
