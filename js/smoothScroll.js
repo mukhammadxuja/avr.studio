@@ -1,3 +1,17 @@
+var prevScrollpos = window.pageYOffset;
+
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector("#navbar").style.top = "1.5rem";
+  } else if (prevScrollpos === 0) {
+    document.querySelector("#navbar").style.top = "1.5rem";
+  } else {
+    document.querySelector("#navbar").style.top = "-70px";
+  }
+  prevScrollpos = currentScrollPos;
+};
+
 function init() {
   new SmoothScroll(document, 120, 10);
 }

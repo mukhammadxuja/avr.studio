@@ -1,5 +1,14 @@
 const timeline = gsap.timeline();
 
+gsap.registerPlugin(ScrollTrigger);
+
+ScrollTrigger.create({
+  trigger: ".gallery",
+  start: "top top",
+  end: "bottom bottom",
+  pin: ".right",
+})
+
 isAnimating = false;
 
 gsap
@@ -13,7 +22,7 @@ gsap
   .addLabel("start", 0);
 
 timeline.from(
-  ".heading",
+  "#heading",
   {
     delay: 0.5,
     duration: 0.8,
@@ -26,7 +35,7 @@ timeline.from(
 );
 
 timeline.from(
-  ".video",
+  "#video",
   {
     delay: 0.5,
     duration: 0.8,

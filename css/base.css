@@ -8,12 +8,33 @@
     --grayscale: #ccc;
   }
 
-  @font-face {
-    font-family: 'Gotham';
-    font-weight: 900;
-    src: url('../assets/fonts/GothamBold.woff2') format('woff2');
+  ::selection {
+    color: var(--primary);
+    background: var(--secondary);
   }
 
+  /* width */
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 20px;
+    padding-right: 5px;
+  }
+
+  @font-face {
+    font-family: "Gotham";
+    font-weight: 900;
+    src: url("../assets/fonts/GothamBold.woff2") format("woff2");
+  }
 
   * {
     margin: 0;
@@ -25,11 +46,6 @@
   body {
     font-family: "Inter", sans-serif;
     overflow-x: hidden;
-  }
-
-  ::selection {
-    color: var(--primary);
-    background: var(--secondary);
   }
 
   body::before {
