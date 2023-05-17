@@ -481,6 +481,7 @@ html,
   body {
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body::before {
@@ -973,10 +974,6 @@ body::before {
   z-index: 9999;
 }
 
-.m-auto{
-  margin: auto;
-}
-
 .mx-5{
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -1005,11 +1002,6 @@ body::before {
 .my-5{
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
-}
-
-.my-auto{
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .mb-10{
@@ -1080,20 +1072,12 @@ body::before {
   height: 40px;
 }
 
-.h-\[40vw\]{
-  height: 40vw;
-}
-
 .h-\[60px\]{
   height: 60px;
 }
 
 .h-\[90px\]{
   height: 90px;
-}
-
-.h-\[90vh\]{
-  height: 90vh;
 }
 
 .h-auto{
@@ -1136,24 +1120,8 @@ body::before {
   width: 40px;
 }
 
-.w-\[40vw\]{
-  width: 40vw;
-}
-
-.w-\[50\%\]{
-  width: 50%;
-}
-
 .w-\[60px\]{
   width: 60px;
-}
-
-.w-\[70\%\]{
-  width: 70%;
-}
-
-.w-\[80\%\]{
-  width: 80%;
 }
 
 .w-\[90\%\]{
@@ -1255,11 +1223,23 @@ body::before {
 }
 
 .animate-spinWord{
-  animation: spinWord 7s infinite;
+  animation: spinWord 7s;
 }
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.scroll-mt-10{
+  scroll-margin-top: 2.5rem;
+}
+
+.scroll-pt-10{
+  scroll-padding-top: 2.5rem;
+}
+
+.scroll-pt-5{
+  scroll-padding-top: 1.25rem;
 }
 
 .flex-col{
@@ -1312,12 +1292,6 @@ body::before {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
-}
-
-.space-y-3 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]){
@@ -1525,10 +1499,6 @@ body::before {
   font-size: 18px;
 }
 
-.text-\[19px\]{
-  font-size: 19px;
-}
-
 .text-\[2\.5rem\]{
   font-size: 2.5rem;
 }
@@ -1539,10 +1509,6 @@ body::before {
 
 .text-\[30px\]{
   font-size: 30px;
-}
-
-.text-\[33px\]{
-  font-size: 33px;
 }
 
 .text-\[34px\]{
@@ -1560,11 +1526,6 @@ body::before {
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .font-\[500\]{
@@ -1964,10 +1925,6 @@ body::before {
 
   .md\:font-semibold{
     font-weight: 600;
-  }
-
-  .md\:leading-\[140\%\]{
-    line-height: 140%;
   }
 
   .md\:leading-\[158\%\]{

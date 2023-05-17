@@ -46,6 +46,7 @@
   body {
     font-family: "Inter", sans-serif;
     overflow-x: hidden;
+    scroll-behavior: smooth;
   }
 
   body::before {

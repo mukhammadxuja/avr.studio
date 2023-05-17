@@ -25,7 +25,7 @@ module.exports = {
       },
       animation: {
         handAnimation: "handAnimation 2s linear infinite",
-        spinWord: "spinWord 7s infinite",
+        spinWord: "spinWord 7s",
       },
       keyframes: {
         handAnimation: {
