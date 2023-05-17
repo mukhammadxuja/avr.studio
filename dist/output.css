@@ -977,9 +977,9 @@ body::before {
   margin: auto;
 }
 
-.mx-8{
-  margin-left: 2rem;
-  margin-right: 2rem;
+.mx-5{
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
 
 .mx-auto{
@@ -1040,10 +1040,6 @@ body::before {
   margin-top: 50px;
 }
 
-.mt-4{
-  margin-top: 1rem;
-}
-
 .block{
   display: block;
 }
@@ -1084,12 +1080,20 @@ body::before {
   height: 40px;
 }
 
+.h-\[40vw\]{
+  height: 40vw;
+}
+
 .h-\[60px\]{
   height: 60px;
 }
 
 .h-\[90px\]{
   height: 90px;
+}
+
+.h-\[90vh\]{
+  height: 90vh;
 }
 
 .h-auto{
@@ -1102,34 +1106,6 @@ body::before {
 
 .h-screen{
   height: 100vh;
-}
-
-.h-\[90vh\]{
-  height: 90vh;
-}
-
-.h-\[\]{
-  height: ;
-}
-
-.h-\[40vw\]{
-  height: 40vw;
-}
-
-.h-\[100\%\]{
-  height: 100%;
-}
-
-.h-\[100vh\]{
-  height: 100vh;
-}
-
-.h-\[90\%\]{
-  height: 90%;
-}
-
-.h-\[40vh\]{
-  height: 40vh;
 }
 
 .w-28{
@@ -1160,8 +1136,24 @@ body::before {
   width: 40px;
 }
 
+.w-\[40vw\]{
+  width: 40vw;
+}
+
+.w-\[50\%\]{
+  width: 50%;
+}
+
 .w-\[60px\]{
   width: 60px;
+}
+
+.w-\[70\%\]{
+  width: 70%;
+}
+
+.w-\[80\%\]{
+  width: 80%;
 }
 
 .w-\[90\%\]{
@@ -1175,30 +1167,6 @@ body::before {
 
 .w-full{
   width: 100%;
-}
-
-.w-\[5\]{
-  width: 5;
-}
-
-.w-\[50\%\]{
-  width: 50%;
-}
-
-.w-\[\]{
-  width: ;
-}
-
-.w-\[80\%\]{
-  width: 80%;
-}
-
-.w-\[70\%\]{
-  width: 70%;
-}
-
-.w-\[40vw\]{
-  width: 40vw;
 }
 
 .max-w-\[95rem\]{
@@ -1278,7 +1246,7 @@ body::before {
   }
 
   80%{
-    transform: translateY(-0%);
+    transform: translateY(-300%);
   }
 
   100%{
@@ -1346,6 +1314,12 @@ body::before {
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
+.space-y-3 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
 .space-y-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1356,12 +1330,6 @@ body::before {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
-}
-
-.space-y-3 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden{
@@ -1382,14 +1350,6 @@ body::before {
 
 .rounded-full{
   border-radius: 9999px;
-}
-
-.rounded-\[\]{
-  border-radius: ;
-}
-
-.border{
-  border-width: 1px;
 }
 
 .border-b-2{
@@ -1447,6 +1407,11 @@ body::before {
   padding-right: 0.5rem;
 }
 
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .px-\[18px\]{
   padding-left: 18px;
   padding-right: 18px;
@@ -1465,6 +1430,11 @@ body::before {
 .py-10{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .py-2{
@@ -1502,12 +1472,12 @@ body::before {
   padding-bottom: 40px;
 }
 
-.pb-20{
-  padding-bottom: 5rem;
+.pb-16{
+  padding-bottom: 4rem;
 }
 
-.pr-\[80px\]{
-  padding-right: 80px;
+.pb-4{
+  padding-bottom: 1rem;
 }
 
 .pt-4{
@@ -1516,6 +1486,10 @@ body::before {
 
 .pt-\[175px\]{
   padding-top: 175px;
+}
+
+.pt-\[60px\]{
+  padding-top: 60px;
 }
 
 .\!text-center{
@@ -1543,8 +1517,16 @@ body::before {
   font-size: 14px;
 }
 
+.text-\[16px\]{
+  font-size: 16px;
+}
+
 .text-\[18px\]{
   font-size: 18px;
+}
+
+.text-\[19px\]{
+  font-size: 19px;
 }
 
 .text-\[2\.5rem\]{
@@ -1557,6 +1539,10 @@ body::before {
 
 .text-\[30px\]{
   font-size: 30px;
+}
+
+.text-\[33px\]{
+  font-size: 33px;
 }
 
 .text-\[34px\]{
@@ -1574,14 +1560,6 @@ body::before {
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-.text-\[19px\]{
-  font-size: 19px;
-}
-
-.text-\[33px\]{
-  font-size: 33px;
 }
 
 .text-sm{
@@ -1613,6 +1591,10 @@ body::before {
   line-height: 120%;
 }
 
+.leading-\[140\%\]{
+  line-height: 140%;
+}
+
 .leading-\[145\%\]{
   line-height: 145%;
 }
@@ -1631,10 +1613,6 @@ body::before {
 
 .leading-none{
   line-height: 1;
-}
-
-.leading-5{
-  line-height: 1.25rem;
 }
 
 .tracking-\[-\.099em\]{
@@ -1675,10 +1653,6 @@ body::before {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\]{
-  color: ;
 }
 
 .underline{
@@ -1807,9 +1781,19 @@ body::before {
     margin-right: 2.5rem;
   }
 
+  .md\:mx-8{
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
   .md\:mx-auto{
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .md\:my-10{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
   }
 
   .md\:my-4{
@@ -1904,6 +1888,10 @@ body::before {
     margin-bottom: calc(2rem * var(--tw-space-y-reverse));
   }
 
+  .md\:rounded-none{
+    border-radius: 0px;
+  }
+
   .md\:border-b-2{
     border-bottom-width: 2px;
   }
@@ -1918,9 +1906,19 @@ body::before {
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 
+  .md\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .md\:py-10{
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+  }
+
+  .md\:py-20{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .md\:py-32{
@@ -1928,12 +1926,20 @@ body::before {
     padding-bottom: 8rem;
   }
 
-  .md\:pb-32{
-    padding-bottom: 8rem;
+  .md\:pb-20{
+    padding-bottom: 5rem;
   }
 
   .md\:pb-8{
     padding-bottom: 2rem;
+  }
+
+  .md\:pr-\[80px\]{
+    padding-right: 80px;
+  }
+
+  .md\:pt-\[100px\]{
+    padding-top: 100px;
   }
 
   .md\:pt-\[90px\]{
@@ -1942,6 +1948,10 @@ body::before {
 
   .md\:text-left{
     text-align: left;
+  }
+
+  .md\:text-\[20px\]{
+    font-size: 20px;
   }
 
   .md\:text-\[30px\]{
@@ -1956,16 +1966,12 @@ body::before {
     font-weight: 600;
   }
 
-  .md\:leading-\[158\%\]{
-    line-height: 158%;
-  }
-
-  .md\:leading-\[1\%\]{
-    line-height: 1%;
-  }
-
   .md\:leading-\[140\%\]{
     line-height: 140%;
+  }
+
+  .md\:leading-\[158\%\]{
+    line-height: 158%;
   }
 
   .md\:text-black{
@@ -1979,5 +1985,28 @@ body::before {
 
   .md\:no-underline{
     text-decoration-line: none;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:block{
+    display: block;
+  }
+
+  .lg\:hidden{
+    display: none;
+  }
+
+  .lg\:py-32{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .lg\:pb-32{
+    padding-bottom: 8rem;
+  }
+
+  .lg\:pt-\[175px\]{
+    padding-top: 175px;
   }
 }

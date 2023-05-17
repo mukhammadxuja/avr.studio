@@ -60,16 +60,16 @@
       </div>
     </div>
 
-    <div id="content" class="flex flex-col" id="root">
+    <div class="flex flex-col" id="root">
       <!-- This navbar s layout -->
       <nav></nav>
 
       <canvas title="Music"></canvas>
 
       <!-- Main home -->
-      <div class="container mx-auto">
+      <div id="main-page">
         <header
-          class="relative h-screen flex items-center justify-center w-full"
+          class="relative flex items-center justify-center w-full h-screen"
         >
           <video
             id="video"
@@ -108,7 +108,7 @@
         </section>
 
         <section>
-          <div class="gallery flex">
+          <div class="flex gallery">
             <div class="w-[50%]">
               <div class="m-auto w-[80%]">
                 <div class="h-[90vh] flex flex-col justify-center space-y-3">
@@ -120,9 +120,9 @@
                     based Uzbekistan.
                   </p>
                   <div class="flex items-center space-x-2">
-                    <span class="blog-badge text-sm">Development</span>
-                    <span class="blog-badge text-sm">Design</span>
-                    <span class="blog-badge text-sm">Branding</span>
+                    <span class="text-sm blog-badge">Development</span>
+                    <span class="text-sm blog-badge">Design</span>
+                    <span class="text-sm blog-badge">Branding</span>
                   </div>
                 </div>
 
@@ -135,9 +135,9 @@
                     based Uzbekistan.
                   </p>
                   <div class="flex items-center space-x-2">
-                    <span class="blog-badge text-sm">Development</span>
-                    <span class="blog-badge text-sm">Design</span>
-                    <span class="blog-badge text-sm">Branding</span>
+                    <span class="text-sm blog-badge">Development</span>
+                    <span class="text-sm blog-badge">Design</span>
+                    <span class="text-sm blog-badge">Branding</span>
                   </div>
                 </div>
 
@@ -150,9 +150,9 @@
                     based Uzbekistan.
                   </p>
                   <div class="flex items-center space-x-2">
-                    <span class="blog-badge text-sm">Development</span>
-                    <span class="blog-badge text-sm">Design</span>
-                    <span class="blog-badge text-sm">Branding</span>
+                    <span class="text-sm blog-badge">Development</span>
+                    <span class="text-sm blog-badge">Design</span>
+                    <span class="text-sm blog-badge">Branding</span>
                   </div>
                 </div>
               </div>
@@ -213,7 +213,7 @@
         <section
           class="relative my-10 h-[400px] md:h-[500px] card w-full space-y-0 overflow-hidden"
         >
-          <div class="absolute top-1/2 -translate-y-1/2 z-10 w-fit">
+          <div class="absolute z-10 -translate-y-1/2 top-1/2 w-fit">
             <h5 class="title">/Contact me</h5>
             <h2
               class="text-[20px] md:text-[30px] font-[600] leading-[120%] md:leading-[158%] tracking-[-1] text-black mb-2"
