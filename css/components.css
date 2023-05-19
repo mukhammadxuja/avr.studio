@@ -48,4 +48,8 @@
   .badge {
     @apply rounded-full bg-white shadow-sm py-1 px-2 text-black;
   }
+
+  .contact-input {
+    @apply w-full mb-5 md:mb-10 text-[16px] md:text-[31px] text-black placeholder:text-grayscale/80 font-medium border-2 rounded-[9px] md:rounded-none md:border-x-0 md:border-t-0 md:border-b-2 duration-200 border-primary md:border-grayscale outline-none md:text-lg py-[12px] px-[18px] md:px-0 hover:border-primary focus:border-primary
+  }
 }

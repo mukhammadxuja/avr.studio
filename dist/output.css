@@ -1044,6 +1044,11 @@ body::before {
   margin-right: auto;
 }
 
+.my-1{
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
 .my-10{
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
@@ -1070,6 +1075,14 @@ body::before {
 
 .mb-2{
   margin-bottom: 0.5rem;
+}
+
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
+.ml-1{
+  margin-left: 0.25rem;
 }
 
 .ml-4{
@@ -1374,6 +1387,10 @@ body::before {
   border-radius: 9999px;
 }
 
+.border-2{
+  border-width: 2px;
+}
+
 .border-b-2{
   border-bottom-width: 2px;
 }
@@ -1385,6 +1402,10 @@ body::before {
 
 .border-black{
   border-color: var(--black);
+}
+
+.border-primary{
+  border-color: var(--primary);
 }
 
 .bg-\[\#4A4453\]{
@@ -1576,6 +1597,11 @@ body::before {
   line-height: 1.75rem;
 }
 
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-\[500\]{
   font-weight: 500;
 }
@@ -1696,50 +1722,12 @@ body::before {
   transition-duration: 300ms;
 }
 
-@media (min-width: 768px){
-  .md\:container{
-    width: 100%;
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
+.placeholder\:text-grayscale::-moz-placeholder{
+  color: var(--grayscale);
+}
 
-  @media (min-width: 640px){
-    .md\:container{
-      max-width: 640px;
-      padding-right: 2rem;
-      padding-left: 2rem;
-    }
-  }
-
-  @media (min-width: 768px){
-    .md\:container{
-      max-width: 768px;
-    }
-  }
-
-  @media (min-width: 1024px){
-    .md\:container{
-      max-width: 1024px;
-      padding-right: 3rem;
-      padding-left: 3rem;
-    }
-  }
-
-  @media (min-width: 1280px){
-    .md\:container{
-      max-width: 1280px;
-      padding-right: 4rem;
-      padding-left: 4rem;
-    }
-  }
-
-  @media (min-width: 1536px){
-    .md\:container{
-      max-width: 1536px;
-      padding-right: 5rem;
-      padding-left: 5rem;
-    }
-  }
+.placeholder\:text-grayscale::placeholder{
+  color: var(--grayscale);
 }
 
 .hover\:scale-105:hover{
@@ -1800,6 +1788,11 @@ body::before {
     margin-right: auto;
   }
 
+  .md\:my-0{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .md\:my-10{
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
@@ -1810,8 +1803,24 @@ body::before {
     margin-bottom: 1rem;
   }
 
+  .md\:mb-0{
+    margin-bottom: 0px;
+  }
+
+  .md\:mb-10{
+    margin-bottom: 2.5rem;
+  }
+
+  .md\:ml-2{
+    margin-left: 0.5rem;
+  }
+
   .md\:mt-0{
     margin-top: 0px;
+  }
+
+  .md\:mt-\[50px\]{
+    margin-top: 50px;
   }
 
   .md\:block{
@@ -1901,8 +1910,17 @@ body::before {
     border-radius: 0px;
   }
 
+  .md\:border-x-0{
+    border-left-width: 0px;
+    border-right-width: 0px;
+  }
+
   .md\:border-b-2{
     border-bottom-width: 2px;
+  }
+
+  .md\:border-t-0{
+    border-top-width: 0px;
   }
 
   .md\:border-\[\#120E0E\]{
@@ -1910,14 +1928,13 @@ body::before {
     border-color: rgb(18 14 14 / var(--tw-border-opacity));
   }
 
+  .md\:border-grayscale{
+    border-color: var(--grayscale);
+  }
+
   .md\:bg-white{
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  }
-
-  .md\:px-0{
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
   .md\:py-10{
@@ -1933,6 +1950,11 @@ body::before {
   .md\:py-32{
     padding-top: 8rem;
     padding-bottom: 8rem;
+  }
+
+  .md\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .md\:pb-20{
@@ -1971,6 +1993,15 @@ body::before {
     font-size: 4rem;
   }
 
+  .md\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-\[31px\]{
+    font-size: 31px;
+  }
+
   .md\:font-semibold{
     font-weight: 600;
   }
@@ -2000,6 +2031,11 @@ body::before {
 
   .lg\:hidden{
     display: none;
+  }
+
+  .lg\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .lg\:py-32{
