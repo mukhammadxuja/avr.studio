@@ -1,3 +1,7 @@
+const blurryImageLoad = new BlurryImageLoad();
+blurryImageLoad.load();
+
+console.log(blurryImageLoad);
 
 // Get
 const canvas = document.querySelector("canvas");
