@@ -2,6 +2,7 @@ const route = (event) => {
   event = event || window.event;
   event.preventDefault();
   window.history.pushState({}, "", event.target.href);
+  window.scrollTo({ top: 0, behavior: "smooth" });
   handleLocation();
 };
 
