@@ -12,76 +12,72 @@ ScrollTrigger.create({
 isAnimating = false;
 
 window.addEventListener("load", () => {
-  gsap.to("#preloader", {
-    opacity: 0,
-    duration: 0.5,
-    delay: 4,
-    onComplete: () => {
-      document.querySelector("#preloader").style.display = "none";
-    },
-  });
-
   gsap
-  .timeline({
-    defaults: {
-      duration: 1.2,
-      ease: "power3.inOut",
-    },
-    onComplete: () => (isAnimating = true),
-  })
-  .addLabel("start", 0);
+    .timeline({
+      defaults: {
+        duration: 1.2,
+        ease: "power3.inOut",
+      },
+      onComplete: () => (isAnimating = true),
+    })
+    .addLabel("start", 0);
 
-timeline.from(
-  "#heading",
-  {
-    delay: 0.5,
-    duration: 0.8,
-    skewY: 10,
-    y: 100,
-    x: -199,
-    opacity: 0,
-  },
-  4
-);
-
-timeline.from(
-  "#video",
-  {
-    delay: 0.5,
-    duration: 0.8,
-    y: 100,
-    opacity: 0,
-  },
-  4
-);
-
-timeline.from(
-  "#navbar",
-  {
-    duration: 0.8,
-    y: -50,
-    ease: Power0,
-    opacity: 0,
-  },
-  4
-);
-
-timeline.to(
-  "#reveal",
-  {
-    duration: 1,
-    ease: "expo",
-    startAt: {
-      y: 200,
-      rotation: 15,
-    },
-    y: "0%",
-    rotation: 0,
-    opacity: 1,
-  },
-  0
-);
-
+  timeline
+    .to("#preloader", {
+      opacity: 0,
+      duration: 0.5,
+      delay: 4,
+      onComplete: () => {
+        document.querySelector("#preloader").style.display = "none";
+      },
+    })
+    .from(
+      "#heading",
+      {
+        delay: 0.5,
+        duration: 0.8,
+        skewY: 10,
+        y: 100,
+        x: -199,
+        opacity: 0,
+      },
+      4
+    )
+    .from(
+      "#video",
+      {
+        delay: 0.5,
+        duration: 0.8,
+        y: 100,
+        opacity: 0,
+      },
+      4
+    )
+    .from(
+      "#navbar",
+      {
+        duration: 0.8,
+        y: -50,
+        ease: Power0,
+        opacity: 0,
+      },
+      4
+    )
+    .to(
+      "#reveal",
+      {
+        duration: 1,
+        ease: "expo",
+        startAt: {
+          y: 200,
+          rotation: 15,
+        },
+        y: "0%",
+        rotation: 0,
+        opacity: 1,
+      },
+      0
+    );
 });
 
 const scroll = new LocomotiveScroll({
