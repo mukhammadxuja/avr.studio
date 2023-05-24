@@ -1,11 +1,9 @@
 const { fontFamily } = require("tailwindcss/defaultTheme");
-/** @type {import('tailwindcss').Config} */
+
 module.exports = {
-  content: [
-    "./components/**/*.{html,js}",
-    "./pages/**/*.{html,js}",
-    "./index.{html,js}",
-  ],
+  mode: "jit",
+  content: ["./src/*.html", "./src/*.{js,jsx,ts,tsx,vue}"],
+  darkMode: "media", // or 'media' or 'class'
   theme: {
     extend: {
       container: {
@@ -20,6 +18,18 @@ module.exports = {
       colors: {
         primary: "var(--primary)",
         secondary: "var(--secondary)",
+        "inreport-primary": "var(--inreport-primary)",
+        "inreport-lighter": "var(--inreport-lighter)",
+        "inreport-secondary": "var(--inreport-secondary)",
+        "dotsoft-primary": "var(--dotsoft-primary)",
+        "dotsoft-lighter": "var(--dotsoft-lighter)",
+        "dotsoft-secondary": "var(--dotsoft-secondary)",
+        "edteach-primary": "var(--edteach-primary)",
+        "edteach-lighter": "var(--edteach-lighter)",
+        "edteach-secondary": "var(--edteach-secondary)",
+        "lazydev-primary": "var(--lazydev-primary)",
+        "lazydev-lighter": "var(--lazydev-lighter)",
+        "lazydev-secondary": "var(--lazydev-secondary)",
         black: "var(--black)",
         grayscale: "var(--grayscale)",
       },
@@ -76,6 +86,9 @@ module.exports = {
         gotham: ["Gotham", ...fontFamily.sans],
       },
     },
+  },
+  variants: {
+    extend: {},
   },
   plugins: [],
 };

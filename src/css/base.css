@@ -1,0 +1,76 @@
+@tailwind base;
+
+@layer base {
+  :root {
+    --primary: #ac90d9;
+    --secondary: #faeaff;
+    --inreport-primary: #3b82f6;
+    --inreport-lighter: #00B5FF;
+    --inreport-secondary: #e8efff;
+    --dotsoft-primary: #056C97;
+    --dotsoft-lighter: #008EAC;
+    --dotsoft-secondary: #E6F4F1;
+    --edteach-primary: #6A5AE0;
+    --edteach-lighter: #AF96FF;
+    --edteach-secondary: #F6EBFF;
+    --lazydev-primary: #1A5CFF;
+    --lazydev-lighter: #007BFF;
+    --lazydev-secondary: #F1EDFF;
+    --black: #120e0e;
+    --grayscale: #ccc;
+  }
+
+  ::selection {
+    color: var(--primary);
+    background: var(--secondary);
+  }
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 20px;
+    padding-right: 5px;
+  }
+
+  @font-face {
+    font-family: "Gotham";
+    font-weight: 900;
+    src: url("../assets/fonts/GothamBold.woff2") format("woff2");
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+  }
+
+  body::before,
+  #preloader::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    content: "";
+    opacity: 0.04;
+    z-index: 1500;
+    pointer-events: none;
+    background: url(../assets/gif/noise.gif);
+  }
+}

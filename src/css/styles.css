@@ -1,0 +1,171 @@
+canvas {
+  position: fixed;
+  bottom: 30px;
+  left: 40px;
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background: transparent;
+}
+
+header.reveal {
+  transform: none;
+}
+
+.man {
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  z-index: 100;
+}
+
+@media (max-width: 640px) {
+  canvas {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  canvas {
+    left: 3rem;
+  }
+
+  .man {
+    right: 3rem;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  canvas {
+    left: 4rem;
+  }
+
+  .man {
+    right: 4rem;
+  }
+}
+
+@media only screen and (max-width: 1536px) {
+  canvas {
+    left: 5rem;
+  }
+
+  .man {
+    right: 5rem;
+  }
+}
+
+.text-animation {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+active {
+  background: #ac90d9;
+  color: white;
+}
+
+#snackbar {
+  visibility: hidden;
+  /* min-width: 250px; */
+  display: flex;
+  align-items: center;
+  margin-left: -125px;
+  position: fixed;
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  padding: 14px 10px;
+  background-color: var(--secondary);
+  color: var(--primary);
+  z-index: 1;
+  left: 50%;
+  top: 30px;
+}
+
+#snackbar p {
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 6px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    top: 0;
+    opacity: 0;
+  }
+  to {
+    top: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    top: 0;
+    opacity: 0;
+  }
+  to {
+    top: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    top: 30px;
+    opacity: 1;
+  }
+  to {
+    top: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    top: 30px;
+    opacity: 1;
+  }
+  to {
+    top: 0;
+    opacity: 0;
+  }
+}
+
+.sending {
+  background-color: #ccc;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+.test-text {
+  transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(-60deg) rotateY(0deg)
+    rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg)
+    skewY(0deg);
+  perspective: 800px;
+}
+
+.show-menu {
+  display: block;
+  opacity: 1;
+}

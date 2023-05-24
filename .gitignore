@@ -1,4 +1,9 @@
-.sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
+.history
+.cache
+.idea
+dist
+node_modules
+.tailwind
+.parcel-cache
+.DS_Store
+

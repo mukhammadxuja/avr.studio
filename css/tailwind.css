@@ -1,9 +1,0 @@
-@import url(base.css);
-@import url(components.css);
-@import url(blurryLoad.css);
-
-@tailwind base;
-
-@tailwind components;
-
-@tailwind utilities;

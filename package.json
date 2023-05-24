@@ -1,22 +1,22 @@
 {
-  "name": "personal-website",
-  "version": "1.0.0",
-  "description": "Anvarov Muhammad's personal website - Frontend development",
-  "main": "tailwind.config.js",
+  "name": "parcel-tailwind-starter",
+  "version": "2.0.0",
+  "description": "Simple TailwindCSS v3 starter with Parcel v2",
   "scripts": {
-    "tw": "tailwindcss -i ./css/tailwind.css -o ./dist/output.css",
-    "tw:watch": "tailwindcss -i ./css/tailwind.css -o ./dist/output.css --watch"
+    "prebuild": "rimraf .cache && rimraf dist",
+    "build": "npm run prebuild && parcel build src/*.html",
+    "dev": "parcel src/*.html"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mukhammadxuja/anvarov.git"
-  },
-  "keywords": [],
-  "author": "Anvarov Muhammad",
   "license": "MIT",
+  "private": true,
   "dependencies": {
-    "postcss": "^8.4.23",
-    "postcss-cli": "^10.1.0",
-    "smooth-scrollbar": "8.7.0"
+    "parcel": "^2.8.3",
+    "tailwindcss": "^3.3.2"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "autoprefixer": "^10.4.14",
+    "locomotive-scroll": "^4.1.4",
+    "postcss": "^8.4.23"
   }
 }

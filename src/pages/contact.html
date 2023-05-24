@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Anvarov Studio</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../assets/svg/avr.svg" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/tailwind.css" />
+  </head>
+
+  <body class="">
+    <nav
+      id="navbar"
+      class="fixed left-0 right-0 z-50 flex items-center justify-between mx-5 duration-300 md:mx-8 top-4"
+    >
+      <div>
+        <a href="/">
+          <img
+            title="logo avr.studio - logo"
+            class="w-28 md:w-36 mix-blend-luminosity"
+            src="../assets/images/avr.studio.png"
+            loading="lazy"
+            alt="logo"
+          />
+        </a>
+      </div>
+      <div class="items-center hidden space-x-1 md:inline-flex">
+        <ul
+          class="flex items-center space-x-2 bg-g backdrop-filter backdrop-blur-sm bg-opacity-80 w-fit rounded-[9px] py-0 px-[27px]"
+        >
+          <li title="Who am I?" class="link">
+            <a href="./projects/dotsoft.html">Who am I?</a>
+          </li>
+          <li title="Works" class="link">
+            <a href="/works">Works</a>
+          </li>
+          <li title="What i do?" class="link">
+            <a href="/about">What I do?</a>
+          </li>
+          <li title="Blog" class="link">
+            <a href="/blog">Blog</a>
+          </li>
+          <!-- <li class="link"><a href="/blog">Contact</a></li> -->
+        </ul>
+        <a title="Contact me" href="/contact" class="btn">Contact me</a>
+      </div>
+      <div
+        class="md:hidden bg-[#AC90D9] hover:bg-[#866CB0] w-[40px] h-[40px] inline-flex items-center justify-center rounded-[9px] py-[20px] px-[18px] cursor-pointer duration-200"
+      >
+        <div class="space-y-1">
+          <div class="w-6 h-[.20rem] bg-white rounded-full"></div>
+          <div class="w-6 h-[.20rem] bg-white rounded-full"></div>
+          <div class="w-6 h-[.20rem] bg-white rounded-full"></div>
+        </div>
+      </div>
+    </nav>
+
+    <canvas title="Music"></canvas>
+
+    <main
+      class="pt-[60px] md:pt-[100px] lg:pt-[175px] px-5 lg:px-0 max-w-[95rem] mx-auto"
+    >
+      <h1
+        class="text-[2.5rem] md:text-[4rem] text-black leading-none font-semibold"
+      >
+        Hey! Tell me all <br />
+        <span class="flex items-center">
+          the things
+          <img
+            class="w-[40px] h-[40px] ml-4 animate-handAnimation"
+            src="../assets/images/emojes/hand.png"
+            alt="hand image"
+          />
+        </span>
+      </h1>
+      <div class="md:mt-[50px] md:space-y-8">
+        <div class="my-5 md:my-10">
+          <p class="text-grayscale text-[20px] md:text-[30px] font-medium my-5">
+            I'm interested in...
+          </p>
+          <div>
+            <button
+              id="serviceBtn"
+              value="Site from scratch"
+              class="btn-outline text-sm md:text-lg py-[12px] px-[18px] ml-1 my-1 md:my-0 md:ml-2"
+            >
+              Site from scratch
+            </button>
+            <button
+              id="serviceBtn"
+              value="UI/UX design"
+              class="btn-outline text-sm md:text-lg py-[12px] px-[18px] ml-1 my-1 md:my-0 md:ml-2"
+            >
+              UI/UX design
+            </button>
+            <button
+              id="serviceBtn"
+              value="Branding"
+              class="btn-outline text-sm md:text-lg py-[12px] px-[18px] ml-1 my-1 md:my-0 md:ml-2"
+            >
+              Branding
+            </button>
+            <button
+              id="serviceBtn"
+              value="Web development"
+              class="btn-outline text-sm md:text-lg py-[12px] px-[18px] ml-1 my-1 md:my-0 md:ml-2"
+            >
+              Web development
+            </button>
+          </div>
+        </div>
+        <form class="my-5 md:my-10">
+          <input
+            class="w-full mb-5 md:mb-10 text-[16px] md:text-[20px] lg:text-[30px] text-black placeholder:text-grayscale font-medium border-2 rounded-[9px] md:rounded-none md:border-x-0 md:border-t-0 md:border-b-2 duration-200 border-primary md:border-grayscale outline-none py-[8px] md:py-[12px] px-[18px] md:px-0 hover:border-primary focus:border-primary"
+            type="text"
+            id="name"
+            placeholder="Your name"
+          />
+          <input
+            class="w-full mb-5 md:mb-10 text-[16px] md:text-[20px] lg:text-[30px] text-black placeholder:text-grayscale font-medium border-2 rounded-[9px] md:rounded-none md:border-x-0 md:border-t-0 md:border-b-2 duration-200 border-primary md:border-grayscale outline-none py-[8px] md:py-[12px] px-[18px] md:px-0 hover:border-primary focus:border-primary"
+            type="text"
+            id="number"
+            placeholder="Your phone number"
+          />
+          <input
+            class="w-full mb-5 md:mb-10 text-[16px] md:text-[20px] lg:text-[30px] text-black placeholder:text-grayscale font-medium border-2 rounded-[9px] md:rounded-none md:border-x-0 md:border-t-0 md:border-b-2 duration-200 border-primary md:border-grayscale outline-none py-[8px] md:py-[12px] px-[18px] md:px-0 hover:border-primary focus:border-primary"
+            type="email"
+            id="email"
+            placeholder="Your email"
+          />
+          <input
+            class="w-full mb-5 md:mb-10 text-[16px] md:text-[20px] lg:text-[30px] text-black placeholder:text-grayscale font-medium border-2 rounded-[9px] md:rounded-none md:border-x-0 md:border-t-0 md:border-b-2 duration-200 border-primary md:border-grayscale outline-none py-[8px] md:py-[12px] px-[18px] md:px-0 hover:border-primary focus:border-primary"
+            type="text"
+            id="projectIdea"
+            placeholder="Tell us about your project"
+          />
+        </form>
+        <div class="my-5 md:my-10">
+          <p class="text-grayscale text-[20px] md:text-[30px] font-medium my-5">
+            Project budget (USD)
+          </p>
+          <div>
+            <button
+              id="budgetBtn"
+              value="100-300"
+              class="btn-outline text-sm md:text-lg py-[12px] px-[18px] ml-1 my-1 md:my-0 md:ml-2"
+            >
+              100-300
+            </button>
+            <button
+              id="budgetBtn"
+              value="300-500"
+              class="btn-outline text-sm md:text-lg py-[12px] px-[18px] ml-1 my-1 md:my-0 md:ml-2"
+            >
+              300-500
+            </button>
+            <button
+              id="budgetBtn"
+              value="500-1000"
+              class="btn-outline text-sm md:text-lg py-[12px] px-[18px] ml-1 my-1 md:my-0 md:ml-2"
+            >
+              500-1000
+            </button>
+            <button
+              id="budgetBtn"
+              value="1000+"
+              class="btn-outline text-sm md:text-lg py-[12px] px-[18px] ml-1 my-1 md:my-0 md:ml-2"
+            >
+              1000+
+            </button>
+          </div>
+        </div>
+        <button
+          id="btn"
+          disabled
+          onclick="getValues()"
+          class="btn mb-10 md:mb-0"
+        >
+          Send request
+        </button>
+      </div>
+    </main>
+
+    <div id="snackbar" role="alert">
+      <svg
+        class="h-5 w-5"
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+        />
+      </svg>
+      <p>So'rovingiz muvaffaqiyatli jo'natildi.</p>
+    </div>
+
+    <footer class="bg-[#4A4453] md:bg-white md:mx-auto md:max-w-[95rem] py-10">
+      <div
+        class="flex flex-col md:flex-row justify-between py-[40px] md:pt-[90px] md:pb-8"
+      >
+        <div class="mx-auto md:mx-0">
+          <h1
+            class="text-white md:text-black text-[3rem] md:text-[4rem] text-center md:text-left text-black leading-none font-medium md:font-semibold"
+          >
+            Have an idea?
+          </h1>
+          <a
+            class="flex items-center justify-center md:items-start md:justify-start text-white md:text-black text-[2.5rem] md:text-[4rem] text-black leading-none font-medium md:border-b-2 underline md:no-underline md:border-[#120E0E] hover:text-[#AC90D9] hover:border-[#AC90D9] duration-200 !text-center w-full md:w-fit"
+            href="/contact"
+            >Contact me</a
+          >
+          <img
+            class="hidden md:block p-3 mt-8 bg-gray-100 rounded-[9px] w-40 h-auto"
+            src="../assets/images/scan.png"
+            alt="Scan image"
+          />
+        </div>
+        <div
+          class="hidden md:inline-flex md:flex-row space-y-4 md:space-y-0 mt-10 md:mt-0"
+        >
+          <ul class="md:mx-10">
+            <li>
+              <a class="footer-link" href="#!">Who am i?</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#!">Selected works</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#!">What I do?</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#!">Contact</a>
+            </li>
+          </ul>
+          <ul class="md:mx-10">
+            <li>
+              <a class="footer-link" href="#!">Tutorials</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#!">Blog</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#!">Sources</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row md:items-center md:space-x-2">
+        <span class="hidden md:block text-lg text-gray-500 font-medium"
+          >2023 &copy;</span
+        >
+        <a
+          class="footer-link text-white md:text-black text-center text-[18px] md:text-gray-500 hover:!text-black md:border-b-2"
+          href="#!"
+          >mukhammadxuja@gmail.com</a
+        >
+        <div class="block md:hidden space-y-1">
+          <p class="text-[14px] font-medium text-center text-gray-200 py-2">
+            Jizzakh, Uzbekistan
+          </p>
+          <div class="flex items-center justify-center space-x-2 my-4 pt-4">
+            <a
+              href="https://github.com/mukhammadxuja"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                title="Github"
+                class="w-[30px] h-[30px]"
+                src="../assets/images/social/github.png"
+                alt="github - image"
+              />
+            </a>
+            <a
+              href="https://t.me/akzmsh"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                title="Telegram"
+                class="w-[35px] h-[35px]"
+                src="../assets/images/social/telegram.png"
+                alt="telegram - image"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mukhammad-anvarov-b88543269/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                title="Linkedin"
+                class="w-[35px] h-[35px]"
+                src="../assets/images/social/linkedin.png"
+                alt="linkedin - image"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/anvarv__/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                title="Instagram"
+                class="w-[30px] h-[30px]"
+                src="../assets/images/social/instagram.png"
+                alt="instagram - image"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <audio src="../assets/music/track.mp3" id="audio"></audio>
+    <!-- https://youtu.be/AkpqQtVPZKg -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("77VLn3jKfKy5LJPvj");
+      })();
+    </script>
+
+    <script src="../js/useState.js"></script>
+    <script src="../js/smoothScroll.js"></script>
+    <script src="../js/blurryLoad.js"></script>
+    <script src="../js/animations.js"></script>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

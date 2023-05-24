@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Anvarov Studio</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="./assets/svg/avr.svg" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.0.6/dist/locomotive-scroll.min.js"></script>
+
+    <!-- TweenMax - GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
+
+    <!-- include GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+
+    <!-- include ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="./css/tailwind.css" />
+  </head>
+
+  <body>
+    <nav
+      id="navbar"
+      class="fixed left-0 right-0 z-[100] flex items-center justify-between mx-5 duration-300 md:mx-8 top-4"
+    >
+      <div>
+        <a href="/">
+          <img
+            title="logo avr.studio - logo"
+            class="w-28 md:w-36 mix-blend-luminosity"
+            src="./assets/images/avr.studio.png"
+            loading="lazy"
+            alt="logo"
+          />
+        </a>
+      </div>
+      <div class="items-center hidden space-x-1 md:inline-flex">
+        <ul
+          class="flex items-center space-x-2 bg-secondary shadow-sm backdrop-filter backdrop-blur-sm bg-opacity-80 w-fit rounded-[9px] py-0 px-[27px]"
+        >
+          <li title="Who am I?" class="link">
+            <a href="./dotsoft.html">Who am I?</a>
+          </li>
+          <li title="Works" class="link">
+            <a href="./edteach.html">Works</a>
+          </li>
+          <li title="What i do?" class="link">
+            <a href="./inreport.html">What I do?</a>
+          </li>
+          <li title="Blog" class="link">
+            <a href="/blog">Blog</a>
+          </li>
+          <!-- <li class="link"><a href="/blog">Contact</a></li> -->
+        </ul>
+        <a title="Contact me" href="./contact.html" class="btn">Contact me</a>
+      </div>
+      <div
+        id="menu-toggle-btn"
+        class="md:hidden bg-[#AC90D9] hover:bg-[#866CB0] w-[40px] h-[40px] inline-flex items-center justify-center rounded-[9px] py-[20px] px-[18px] cursor-pointer duration-200"
+      >
+        <div class="space-y-1">
+          <div class="w-6 h-[.20rem] bg-white rounded-full"></div>
+          <div class="w-6 h-[.20rem] bg-white rounded-full"></div>
+          <div class="w-6 h-[.20rem] bg-white rounded-full"></div>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="hidden fixed top-0 left-0 z-[99] bg-white h-screen flex items-center justify-center w-full container mx-auto"
+    >
+      <div>
+        <h3 class="pb-[30px] text-grayscale text-[16px] leading-[100%]">
+          Menu
+        </h3>
+        <ul class="space-y-2">
+          <li
+            class="text-[38px] font-[400] tracking-[-.05em] leading-[100%] text-black"
+          >
+            <a href="">Who am I?</a>
+          </li>
+          <li
+            class="text-[38px] font-[400] tracking-[-.05em] leading-[100%] text-black"
+          >
+            <a href="">Projects</a>
+          </li>
+          <li
+            class="text-[38px] font-[400] tracking-[-.05em] leading-[100%] text-black"
+          >
+            <a href="">Tutorials</a>
+          </li>
+          <li
+            class="text-[38px] font-[400] tracking-[-.05em] leading-[100%] text-black"
+          >
+            <a href="./contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="pt-[30px] space-y-2">
+          <span class="text-grayscale text-[16px] leading-[100%]"
+            >Get in touch</span
+          >
+          <p
+            class="text-black border-b border-black text-[16px] whitespace-normal leading-[100%]"
+            href=""
+          >
+            mukhammadxuja@gmail.com
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <canvas title="Music"></canvas>
+
+    <div
+      id="preloader"
+      class="fixed top-0 left-0 z-[9999] bg-white h-screen w-full flex items-center justify-center"
+    >
+      <div
+        class="flex text-black font-bold text-[20px] md:text-[34px] font-gotham tracking-[-.099em] h-10 md:h-16 overflow-hidden px-2"
+      >
+        <span>avr</span>
+        <div>
+          <h3 class="animate-spinWord">
+            <span class="font-serif">.</span>coding
+          </h3>
+          <h3 class="animate-spinWord">
+            <span class="font-serif">.</span>design
+          </h3>
+          <h3 class="animate-spinWord">
+            <span class="font-serif">.</span>branding
+          </h3>
+          <h3 class="animate-spinWord">
+            <span class="font-serif">.</span>studio
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <main class="overflow-hidden">
+      <header class="relative flex items-center justify-center w-full h-screen">
+        <video
+          id="video"
+          class="video w-[90%] md:w-[50%]"
+          src="./assets/videos/medium.mp4"
+          autoplay
+          loop
+          muted
+        ></video>
+        <h1 id="heading" class="select-none text-animation heading py-2">
+          .Coding .Design <br class="hidden md:block" />
+          .Branding
+        </h1>
+      </header>
+
+      <!-- About me -->
+      <section class="container mx-auto">
+        <div class="my-10 card">
+          <h5 class="title">/Who am I?</h5>
+          <h2
+            class="text-[20px] md:text-[30px] font-[600] leading-[145%] md:leading-[158%] tracking-[-1] text-black"
+          >
+            We are <span class="badge">creative</span> and
+            <span class="badge">strategic</span> thinkers,
+            <br class="hidden md:block" />
+            building for the <span class="badge">metaverse</span>.
+            <br class="hidden md:block" />
+            We help brands to explore new playgrounds,
+            <br class="hidden md:block" />
+            connect with
+            <span class="badge"><span class="badge">strategic</span></span> and
+            craft
+            <br class="hidden md:block" />
+            cool experiences.
+          </h2>
+          <button class="btn">Contact me</button>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="my-10 h-[50vh] w-[100vw]">
+        <div
+          data-scroll-container
+          class="scroll-content flex items-center flex-nowrap w-full h-full"
+        >
+          <div class="ml-0 md:ml-[200px]">
+            <h2
+              class="horizontal-title w-[600px] cursor-pointer text-center text-[25px] text-black whitespace-nowrap font-semibold leading-[28px] tracking-[-.35px]"
+            >
+              No Monthly Service Fees, <br />
+              Transaction Fee from 0%
+            </h2>
+          </div>
+          <div class="">
+            <h2
+              class="horizontal-title w-[600px] cursor-pointer text-center text-[25px] text-black whitespace-nowrap font-semibold leading-[28px] tracking-[-.35px]"
+            >
+              No Monthly Service Fees, <br />
+              Transaction Fee from 0%
+            </h2>
+          </div>
+          <div class="">
+            <h2
+              class="horizontal-title w-[600px] cursor-pointer text-center text-[25px] text-black whitespace-nowrap font-semibold leading-[28px] tracking-[-.35px]"
+            >
+              No Monthly Service Fees, <br />
+              Transaction Fee from 0%
+            </h2>
+          </div>
+          <div>
+            <h2
+              class="horizontal-title w-[600px] cursor-pointer text-center text-[25px] text-black whitespace-nowrap font-semibold leading-[28px] tracking-[-.35px]"
+            ></h2>
+          </div>
+          <div>
+            <h2
+              class="horizontal-title w-[600px] cursor-pointer text-center text-[25px] text-black whitespace-nowrap font-semibold leading-[28px] tracking-[-.35px]"
+            ></h2>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog -->
+      <section class="container mx-auto">
+        <h5 class="my-2 md:my-4 title">/Blogs?</h5>
+        <div class="blog-wrapper border-y">
+          <div class="relative flex flex-col md:flex-row">
+            <img
+              class="w-[140px] h-[90px] md:w-[200px] md:h-[140px] rounded-[10px] mr-10"
+              src="./assets/images/blog/js-in-30-days.jpg"
+              alt="blog image"
+            />
+            <div>
+              <h2 class="blog-title">
+                Javascript 30<br class="hidden md:block" />
+                kunda qo'llanmasi.
+              </h2>
+              <span class="blog-badge">Github</span>
+            </div>
+          </div>
+          <div class="space-y-5">
+            <p class="blog-parag">
+              Asabeneh Yetayehning 30 Days Of JavaScript
+              <br class="hidden md:block" />
+              qo'llanmasidan ilhomlangan holda o'zbek tiliga
+              <br class="hidden md:block" />
+              tarjima qilindi.
+            </p>
+            <div class="md:float-right">
+              <a
+                href=""
+                class="btn-outline py-[12px] px-[18px] my-4 md:float-right"
+                >Coming soon</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="blog-wrapper">
+          <div class="relative flex flex-col md:flex-row">
+            <img
+              class="w-[140px] h-[90px] md:w-[200px] md:h-[140px] rounded-[10px] mr-10"
+              src="./assets/images/blog/ts-in-30-days.jpg"
+              alt="blog image"
+            />
+            <div>
+              <h2 class="blog-title">
+                Typescript 30<br class="hidden md:block" />
+                kunda qo'llanmasi.
+              </h2>
+              <span class="blog-badge">Github</span>
+            </div>
+          </div>
+          <div class="space-y-5">
+            <p class="blog-parag">
+              Asabeneh Yetayehning 30 Days Of JavaScript
+              <br class="hidden md:block" />
+              qo'llanmasidan ilhomlangan holda o'zbek tiliga
+              <br class="hidden md:block" />
+              tarjima qilindi.
+            </p>
+            <div class="md:float-right">
+              <a
+                href=""
+                class="btn-outline py-[12px] px-[18px] my-4 md:float-right"
+                >Coming soon</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="blog-wrapper">
+          <div class="relative flex flex-col md:flex-row">
+            <img
+              class="w-[140px] h-[90px] md:w-[200px] md:h-[140px] rounded-[10px] mr-10"
+              src="./assets/images/blog/reactjs-in-30-days.jpg"
+              alt="blog image"
+            />
+            <div>
+              <h2 class="blog-title">
+                Reactjs 30<br class="hidden md:block" />
+                kunda qo'llanmasi.
+              </h2>
+              <span class="blog-badge">Github</span>
+            </div>
+          </div>
+          <div class="space-y-5">
+            <p class="blog-parag">
+              Asabeneh Yetayehning 30 Days Of JavaScript
+              <br class="hidden md:block" />
+              qo'llanmasidan ilhomlangan holda o'zbek tiliga
+              <br class="hidden md:block" />
+              tarjima qilindi.
+            </p>
+            <div class="md:float-right">
+              <a
+                href=""
+                class="btn-outline py-[12px] px-[18px] my-4 md:float-right"
+                >Coming soon</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="blog-wrapper">
+          <div class="relative flex flex-col md:flex-row">
+            <img
+              class="w-[140px] h-[90px] md:w-[200px] md:h-[140px] rounded-[10px] mr-10"
+              src="./assets/images/blog/unit-testing-30-days.jpg"
+              alt="blog image"
+            />
+            <div>
+              <h2 class="blog-title">
+                Unit Testing 30<br class="hidden md:block" />
+                kunda qo'llanmasi.
+              </h2>
+              <span class="blog-badge">Github</span>
+            </div>
+          </div>
+          <div class="space-y-5">
+            <p class="blog-parag">
+              Asabeneh Yetayehning 30 Days Of JavaScript
+              <br class="hidden md:block" />
+              qo'llanmasidan ilhomlangan holda o'zbek tiliga
+              <br class="hidden md:block" />
+              tarjima qilindi.
+            </p>
+            <div class="md:float-right">
+              <a
+                href=""
+                class="btn-outline py-[12px] px-[18px] my-4 md:float-right"
+                >Coming soon</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact me -->
+      <section class="container mx-auto">
+        <div
+          id="contact"
+          class="relative my-10 h-[400px] md:h-[500px] card w-full space-y-0 overflow-hidden"
+        >
+          <div class="absolute z-10 -translate-y-1/2 top-1/2 w-fit">
+            <h5 class="title">/Contact me</h5>
+            <h2
+              class="text-[20px] md:text-[30px] font-[600] leading-[120%] md:leading-[158%] tracking-[-1] text-black mb-2"
+            >
+              When was the last time you tried something <br />
+              new with your brand? Let’s get in touch, <br />
+              we can think and build together.
+            </h2>
+            <button class="btn">mukhammadxuja@gmail.com</button>
+          </div>
+          <video
+            class="absolute z-0 top-0 right-0 w-full h-full object-cover rounded-[30px]"
+            src="./assets/videos/contact-medium.mp4"
+            autoplay
+            loop
+            muted
+          ></video>
+        </div>
+      </section>
+
+      <!-- section contact man -->
+      <section class="hidden md:block man">
+        <a title="Contact me" href="#contact">
+          <video
+            class="w-[60px] h-[60px] md:w-[80px] md:h-[80px] rounded-full cursor-pointer hover:scale-105 duration-200"
+            src="./assets/videos/man.mp4"
+            autoplay
+            loop
+            muted
+          ></video>
+        </a>
+      </section>
+    </main>
+
+    <footer class="bg-[#4A4453] md:bg-white md:mx-auto md:max-w-[95rem] py-10">
+      <div
+        class="flex flex-col md:flex-row justify-between py-[40px] md:pt-[90px] md:pb-8"
+      >
+        <div class="mx-auto md:mx-0">
+          <h1
+            class="text-white md:text-black text-[3rem] md:text-[4rem] text-center md:text-left text-black leading-none font-medium md:font-semibold"
+          >
+            Have an idea?
+          </h1>
+          <a
+            class="flex items-center justify-center md:items-start md:justify-start text-white md:text-black text-[2.5rem] md:text-[4rem] text-black leading-none font-medium md:border-b-2 underline md:no-underline md:border-[#120E0E] hover:text-[#AC90D9] hover:border-[#AC90D9] duration-200 !text-center w-full md:w-fit"
+            href="/contact"
+            >Contact me</a
+          >
+          <img
+            class="hidden md:block p-3 mt-8 bg-gray-100 rounded-[9px] w-40 h-auto"
+            src="./assets/images/scan.png"
+            alt="Scan image"
+          />
+        </div>
+        <div
+          class="hidden mt-10 space-y-4 md:inline-flex md:flex-row md:space-y-0 md:mt-0"
+        >
+          <ul class="md:mx-10">
+            <li>
+              <a class="footer-link" href="#!">Who am i?</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#!">Selected works</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#!">What I do?</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#!">Contact</a>
+            </li>
+          </ul>
+          <ul class="md:mx-10">
+            <li>
+              <a class="footer-link" href="#!">Tutorials</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#!">Blog</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#!">Sources</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row md:items-center md:space-x-2">
+        <span class="hidden text-lg font-medium text-gray-500 md:block"
+          >2023 &copy;</span
+        >
+        <a
+          class="footer-link text-white md:text-black text-center text-[18px] md:text-gray-500 hover:!text-black md:border-b-2"
+          href="#!"
+          >mukhammadxuja@gmail.com</a
+        >
+        <div class="block space-y-1 md:hidden">
+          <p class="text-[14px] font-medium text-center text-gray-200 py-2">
+            Jizzakh, Uzbekistan
+          </p>
+          <div class="flex items-center justify-center pt-4 my-4 space-x-2">
+            <a
+              href="https://github.com/mukhammadxuja"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                title="Github"
+                class="w-[30px] h-[30px]"
+                src="./assets/images/social/github.png"
+                alt="github - image"
+              />
+            </a>
+            <a
+              href="https://t.me/akzmsh"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                title="Telegram"
+                class="w-[35px] h-[35px]"
+                src="./assets/images/social/telegram.png"
+                alt="telegram - image"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mukhammad-anvarov-b88543269/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                title="Linkedin"
+                class="w-[35px] h-[35px]"
+                src="./assets/images/social/linkedin.png"
+                alt="linkedin - image"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/anvarv__/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                title="Instagram"
+                class="w-[30px] h-[30px]"
+                src="./assets/images/social/instagram.png"
+                alt="instagram - image"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <audio src="./assets/music/track.mp3" id="audio"></audio>
+    <!-- https://youtu.be/AkpqQtVPZKg -->
+
+    <script src="js/useState.js"></script>
+    <script src="js/smoothScroll.js"></script>
+    <script src="js/blurryLoad.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
