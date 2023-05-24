@@ -11,7 +11,17 @@ ScrollTrigger.create({
 
 isAnimating = false;
 
-gsap
+window.addEventListener("load", () => {
+  gsap.to("#preloader", {
+    opacity: 0,
+    duration: 0.5,
+    delay: 4,
+    onComplete: () => {
+      document.querySelector("#preloader").style.display = "none";
+    },
+  });
+
+  gsap
   .timeline({
     defaults: {
       duration: 1.2,
@@ -72,15 +82,6 @@ timeline.to(
   0
 );
 
-window.addEventListener("load", () => {
-  gsap.to("#preloader", {
-    opacity: 0,
-    duration: 0.5,
-    delay: 4,
-    onComplete: () => {
-      document.querySelector("#preloader").style.display = "none";
-    },
-  });
 });
 
 const scroll = new LocomotiveScroll({
