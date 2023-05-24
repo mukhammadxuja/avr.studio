@@ -4,7 +4,7 @@
   "description": "Simple TailwindCSS v3 starter with Parcel v2",
   "scripts": {
     "prebuild": "rimraf .cache && rimraf dist",
-    "build": "npm run prebuild && parcel build src/*.html",
+    "build": "parcel build src/*.html",
     "dev": "parcel src/*.html"
   },
   "license": "MIT",
