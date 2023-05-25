@@ -32,6 +32,11 @@
   </head>
 
   <body>
+    <h1
+      class="fixed z-[99999] translate-x-1/2 border rounded-[10px] py-3 px-6 text-lg font-medium status bottom-4 left-1/2"
+    >
+      Hello
+    </h1>
     <nav
       id="navbar"
       class="fixed left-0 right-0 z-[100] flex items-center justify-between mx-5 duration-300 md:mx-8 top-4"
@@ -61,7 +66,7 @@
             <a href="./inreport.html">What I do?</a>
           </li>
           <li title="Blog" class="link">
-            <a href="/blog">Blog</a>
+            <a href="./lazydev.html">Blog</a>
           </li>
           <!-- <li class="link"><a href="/blog">Contact</a></li> -->
         </ul>
@@ -528,6 +533,36 @@
 
     <audio src="./assets/music/track.mp3" id="audio"></audio>
     <!-- https://youtu.be/AkpqQtVPZKg -->
+
+    <script>
+      function hasNetwork(online) {
+        const element = document.querySelector(".status");
+        // Update the DOM to reflect the current status
+        if (online) {
+          element.classList.remove("offline");
+          element.classList.add("online");
+          element.innerText = "Online";
+        } else {
+          element.classList.remove("online");
+          element.classList.add("offline");
+          element.innerText = "You are offline! Please check your network.";
+        }
+      }
+
+      window.addEventListener("load", () => {
+        hasNetwork(navigator.onLine);
+
+        window.addEventListener("online", () => {
+          // Set hasNetwork to online when they change to online.
+          hasNetwork(true);
+        });
+
+        window.addEventListener("offline", () => {
+          // Set hasNetwork to offline when they change to offline.
+          hasNetwork(false);
+        });
+      });
+    </script>
 
     <script src="js/useState.js"></script>
     <script src="js/smoothScroll.js"></script>
