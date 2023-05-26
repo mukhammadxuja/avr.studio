@@ -2,6 +2,7 @@
   "name": "parcel-tailwind-starter",
   "version": "2.0.0",
   "description": "Simple TailwindCSS v3 starter with Parcel v2",
+  "source": "./src/index.html",
   "scripts": {
     "prebuild": "rimraf .cache && rimraf dist",
     "build": "parcel build src/*.html",
