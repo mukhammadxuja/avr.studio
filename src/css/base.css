@@ -5,17 +5,17 @@
     --primary: #ac90d9;
     --secondary: #faeaff;
     --inreport-primary: #3b82f6;
-    --inreport-lighter: #00B5FF;
+    --inreport-lighter: #00b5ff;
     --inreport-secondary: #e8efff;
-    --dotsoft-primary: #056C97;
-    --dotsoft-lighter: #008EAC;
-    --dotsoft-secondary: #E6F4F1;
-    --edteach-primary: #6A5AE0;
-    --edteach-lighter: #AF96FF;
-    --edteach-secondary: #F6EBFF;
-    --lazydev-primary: #1A5CFF;
-    --lazydev-lighter: #007BFF;
-    --lazydev-secondary: #F1EDFF;
+    --dotsoft-primary: #056c97;
+    --dotsoft-lighter: #008eac;
+    --dotsoft-secondary: #e6f4f1;
+    --edteach-primary: #6a5ae0;
+    --edteach-lighter: #af96ff;
+    --edteach-secondary: #f6ebff;
+    --lazydev-primary: #1a5cff;
+    --lazydev-lighter: #007bff;
+    --lazydev-secondary: #f1edff;
     --black: #120e0e;
     --grayscale: #ccc;
   }

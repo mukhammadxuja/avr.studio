@@ -32,9 +32,6 @@
   </head>
 
   <body>
-    <h1
-      class="fixed z-[99999] translate-x-1/2 border rounded-[10px] py-3 px-6 text-lg font-medium status bottom-4 left-1/2"
-    ></h1>
     <nav
       id="navbar"
       class="fixed left-0 right-0 z-[100] flex items-center justify-between mx-5 duration-300 md:mx-8 top-4"
@@ -55,16 +52,16 @@
           class="flex items-center space-x-2 bg-secondary shadow-sm backdrop-filter backdrop-blur-sm bg-opacity-80 w-fit rounded-[9px] py-0 px-[27px]"
         >
           <li title="Who am I?" class="link">
-            <a href="./dotsoft.html">Who am I?</a>
+            <a href="#who-am-i">Who am I?</a>
           </li>
           <li title="Works" class="link">
-            <a href="./edteach.html">Works</a>
+            <a href="#works">Works</a>
           </li>
           <li title="What i do?" class="link">
-            <a href="./inreport.html">What I do?</a>
+            <a href="#what-i-do">What I do?</a>
           </li>
           <li title="Blog" class="link">
-            <a href="./lazydev.html">Blog</a>
+            <a href="#blog">Blog</a>
           </li>
           <!-- <li class="link"><a href="/blog">Contact</a></li> -->
         </ul>
@@ -127,7 +124,7 @@
 
     <canvas title="Music"></canvas>
 
-    <div
+    <!-- <div
       id="preloader"
       class="fixed top-0 left-0 z-[9999] bg-white h-screen w-full flex items-center justify-center"
     >
@@ -150,9 +147,9 @@
           </h3>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <main class="overflow-hidden">
+    <main>
       <header class="relative flex items-center justify-center w-full h-screen">
         <video
           id="video"
@@ -169,8 +166,8 @@
       </header>
 
       <!-- About me -->
-      <section class="container mx-auto">
-        <div class="my-10 card">
+      <section id="who-am-i" class="container mx-auto">
+        <div class="py-10 card">
           <h5 class="title">/Who am I?</h5>
           <h2
             class="text-[20px] md:text-[30px] font-[600] leading-[145%] md:leading-[158%] tracking-[-1] text-black"
@@ -193,7 +190,7 @@
       </section>
 
       <!-- Services -->
-      <section class="my-10 h-[50vh] w-[100vw]">
+      <section id="what-i-do" class="my-10 h-[50vh] w-[100vw]">
         <div
           data-scroll-container
           class="flex items-center w-full h-full scroll-content flex-nowrap"
@@ -237,7 +234,7 @@
 
       <!-- Works small screens -->
       <section
-        class="lg:hidden grid grid-cols-1 grid-rows-1 md:grid-cols-2 md:grid-rows-2 gap-8 container mx-auto"
+        class="container grid grid-cols-1 grid-rows-1 gap-8 mx-auto lg:hidden md:grid-cols-2 md:grid-rows-2"
       >
         <div class="p-2">
           <a href="./dotsoft.html">
@@ -289,11 +286,9 @@
         </div>
         <div class="p-2">
           <a href="./lazydev.html">
-
-            <img
-            class="w-full h-[350px] object-cover rounded-xl"
-            src="./assets/images/works/lazydev-min.png"
-            alt="lazydev-min.png - example image"
+            <img class="w-full h-[350px] object-cover rounded-xl"
+            src="./assets/images/works/lazydev-min.png" alt="lazydev-min.png -
+            example image"
           </a>
           />
           <h2
@@ -307,8 +302,11 @@
       </section>
 
       <!-- Works - large screen -->
-      <section class="hidden lg:block px-5 lg:px-0 max-w-[95rem] mx-auto">
-        <div class="gallery flex">
+      <section
+        id="works"
+        class="hidden lg:block px-5 lg:px-0 max-w-[95rem] mx-auto"
+      >
+        <div class="flex gallery">
           <div class="w-[50%]">
             <div class="m-auto w-[80%]">
               <div class="h-[90vh] flex flex-col justify-center space-y-3">
@@ -320,12 +318,12 @@
                   based Uzbekistan.
                 </p>
                 <div class="flex items-center space-x-2">
-                  <span class="blog-badge text-sm">Website</span>
-                  <span class="blog-badge text-sm">Design</span>
-                  <span class="blog-badge text-sm">Branding</span>
+                  <span class="text-sm blog-badge">Website</span>
+                  <span class="text-sm blog-badge">Design</span>
+                  <span class="text-sm blog-badge">Branding</span>
                 </div>
                 <div class="!pt-5">
-                  <a href="./dotsoft.html" class="btn-contact w-fit text-sm"
+                  <a href="./dotsoft.html" class="text-sm btn-contact w-fit"
                     >View more</a
                   >
                 </div>
@@ -341,12 +339,12 @@
                   platform.
                 </p>
                 <div class="flex items-center space-x-2">
-                  <span class="blog-badge text-sm">Website</span>
-                  <span class="blog-badge text-sm">Design</span>
-                  <span class="blog-badge text-sm">Web app</span>
+                  <span class="text-sm blog-badge">Website</span>
+                  <span class="text-sm blog-badge">Design</span>
+                  <span class="text-sm blog-badge">Web app</span>
                 </div>
                 <div class="!pt-5">
-                  <a href="./edteach.html" class="btn-contact w-fit text-sm"
+                  <a href="./edteach.html" class="text-sm btn-contact w-fit"
                     >View more</a
                   >
                 </div>
@@ -361,12 +359,12 @@
                   tiruvchi dastur.
                 </p>
                 <div class="flex items-center space-x-2">
-                  <span class="blog-badge text-sm">Website</span>
-                  <span class="blog-badge text-sm">Design</span>
-                  <span class="blog-badge text-sm">Web app</span>
+                  <span class="text-sm blog-badge">Website</span>
+                  <span class="text-sm blog-badge">Design</span>
+                  <span class="text-sm blog-badge">Web app</span>
                 </div>
                 <div class="!pt-5">
-                  <a href="./inreport.html" class="btn-contact w-fit text-sm"
+                  <a href="./inreport.html" class="text-sm btn-contact w-fit"
                     >View more</a
                   >
                 </div>
@@ -381,12 +379,12 @@
                   components for React.
                 </p>
                 <div class="flex items-center space-x-2">
-                  <span class="blog-badge text-sm">Website</span>
-                  <span class="blog-badge text-sm">Design</span>
-                  <span class="blog-badge text-sm">Branding</span>
+                  <span class="text-sm blog-badge">Website</span>
+                  <span class="text-sm blog-badge">Design</span>
+                  <span class="text-sm blog-badge">Branding</span>
                 </div>
                 <div class="!pt-5">
-                  <a href="./lazydev.html" class="btn-contact w-fit text-sm"
+                  <a href="./lazydev.html" class="text-sm btn-contact w-fit"
                     >View more</a
                   >
                 </div>
@@ -409,7 +407,7 @@
       </section>
 
       <!-- Blog -->
-      <section class="container mx-auto">
+      <section id="blog" class="container mx-auto">
         <h5 class="my-2 md:my-4 title">/Blogs?</h5>
         <div class="blog-wrapper border-y">
           <div class="relative flex flex-col md:flex-row">
