@@ -6,7 +6,7 @@
   }
 
   .card {
-    @apply rounded-[30px] py-[30px] px-[30px] md:py-[70px] md:px-[120px] bg-secondary backdrop-filter backdrop-blur-sm bg-opacity-80 space-y-2 md:space-y-4;
+    @apply rounded-[30px] py-[30px] px-[30px] md:py-[40px] md:px-[60px] lg:py-[70px] lg:px-[120px] bg-secondary backdrop-filter backdrop-blur-sm bg-opacity-80 space-y-2 md:space-y-4;
   }
 
   .title {
@@ -14,15 +14,15 @@
   }
 
   .blog-wrapper {
-    @apply flex flex-col md:flex-row justify-between border-b border-black pt-5 pb-8 md:p-0 md:py-10;
+    @apply flex flex-col justify-between pt-5 pb-8 border-b border-black md:flex-row md:p-0 md:py-10;
   }
 
   .blog-title {
-    @apply my-3 md:my-0 text-[20px] md:text-[30px] font-[600] leading-[145%] md:leading-[33px] tracking-[-1px];
+    @apply my-3 md:my-0 text-[20px] lg:text-[30px] font-[600] leading-[145%] lg:leading-[33px] tracking-[-1px];
   }
 
   .blog-parag {
-    @apply font-semibold text-[14px] md:text-lg text-black md:text-right;
+    @apply font-semibold text-[14px] lg:text-lg text-black md:text-right;
   }
 
   .blog-badge {
@@ -42,7 +42,7 @@
   }
 
   .btn-outline {
-    @apply btn bg-white hover:bg-primary border-2 border-primary text-primary hover:text-white;
+    @apply bg-white border-2 btn hover:bg-primary border-primary text-primary hover:text-white;
   }
 
   .btn-contact {
@@ -50,7 +50,7 @@
   }
 
   .badge {
-    @apply rounded-full bg-white shadow-sm py-1 px-2 text-black;
+    @apply px-2 py-1 text-black bg-white rounded-full shadow-sm;
   }
 
   .contact-input {
