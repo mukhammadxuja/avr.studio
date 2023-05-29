@@ -172,11 +172,3 @@ canvas.addEventListener("click", () => {
     });
   }
 });
-
-// function showStatus() {
-//   var x = document.querySelector(".status");
-//   x.className = "show";
-//   setTimeout(function () {
-//     x.className = x.className.replace("show", "");
-//   }, 3000);
-// }

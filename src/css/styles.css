@@ -108,7 +108,6 @@ active {
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
-
 .status.online {
   display: none;
 }
@@ -191,4 +190,8 @@ active {
 .show-menu {
   display: block;
   opacity: 1;
+}
+
+.hide {
+  display: none;
 }

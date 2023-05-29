@@ -83,6 +83,7 @@
         >
       </div>
       <div
+      onclick="toggleMenu()"
         class="md:hidden bg-edteach-primary hover:bg-edteach-lighter w-[40px] h-[40px] inline-flex items-center justify-center rounded-[9px] py-[20px] px-[18px] cursor-pointer duration-200"
       >
         <div class="space-y-1">
@@ -92,6 +93,81 @@
         </div>
       </div>
     </nav>
+
+      <!-- Menu -->
+      <div
+      id="menu"
+      class="fixed top-0 left-0 z-[99] bg-white h-screen flex items-center justify-center w-full container mx-auto duration-500 -translate-x-full"
+    >
+      <div>
+        <h3 class="pb-[30px] text-grayscale text-[16px] leading-[100%]">
+          Menu
+        </h3>
+        <ul class="space-y-2">
+          <li
+            class="text-[38px] font-[400] tracking-[-.05em] leading-[100%] text-black"
+          >
+            <a href="#who-am-i">Who am I?</a>
+          </li>
+          <li
+            class="text-[38px] font-[400] tracking-[-.05em] leading-[100%] text-black"
+          >
+            <a href="./dotsoft.html">Projects</a>
+          </li>
+          <li
+            class="text-[38px] font-[400] tracking-[-.05em] leading-[100%] text-black"
+          >
+            <a href="./tutorials.html">Tutorials</a>
+          </li>
+          <li
+            class="text-[38px] font-[400] tracking-[-.05em] leading-[100%] text-black"
+          >
+            <a href="./contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="pt-[30px] space-y-2">
+          <span class="text-grayscale text-[16px] leading-[100%]"
+            >Get in touch</span
+          >
+          <p
+            class="text-black border-b border-black text-[16px] whitespace-normal leading-[100%]"
+            href=""
+          >
+            mukhammadxuja@gmail.com
+          </p>
+          <div class="flex items-center space-x-4 pt-4">
+            <a
+              href="https://t.me/akzmsh"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./assets/svg/telegram.svg" alt="telegram - image" />
+            </a>
+            <a
+              href="https://github.com/mukhammadxuja"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./assets/svg/github.svg" alt="github - image" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mukhammad-anvarov-b88543269/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./assets/svg/linkedin.svg" alt="linkedin - image" />
+            </a>
+            <a
+              href="https://www.instagram.com/anvarv__/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./assets/svg/instagram.svg" alt="instagram - image" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <canvas title="Music"></canvas>
 
