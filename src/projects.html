@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Anvarov Studio - Projects</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="./assets/svg/avr.svg" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+    <!-- TweenMax - GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
+
+    <!-- include GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+
+    <!-- include ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="./css/tailwind.css" />
+  </head>
+
+  <body>
+    <nav
+      class="fixed left-0 right-0 z-50 flex items-center justify-between mx-5 duration-300 md:mx-8 top-4"
+    >
+      <div>
+        <a href="/">
+          <img
+            title="logo avr.studio - logo"
+            class="w-28 md:w-36 mix-blend-luminosity"
+            src="./assets/images/avr.studio.png"
+            loading="lazy"
+            alt="logo"
+          />
+        </a>
+      </div>
+      <div class="items-center hidden space-x-1 md:inline-flex">
+        <ul
+          class="flex items-center space-x-2 bg-secondary backdrop-filter backdrop-blur-sm bg-opacity-80 w-fit rounded-[9px] py-0 px-[27px]"
+        >
+          <li title="Who am I?" class="link">
+            <a href="./dotsoft.html">Who am I?</a>
+          </li>
+          <li title="Works" class="link">
+            <a href="/works">Works</a>
+          </li>
+          <li title="What i do?" class="link">
+            <a href="/about">What I do?</a>
+          </li>
+          <li title="Blog" class="link">
+            <a href="/blog">Blog</a>
+          </li>
+          <!-- <li class="link"><a href="/blog">Contact</a></li> -->
+        </ul>
+        <a title="Contact me" href="/contact" class="btn">Contact me</a>
+      </div>
+      <div
+        onclick="toggleMenu()"
+        class="md:hidden bg-[#AC90D9] hover:bg-[#866CB0] w-[40px] h-[40px] inline-flex items-center justify-center rounded-[9px] py-[20px] px-[18px] cursor-pointer duration-200"
+      >
+        <div class="space-y-1">
+          <div class="w-6 h-[.20rem] bg-white rounded-full"></div>
+          <div class="w-6 h-[.20rem] bg-white rounded-full"></div>
+          <div class="w-6 h-[.20rem] bg-white rounded-full"></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Menu -->
+    <div
+      id="menu"
+      class="fixed top-0 left-0 z-[99] bg-white h-screen flex items-center justify-center w-full container mx-auto duration-500 -translate-x-full"
+    >
+      <div>
+        <h3 class="pb-[30px] text-grayscale text-[16px] leading-[100%]">
+          Menu
+        </h3>
+        <ul class="space-y-2">
+          <li
+            class="text-[38px] font-[400] tracking-[-.05em] leading-[100%] text-black"
+          >
+            <a href="#who-am-i">Who am I?</a>
+          </li>
+          <li
+            class="text-[38px] font-[400] tracking-[-.05em] leading-[100%] text-black"
+          >
+            <a href="./dotsoft.html">Projects</a>
+          </li>
+          <li
+            class="text-[38px] font-[400] tracking-[-.05em] leading-[100%] text-black"
+          >
+            <a href="./tutorials.html">Tutorials</a>
+          </li>
+          <li
+            class="text-[38px] font-[400] tracking-[-.05em] leading-[100%] text-black"
+          >
+            <a href="./contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="pt-[30px] space-y-2">
+          <span class="text-grayscale text-[16px] leading-[100%]"
+            >Get in touch</span
+          >
+          <p
+            class="text-black border-b border-black text-[16px] whitespace-normal leading-[100%]"
+            href=""
+          >
+            mukhammadxuja@gmail.com
+          </p>
+          <div class="flex items-center space-x-4 pt-4">
+            <a
+              href="https://t.me/akzmsh"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./assets/svg/telegram.svg" alt="telegram - image" />
+            </a>
+            <a
+              href="https://github.com/mukhammadxuja"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./assets/svg/github.svg" alt="github - image" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mukhammad-anvarov-b88543269/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./assets/svg/linkedin.svg" alt="linkedin - image" />
+            </a>
+            <a
+              href="https://www.instagram.com/anvarv__/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./assets/svg/instagram.svg" alt="instagram - image" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <canvas title="Music"></canvas>
+
+    <main class="pt-[60px] md:pt-[100px] lg:pt-[175px] px-5 md:px-0">
+      <section class="container mx-auto mt-20 md:mt-0 pb-20 md:pb-32">
+        <div
+          class="pb-5 md:pb-20 lg:pb-32 max-w-[95rem] mx-auto flex flex-col justify-center"
+        >
+          <h5 class="overflow-hidden">
+            <span
+              id="reveal"
+              class="text-[16px] inline-block opacity-0 translate-y-full md:text-[18px] leading-[250%] font-[400]"
+              >Filter</span
+            >
+          </h5>
+          <h1
+            class="text-[2.5rem] overflow-hidden md:text-[4rem] text-black leading-tight font-medium"
+          >
+            <span
+              id="reveal"
+              class="cursor-pointer inline-block opacity-0 translate-y-full"
+            >
+              All projects
+            </span>
+          </h1>
+        </div>
+        <div
+          class="grid justify-items-center grid-cols-1 grid-rows-1 gap-8 md:grid-cols-2 md:grid-rows-2 max-w-fit mx-auto"
+        >
+          <div class="p-2 w-full md:w-[350px] lg:w-[470px] h-[436px] md:h-[520px] lg:h-[720px] xl:w-[550px] xl:h-[820px] rounded-[9px] mt-[60px] md:mt-0">
+            <a href="./dotsoft.html">
+              <img
+                class="w-full h-full object-cover rounded-[9px]"
+                src="./assets/images/works/dotsoft.png"
+                alt="dotsoft - example image"
+              />
+            </a>
+            <h2
+              class="text-[20px] font-medium pt-5 md:pt-8 text-center leading-tight"
+            >
+              <b class="text-black">Dotsoft</b>
+              - Creative web agency <br />
+              based in Uzbekistan.
+            </h2>
+          </div>
+          <div class="p-2 w-full md:w-[350px] lg:w-[470px] h-[436px] md:h-[520px] lg:h-[720px] xl:w-[550px] xl:h-[820px] rounded-[9px] mt-[60px] md:mt-[100px]">
+            <a href="./edteach.html">
+              <img
+                class="w-full h-full object-cover rounded-[9px]"
+                src="./assets/images/works/edteach.png"
+                alt="dotsoft - example image"
+              />
+            </a>
+            <h2
+              class="text-[20px] font-medium pt-5 md:pt-8 text-center leading-tight"
+            >
+              <b class="text-black">Edteach</b>
+              - Game based <br />
+              learning platform.
+            </h2>
+          </div>
+          <div class="p-2 w-full md:w-[350px] lg:w-[470px] h-[436px] md:h-[520px] lg:h-[720px] xl:w-[550px] xl:h-[820px] rounded-[9px] mt-[60px] md:mt-0">
+            <a href="./inreport.html">
+              <img
+                class="w-full h-full object-cover rounded-[9px]"
+                src="./assets/images/works/inreport.png"
+                alt="inreport-min.png - example image"
+              />
+            </a>
+            <h2
+              class="text-[20px] font-medium pt-5 md:pt-8 text-center leading-tight"
+            >
+              <b class="text-black">Inreport</b>
+              - Sotuvni <br />
+              avtomatlashtiruvchi dastur.
+            </h2>
+          </div>
+          <div class="p-2 w-full md:w-[350px] lg:w-[470px] h-[436px] md:h-[520px] lg:h-[720px] xl:w-[550px] xl:h-[820px] rounded-[9px] mt-[60px] md:mt-[100px]">
+            <a href="./lazydev.html">
+              <img class="w-full h-full object-cover rounded-[9px]"
+              src="./assets/images/works/lazydev.png"
+              alt="lazydev-min.png - example image"
+            </a>
+            <h2
+              class="text-[20px] font-medium pt-5 md:pt-8 text-center leading-tight"
+            >
+              <b class="text-black">Lazydev</b>
+              - Open source ui <br />
+              components for React.
+            </h2>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="bg-[#4A4453] md:bg-white md:mx-auto md:max-w-[95rem] py-10 mt-20 md:mt-0"
+    >
+      <div
+        class="flex flex-col md:flex-row justify-between py-[40px] md:pt-[90px] md:pb-8"
+      >
+        <div class="mx-auto md:mx-0">
+          <h1
+            class="text-white md:text-black text-[3rem] md:text-[4rem] text-center md:text-left text-black leading-none font-medium md:font-semibold"
+          >
+            Have an idea?
+          </h1>
+          <a
+            class="flex items-center justify-center md:items-start md:justify-start text-white md:text-black text-[2.5rem] md:text-[4rem] text-black leading-none font-medium md:border-b-2 underline md:no-underline md:border-[#120E0E] hover:text-[#AC90D9] hover:border-[#AC90D9] duration-200 !text-center w-full md:w-fit"
+            href="./contact.html"
+            >Contact me</a
+          >
+          <img
+            class="hidden md:block p-3 mt-8 bg-gray-100 rounded-[9px] w-40 h-auto"
+            src="./assets/images/scan.png"
+            alt="Scan image"
+          />
+        </div>
+        <div
+          class="hidden mt-10 space-y-4 md:inline-flex md:flex-row md:space-y-0 md:mt-0"
+        >
+          <ul class="md:mx-10">
+            <li>
+              <a class="footer-link" href="#who-am-i">Who am i?</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#works">Selected works</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#what-i-do">What I do?</a>
+            </li>
+            <li>
+              <a class="footer-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+          <ul class="md:mx-10">
+            <li>
+              <a class="footer-link" href="#!">Tutorials</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#!">Blog</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#!">Sources</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row md:items-center md:space-x-2">
+        <span class="hidden text-lg font-medium text-gray-500 md:block"
+          >2023 &copy;</span
+        >
+        <a
+          class="footer-link text-white md:text-black text-center text-[18px] md:text-gray-500 hover:!text-black md:border-b-2"
+          href="#!"
+          >mukhammadxuja@gmail.com</a
+        >
+        <div class="block space-y-1 md:hidden">
+          <p class="text-[14px] font-medium text-center text-gray-200 py-2">
+            Jizzakh, Uzbekistan
+          </p>
+          <div class="flex items-center justify-center pt-4 my-4 space-x-2">
+            <a
+              href="https://github.com/mukhammadxuja"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                title="Github"
+                class="w-[30px] h-[30px]"
+                src="./assets/images/social/github.png"
+                alt="github - image"
+              />
+            </a>
+            <a
+              href="https://t.me/akzmsh"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                title="Telegram"
+                class="w-[35px] h-[35px]"
+                src="./assets/images/social/telegram.png"
+                alt="telegram - image"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mukhammad-anvarov-b88543269/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                title="Linkedin"
+                class="w-[35px] h-[35px]"
+                src="./assets/images/social/linkedin.png"
+                alt="linkedin - image"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/anvarv__/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                title="Instagram"
+                class="w-[30px] h-[30px]"
+                src="./assets/images/social/instagram.png"
+                alt="instagram - image"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <audio src="./assets/music/track.mp3" id="audio"></audio>
+
+    <script src="./js/useState.js"></script>
+    <script src="./js/smoothScroll.js"></script>
+    <script src="./js/blurryLoad.js"></script>
+    <script src="./js/animations.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
