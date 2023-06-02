@@ -174,14 +174,16 @@
               id="reveal"
               class="cursor-pointer inline-block opacity-0 translate-y-full"
             >
-              All Projects 
+              All Projects
             </span>
           </h1>
         </div>
         <div
           class="grid justify-items-center grid-cols-1 grid-rows-1 gap-8 md:grid-cols-2 md:grid-rows-2 max-w-fit mx-auto"
         >
-          <div class="p-2 w-full md:w-[350px] lg:w-[470px] h-[436px] md:h-[520px] lg:h-[720px] xl:w-[550px] xl:h-[820px] rounded-[9px] mt-[60px] md:mt-0">
+          <div
+            class="p-2 w-full md:w-[350px] lg:w-[470px] h-[436px] md:h-[520px] lg:h-[720px] xl:w-[550px] xl:h-[820px] rounded-[9px] mt-[60px] md:mt-0"
+          >
             <a href="./dotsoft.html">
               <img
                 class="w-full h-full object-cover rounded-[9px] hover:scale-[0.98] duration-300"
@@ -197,7 +199,9 @@
               based in Uzbekistan.
             </h2>
           </div>
-          <div class="p-2 w-full md:w-[350px] lg:w-[470px] h-[436px] md:h-[520px] lg:h-[720px] xl:w-[550px] xl:h-[820px] rounded-[9px] mt-[60px] md:mt-[100px]">
+          <div
+            class="p-2 w-full md:w-[350px] lg:w-[470px] h-[436px] md:h-[520px] lg:h-[720px] xl:w-[550px] xl:h-[820px] rounded-[9px] mt-[60px] md:mt-[100px]"
+          >
             <a href="./edteach.html">
               <img
                 class="w-full h-full object-cover rounded-[9px] hover:scale-[0.98] duration-300"
@@ -213,7 +217,9 @@
               learning platform.
             </h2>
           </div>
-          <div class="p-2 w-full md:w-[350px] lg:w-[470px] h-[436px] md:h-[520px] lg:h-[720px] xl:w-[550px] xl:h-[820px] rounded-[9px] mt-[60px] md:mt-0">
+          <div
+            class="p-2 w-full md:w-[350px] lg:w-[470px] h-[436px] md:h-[520px] lg:h-[720px] xl:w-[550px] xl:h-[820px] rounded-[9px] mt-[60px] md:mt-0"
+          >
             <a href="./inreport.html">
               <img
                 class="w-full h-full object-cover rounded-[9px] hover:scale-[0.98] duration-300"
@@ -229,11 +235,14 @@
               avtomatlashtiruvchi dastur.
             </h2>
           </div>
-          <div class="p-2 w-full md:w-[350px] lg:w-[470px] h-[436px] md:h-[520px] lg:h-[720px] xl:w-[550px] xl:h-[820px] rounded-[9px] mt-[60px] md:mt-[100px]">
+          <div
+            class="p-2 w-full md:w-[350px] lg:w-[470px] h-[436px] md:h-[520px] lg:h-[720px] xl:w-[550px] xl:h-[820px] rounded-[9px] mt-[60px] md:mt-[100px]"
+          >
             <a href="./lazydev.html">
-              <img class="w-full h-full object-cover rounded-[9px] hover:scale-[0.98] duration-300"
-              src="./assets/images/works/lazydev.png"
-              alt="lazydev-min.png - example image"
+              <img class="w-full h-full object-cover rounded-[9px]
+              hover:scale-[0.98] duration-300"
+              src="./assets/images/works/lazydev.png" alt="lazydev-min.png -
+              example image"
             </a>
             <h2
               class="text-[20px] font-medium pt-5 md:pt-8 text-center leading-tight"
@@ -304,11 +313,19 @@
         <span class="hidden text-lg font-medium text-gray-500 md:block"
           >2023 &copy;</span
         >
-        <a
-          class="footer-link text-white md:text-black text-center text-[18px] md:text-gray-500 hover:!text-black md:border-b-2"
+        <button
+          value="mukhammadxuja@gmail.com"
+          id="copy"
+          onclick="copyToClipboard()"
+          class="relative footer-link group text-white md:text-black text-center text-[18px] md:text-gray-500 hover:!text-black md:border-b-2"
           href="#!"
-          >mukhammadxuja@gmail.com</a
         >
+          <span
+            class="absolute -top-7 px-2 py-1 rounded-lg text-sm bg-gray-300 bg-opacity-40 right-0 hidden group-hover:block"
+            >Click to copy</span
+          >
+          mukhammadxuja@gmail.com
+        </button>
         <div class="block space-y-1 md:hidden">
           <p class="text-[14px] font-medium text-center text-gray-200 py-2">
             Jizzakh, Uzbekistan

@@ -172,3 +172,10 @@ canvas.addEventListener("click", () => {
     });
   }
 });
+
+function copyToClipboard() {
+  const copy = document.getElementById("copy");
+  console.log(copy.value);
+
+  navigator.clipboard.writeText(copy.value);
+}
