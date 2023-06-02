@@ -69,7 +69,7 @@
       </div>
       <div
         onclick="toggleMenu()"
-        class="bg-[#AC90D9] hover:bg-[#866CB0] w-[40px] h-[40px] inline-flex items-center justify-center rounded-[9px] py-[20px] px-[18px] cursor-pointer duration-200"
+        class="block md:hidden bg-[#AC90D9] hover:bg-[#866CB0] w-[40px] h-[40px] inline-flex items-center justify-center rounded-[9px] py-[20px] px-[18px] cursor-pointer duration-200"
       >
         <div class="space-y-1">
           <div class="w-6 h-[.20rem] bg-white rounded-full"></div>
@@ -82,7 +82,7 @@
     <!-- Menu -->
     <div
       id="menu"
-      class="fixed top-0 left-0 z-[99] bg-white h-screen flex items-center justify-center w-full container mx-auto duration-500 -translate-x-full"
+      class="md:hidden fixed top-0 left-0 z-[99] bg-white h-screen flex items-center justify-center w-full container mx-auto duration-500 -translate-x-full"
     >
       <div>
         <h3 class="pb-[30px] text-grayscale text-[16px] leading-[100%]">
@@ -223,14 +223,11 @@
       </section>
 
       <!-- Services -->
-      <section id="what-i-do" class="my-10 h-[50vh] w-[100vw] mt-20 md:mt-0">
-        <div
-          data-scroll-container
-          class="flex items-center w-full h-full scroll-content flex-nowrap"
-        >
-          <div class="ml-0 md:ml-[200px]">
+      <section id="what-i-do" class="max-w-[95rem] mx-auto my-10 h-[50vh] w-[100vw] mt-20 md:mt-0">
+        <div class="flex items-center justify-between w-full h-full">
+          <div class="">
             <h2
-              class="horizontal-title w-[600px] cursor-pointer text-center text-[25px] text-black whitespace-nowrap font-semibold leading-[28px] tracking-[-.35px]"
+              class="horizontal-title cursor-pointer text-center text-[25px] text-black whitespace-nowrap font-semibold leading-[28px] tracking-[-.35px]"
             >
               No Monthly Service Fees, <br />
               Transaction Fee from 0%
@@ -238,7 +235,7 @@
           </div>
           <div class="">
             <h2
-              class="horizontal-title w-[600px] cursor-pointer text-center text-[25px] text-black whitespace-nowrap font-semibold leading-[28px] tracking-[-.35px]"
+              class="horizontal-title cursor-pointer text-center text-[25px] text-black whitespace-nowrap font-semibold leading-[28px] tracking-[-.35px]"
             >
               No Monthly Service Fees, <br />
               Transaction Fee from 0%
@@ -246,21 +243,11 @@
           </div>
           <div class="">
             <h2
-              class="horizontal-title w-[600px] cursor-pointer text-center text-[25px] text-black whitespace-nowrap font-semibold leading-[28px] tracking-[-.35px]"
+              class="horizontal-title cursor-pointer text-center text-[25px] text-black whitespace-nowrap font-semibold leading-[28px] tracking-[-.35px]"
             >
               No Monthly Service Fees, <br />
               Transaction Fee from 0%
             </h2>
-          </div>
-          <div>
-            <h2
-              class="horizontal-title w-[600px] cursor-pointer text-center text-[25px] text-black whitespace-nowrap font-semibold leading-[28px] tracking-[-.35px]"
-            ></h2>
-          </div>
-          <div>
-            <h2
-              class="horizontal-title w-[600px] cursor-pointer text-center text-[25px] text-black whitespace-nowrap font-semibold leading-[28px] tracking-[-.35px]"
-            ></h2>
           </div>
         </div>
       </section>
