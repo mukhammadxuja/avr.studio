@@ -173,9 +173,10 @@ canvas.addEventListener("click", () => {
   }
 });
 
-function copyToClipboard() {
+const copyToClipboard = async () => {
   const copy = document.getElementById("copy");
-  console.log(copy.value);
+  const copySpan = document.getElementById("copySpan");
 
   navigator.clipboard.writeText(copy.value);
-}
+  copySpan.textContent = "Copied!";
+};
