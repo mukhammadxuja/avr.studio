@@ -33,7 +33,8 @@
 
   <body>
     <nav
-      class="fixed left-0 right-0 z-50 flex items-center justify-between mx-5 duration-300 md:mx-8 top-4"
+      id="projectsNav"
+      class="fixed left-0 right-0 z-50 -translate-y-10 opacity-0 flex items-center justify-between mx-5 duration-300 md:mx-8 top-4"
     >
       <div>
         <a href="/">
@@ -206,7 +207,8 @@
       </div>
 
       <div
-        class="rounded-[9px] md:rounded-none h-[520px] md:h-screen overflow-hidden"
+      id="entrance"
+        class="rounded-[9px] md:rounded-none opacity-0 h-[520px] md:h-screen overflow-hidden"
       >
         <img
           class="object-cover w-full h-full"
@@ -409,7 +411,7 @@
         />
       </div>
 
-      <div class="relative flex items-center justify-center h-screen">
+      <div class="relative flex items-center justify-center py-20 md:h-screen">
         <img
           id="nextImg"
           class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-0 object-cover w-[35rem] h-[25rem] rounded-[9px] opacity-0 invisible pointer-events-none"

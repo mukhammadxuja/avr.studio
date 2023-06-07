@@ -64,6 +64,14 @@ window.addEventListener("load", () => {
       4
     )
     .to(
+      "#entrance",
+      {
+        duration: 1,
+        opacity: 1,
+      },
+      0
+    )
+    .to(
       "#reveal",
       {
         duration: 1,
@@ -74,6 +82,15 @@ window.addEventListener("load", () => {
         },
         y: "0%",
         rotation: 0,
+        opacity: 1,
+      },
+      0
+    )
+    .to(
+      "#projectsNav",
+      {
+        duration: 0.3,
+        y: 0,
         opacity: 1,
       },
       0
