@@ -56,4 +56,16 @@
   .contact-input {
     @apply w-full mb-5 md:mb-10 text-[16px] md:text-[20px] lg:text-[30px] text-black placeholder:text-grayscale font-medium border-2 rounded-[9px] md:rounded-none md:border-x-0 md:border-t-0 md:border-b-2 duration-200 border-primary md:border-grayscale outline-none py-[8px] md:py-[12px] px-[18px] md:px-0 hover:border-primary focus:border-primary;
   }
+
+  .tools-badge {
+    @apply text-sm md:text-lg rounded-[30px] py-[5px] px-[8px] md:py-1 md:px-3 mt-2;
+  }
+
+  .visit-live {
+    @apply text-[16px] md:text-[20px] text-black leading-none font-semibold border-b-2 border-black duration-200
+  }
+
+  .next {
+    @apply absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-10 text-[2.5rem] md:text-[4rem] text-black leading-none font-medium border-b-2 border-black duration-200 mix-blend-difference
+  }
 }

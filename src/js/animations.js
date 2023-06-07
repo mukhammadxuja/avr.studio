@@ -122,7 +122,3 @@ const openNav = () => {
 };
 
 openNav();
-
-// const animateOpenNav = () => {
-//   return null;
-// };

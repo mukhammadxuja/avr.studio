@@ -242,11 +242,31 @@
               <br class="hidden md:block" />
               keeping users comfortable with familiar interactions. <br />
             </p>
-            <div class="my-5 md:my-10">
+            <div class="my-5 flex items-center space-x-2">
+              <span
+                class="tools-badge bg-edteach-secondary text-edteach-primary"
+                >Nextjs</span
+              >
+              <span
+                class="tools-badge bg-edteach-secondary text-edteach-primary"
+                >Firebase</span
+              >
+              <span
+                class="tools-badge bg-edteach-secondary text-edteach-primary"
+                >Tailwind</span
+              >
+              <span
+                class="tools-badge bg-edteach-secondary text-edteach-primary"
+                >React hot toast</span
+              >
+            </div>
+            <div class="item my-8 md:my-10">
               <a
-                class="text-[16px] md:text-[20px] text-black leading-none font-semibold border-b-2 border-black hover:text-edteach-primary hover:border-edteach-primary duration-200"
-                href="./contact.html"
-                >Launch project</a
+                href="https://www.edteach.uz/"
+                class="visit-live hover:text-edteach-primary hover:border-edteach-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Visit live</a
               >
             </div>
           </div>
@@ -433,12 +453,13 @@
         />
       </div>
 
-      <div class="flex items-center justify-center py-20 md:py-32">
-        <a
-          class="text-[2.5rem] md:text-[4rem] text-black leading-none font-medium border-b-2 border-[#120E0E] hover:text-inreport-primary hover:border-inreport-primary duration-200"
-          href="./inreport.html"
-          >Inreport system</a
-        >
+      <div class="relative flex items-center justify-center h-screen">
+        <img
+          id="nextImg"
+          class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-0 object-cover w-[35rem] h-[25rem] rounded-[9px] opacity-0 invisible pointer-events-none"
+          src="./assets/images/projects/inreport/laptop.png"
+        />
+        <a id="nextText" class="next" href="./inreport.html">Inreport System</a>
       </div>
     </main>
 
@@ -579,6 +600,23 @@
 
     <audio src="./assets/music/track.mp3" id="audio"></audio>
     <!-- https://youtu.be/AkpqQtVPZKg -->
+
+    <script>
+      const next = document.getElementById("nextText");
+      const image = document.getElementById("nextImg");
+
+      next.addEventListener("mouseenter", (e) => {
+        gsap.to(image, { autoAlpha: 1 });
+      });
+
+      next.addEventListener("mouseleave", (e) => {
+        gsap.to(image, { autoAlpha: 0 });
+      });
+
+      next.addEventListener("mousemove", (e) => {
+        gsap.set(image, { x: e.offsetX - 100, y: e.offsetY - 0 });
+      });
+    </script>
 
     <script src="./js/useState.js"></script>
     <script src="./js/smoothScroll.js"></script>
