@@ -28,6 +28,9 @@
 
     <!-- include ScrollTrigger -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+
+    <!-- Matter js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
     <link rel="stylesheet" href="./css/tailwind.css" />
   </head>
 
@@ -154,7 +157,17 @@
       </div>
     </div>
 
-    <canvas title="Music"></canvas>
+    <div>
+      <canvas
+        class="fixed bottom-[30px] left-5 md:left-10 z-[1000] w-[50px] h-[50px] cursor-pointer bg-transparent"
+        title="Music"
+      ></canvas>
+      <span
+        id="musicValue"
+        class="fixed bottom-[45px] left-[calc(1.25rem_+_60px)] md:left-[calc(2.5rem_+_60px)] z-[1000] text-base font-semibold text-primary"
+        >Off</span
+      >
+    </div>
 
     <!-- Preloader -->
     <div
@@ -595,7 +608,7 @@
       </section>
 
       <!-- section contact man -->
-      <section class="hidden md:block man mt-20 md:mt-0">
+      <section class="fixed bottom-[30px] right-5 md:right-10 z-[1000] w-[70px] h-[70px] rounded-full cursor-pointer bg-transparent">
         <a title="Contact me" href="#contact">
           <video
             class="w-[60px] h-[60px] md:w-[80px] md:h-[80px] rounded-full cursor-pointer hover:scale-105 duration-200"
@@ -737,7 +750,7 @@
       </div>
     </footer>
 
-    <audio src="./assets/music/track.mp3" id="audio"></audio>
+    <audio src="./assets/music/song.mp3" id="audio"></audio>
     <!-- https://youtu.be/AkpqQtVPZKg -->
 
     <script>
@@ -773,12 +786,15 @@
         const menu = document.getElementById("menu");
         menu.classList.toggle("translate-x-0");
       }
+
+      console.log("woking", Matter.Engine);
     </script>
 
     <script src="js/useState.js"></script>
     <script src="js/smoothScroll.js"></script>
     <script src="js/blurryLoad.js"></script>
     <script src="js/animations.js"></script>
+    <script src="js/music.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>

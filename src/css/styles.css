@@ -1,59 +1,5 @@
-canvas {
-  position: fixed;
-  bottom: 30px;
-  left: 40px;
-  z-index: 100;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  background: transparent;
-}
-
 header.reveal {
   transform: none;
-}
-
-.man {
-  position: fixed;
-  bottom: 30px;
-  right: 40px;
-  z-index: 100;
-}
-
-@media (max-width: 640px) {
-  canvas {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  canvas {
-    left: 3rem;
-  }
-
-  .man {
-    right: 3rem;
-  }
-}
-
-@media only screen and (max-width: 1280px) {
-  canvas {
-    left: 4rem;
-  }
-
-  .man {
-    right: 4rem;
-  }
-}
-
-@media only screen and (max-width: 1536px) {
-  canvas {
-    left: 5rem;
-  }
-
-  .man {
-    right: 5rem;
-  }
 }
 
 .text-animation {
