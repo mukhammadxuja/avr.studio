@@ -141,3 +141,47 @@ active {
 .hide {
   display: none;
 }
+
+section {
+	 position: relative;
+}
+ section img {
+	 max-width: 40%;
+	 display: block;
+}
+ section .sticky {
+	 height: 86vh;
+	 position: sticky;
+	 top: 7vh;
+   right: 0;
+   bottom: 2rem;
+	 overflow: hidden;
+}
+ section .sticky-wrapper {
+	 position: relative;
+	 z-index: 1;
+	 height: calc(2*100vh);
+}
+ section .sticky .wipe-stack {
+	 height: 100vh;
+	 position: relative;
+	 overflow: hidden;
+}
+ section .sticky-wipe {
+	 height: 100vh;
+	 width: 100%;
+	 position: absolute;
+	 background-position: center center;
+	 background-repeat: no-repeat;
+	 background-size: cover;
+}
+ section .sticky-wipe.item-1 {
+	 z-index: 2;
+   border-radius: 10px;
+}
+ section .sticky-wipe.item-2 {
+	 z-index: 3;
+   border-radius: 10px;
+	 clip-path: inset(0% 0px 0px);
+}
+ 

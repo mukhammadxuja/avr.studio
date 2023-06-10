@@ -2,11 +2,26 @@ const timeline = gsap.timeline();
 
 gsap.registerPlugin(ScrollTrigger);
 
+const item2 = document.getElementsByClassName("item-2")
+console.log(item2);
+
 ScrollTrigger.create({
   trigger: ".gallery",
   start: "top top",
   end: "bottom bottom",
   pin: ".right",
+});
+
+gsap.from(item2, {
+  scrollTrigger: {
+    trigger: ".sticky-wrapper",
+    scrub: true,
+    start: "top top",
+    end: "+=100%",
+    pin: ".sticky"
+  },
+  clipPath: "inset(100% 0px 0px)",
+  ease: "none",
 });
 
 isAnimating = false;
@@ -139,3 +154,4 @@ const openNav = () => {
 };
 
 openNav();
+

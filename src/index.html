@@ -170,7 +170,7 @@
     </div>
 
     <!-- Preloader -->
-    <div
+    <!-- <div
       id="preloader"
       class="fixed top-0 left-0 z-[9999] bg-white h-screen w-full flex items-center justify-center"
     >
@@ -193,7 +193,7 @@
           </h3>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <main>
       <header class="relative flex items-center justify-center w-full h-screen">
@@ -213,7 +213,7 @@
 
       <!-- About me -->
       <section id="who-am-i" class="container mx-auto mt-20 md:mt-0">
-        <div class="py-10 card">
+        <div class="card">
           <h5 class="title">/Who am I?</h5>
           <h2
             class="text-[20px] lg:text-[30px] font-[600] leading-[145%] lg:leading-[158%] tracking-[-1] text-black"
@@ -342,12 +342,12 @@
       <!-- Works - large screen -->
       <section
         id="works"
-        class="hidden mt-20 md:mt-0 lg:block px-5 lg:px-0 max-w-[95rem] mx-auto"
+        class="relative hidden mt-20 md:mt-0 lg:block px-5 lg:px-0 max-w-[95rem] mx-auto"
       >
         <h5 class="title">/Works</h5>
         <div class="flex gallery">
-          <div class="w-[50%]">
-            <div class="m-auto w-[80%]">
+          <div class="w-[60%]">
+            <div class="m-auto w-[100%]">
               <div class="h-[90vh] flex flex-col justify-center space-y-3">
                 <h3 class="text-[19px] font-medium">Dotsoft.uz</h3>
                 <p
@@ -389,7 +389,7 @@
                 </div>
               </div>
 
-              <div class="h-[90vh] flex flex-col justify-center space-y-3">
+              <!-- <div class="h-[90vh] flex flex-col justify-center space-y-3">
                 <h3 class="text-[19px] font-medium">Inreport system</h3>
                 <p
                   class="text-[33px] font-medium leading-[145%] md:leading-[140%] tracking-[-1] text-black"
@@ -427,11 +427,35 @@
                     >View more</a
                   >
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
 
-          <div class="right h-[90vh] w-[50%] flex flex-col justify-center">
+          <section id="right" class="w-[40%] rounded-[10px]">
+            <div class="sticky-wrapper">
+              <div class="sticky">
+                <div class="wipe-stack">
+                  <div
+                    class="sticky-wipe item-1"
+                    style="
+                      background-image: url('./assets/images/projects/dotsoft/collection-sm.png');
+                    "
+                  ></div>
+
+                  <div
+                    class="sticky-wipe item-2"
+                    style="
+                      background-image: url('./assets/images/projects/edteach/web-rotate-sm.png');
+                    "
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- <div class="right h-[90vh] w-[50%] flex flex-col justify-center">
             <div class="photos w-[40vw] h-[40vw] overflow-hidden">
               <div class="h-full">
                 <img
@@ -441,9 +465,7 @@
                 />
               </div>
             </div>
-          </div>
-        </div>
-      </section>
+          </div> -->
 
       <!-- Blog -->
       <section id="blog" class="container mx-auto mt-20 md:mt-0">
@@ -608,7 +630,9 @@
       </section>
 
       <!-- section contact man -->
-      <section class="fixed bottom-[30px] right-5 md:right-10 z-[1000] w-[70px] h-[70px] rounded-full cursor-pointer bg-transparent">
+      <section
+        class="fixed bottom-[30px] right-5 md:right-10 z-[1000] w-[70px] h-[70px] rounded-full cursor-pointer bg-transparent"
+      >
         <a title="Contact me" href="#contact">
           <video
             class="w-[60px] h-[60px] md:w-[80px] md:h-[80px] rounded-full cursor-pointer hover:scale-105 duration-200"
