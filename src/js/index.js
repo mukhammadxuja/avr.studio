@@ -98,3 +98,8 @@ const copyToClipboard = async () => {
   navigator.clipboard.writeText(copy.value);
   copySpan.textContent = "Copied!";
 };
+
+function toggleMenu() {
+  const menu = document.getElementById("menu");
+  menu.classList.toggle("translate-x-0");
+}

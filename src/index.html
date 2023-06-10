@@ -28,9 +28,6 @@
 
     <!-- include ScrollTrigger -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
-
-    <!-- Matter js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
     <link rel="stylesheet" href="./css/tailwind.css" />
   </head>
 
@@ -95,7 +92,7 @@
           <li
             class="text-[38px] font-[400] tracking-[-.05em] leading-[100%] text-black"
           >
-            <a href="#who-am-i">Who am I?</a>
+            <a href="./about.html">Who am I?</a>
           </li>
           <li
             class="text-[38px] font-[400] tracking-[-.05em] leading-[100%] text-black"
@@ -105,7 +102,7 @@
           <li
             class="text-[38px] font-[400] tracking-[-.05em] leading-[100%] text-black"
           >
-            <a href="./tutorials.html">Tutorials</a>
+            <a href="./coming-soon.html">Tutorials</a>
           </li>
           <li
             class="text-[38px] font-[400] tracking-[-.05em] leading-[100%] text-black"
@@ -157,20 +154,8 @@
       </div>
     </div>
 
-    <div>
-      <canvas
-        class="fixed bottom-[30px] left-5 md:left-10 z-[1000] w-[50px] h-[50px] cursor-pointer bg-transparent"
-        title="Music"
-      ></canvas>
-      <span
-        id="musicValue"
-        class="fixed bottom-[45px] left-[calc(1.25rem_+_60px)] md:left-[calc(2.5rem_+_60px)] z-[1000] text-base font-semibold text-primary"
-        >Off</span
-      >
-    </div>
-
     <!-- Preloader -->
-    <!-- <div
+    <div
       id="preloader"
       class="fixed top-0 left-0 z-[9999] bg-white h-screen w-full flex items-center justify-center"
     >
@@ -193,7 +178,7 @@
           </h3>
         </div>
       </div>
-    </div> -->
+    </div>
 
     <main>
       <header class="relative flex items-center justify-center w-full h-screen">
@@ -235,41 +220,10 @@
         </div>
       </section>
 
-      <!-- Services -->
-      <section
-        id="what-i-do"
-        class="max-w-[95rem] mx-auto my-10 h-[50vh] w-[100vw] mt-20 md:mt-0"
-      >
-        <div class="flex items-center justify-between w-full h-full">
-          <div class="">
-            <h2
-              class="horizontal-title cursor-pointer text-center text-[25px] text-black whitespace-nowrap font-semibold leading-[28px] tracking-[-.35px]"
-            >
-              No Monthly Service Fees, <br />
-              Transaction Fee from 0%
-            </h2>
-          </div>
-          <div class="">
-            <h2
-              class="horizontal-title cursor-pointer text-center text-[25px] text-black whitespace-nowrap font-semibold leading-[28px] tracking-[-.35px]"
-            >
-              No Monthly Service Fees, <br />
-              Transaction Fee from 0%
-            </h2>
-          </div>
-          <div class="">
-            <h2
-              class="horizontal-title cursor-pointer text-center text-[25px] text-black whitespace-nowrap font-semibold leading-[28px] tracking-[-.35px]"
-            >
-              No Monthly Service Fees, <br />
-              Transaction Fee from 0%
-            </h2>
-          </div>
-        </div>
-      </section>
-
       <!-- Works small screens -->
-      <section class="container mx-auto block lg:hidden mt-20 md:mt-0">
+      <section
+        class="container mx-auto block lg:hidden mt-20 md:mt-[200px] py-10"
+      >
         <h5 class="title">/Works</h5>
         <div
           class="grid grid-cols-1 grid-rows-1 gap-8 md:grid-cols-2 md:grid-rows-2"
@@ -342,7 +296,7 @@
       <!-- Works - large screen -->
       <section
         id="works"
-        class="relative hidden mt-20 md:mt-0 lg:block px-5 lg:px-0 max-w-[95rem] mx-auto"
+        class="relative hidden mt-20 md:mt-[200px] lg:block px-5 lg:px-0 max-w-[95rem] mx-auto"
       >
         <h5 class="title">/Works</h5>
         <div class="flex gallery">
@@ -431,7 +385,7 @@
             </div>
           </div>
 
-          <section id="right" class="w-[40%] rounded-[10px]">
+          <div id="right" class="w-[40%] rounded-[10px]">
             <div class="sticky-wrapper">
               <div class="sticky">
                 <div class="wipe-stack">
@@ -451,21 +405,47 @@
                 </div>
               </div>
             </div>
-          </section>
+          </div>
+        </div>
+        <div class="md:pt-10 flex items-center justify-center">
+          <a class="btn-outline" href="./projects.html">View more</a>
         </div>
       </section>
 
-      <!-- <div class="right h-[90vh] w-[50%] flex flex-col justify-center">
-            <div class="photos w-[40vw] h-[40vw] overflow-hidden">
-              <div class="h-full">
-                <img
-                  class="w-[70%] h-full object-cover rounded-[9px] mx-auto my-auto"
-                  src="./assets/images/works/works.png"
-                  alt="dotsoft"
-                />
-              </div>
-            </div>
-          </div> -->
+      <!-- Services -->
+      <section
+        id="what-i-do"
+        class="my-reel max-w-[95rem] mx-auto my-10 h-[50vh] w-[100vw] mt-20 md:mt-0"
+      >
+        <div
+          class="my-reel-wrap flex items-center justify-between w-full h-full"
+        >
+          <div class="my-reel-item">
+            <h2
+              class="horizontal-title cursor-pointer text-center text-[25px] text-black whitespace-nowrap font-semibold leading-[28px] tracking-[-.35px]"
+            >
+              No Monthly Service Fees, <br />
+              Transaction Fee from 0%
+            </h2>
+          </div>
+          <div class="my-reel-item">
+            <h2
+              class="horizontal-title cursor-pointer text-center text-[25px] text-black whitespace-nowrap font-semibold leading-[28px] tracking-[-.35px]"
+            >
+              No Monthly Service Fees, <br />
+              Transaction Fee from 0%
+            </h2>
+          </div>
+          <div class="my-reel-item">
+            <h2
+              class="horizontal-title cursor-pointer text-center text-[25px] text-black whitespace-nowrap font-semibold leading-[28px] tracking-[-.35px]"
+            >
+              No Monthly Service Fees, <br />
+              Transaction Fee from 0%
+            </h2>
+          </div>
+        </div>
+      </section>
 
       <!-- Blog -->
       <section id="blog" class="container mx-auto mt-20 md:mt-0">
@@ -643,6 +623,18 @@
           ></video>
         </a>
       </section>
+
+      <section>
+        <canvas
+          class="fixed bottom-[30px] left-5 md:left-10 z-[1000] w-[50px] h-[50px] cursor-pointer bg-transparent"
+          title="Music"
+        ></canvas>
+        <span
+          id="musicValue"
+          class="fixed bottom-[45px] left-[calc(1.25rem_+_60px)] md:left-[calc(2.5rem_+_60px)] z-[1000] text-base font-semibold text-primary"
+          >Off</span
+        >
+      </section>
     </main>
 
     <footer
@@ -673,13 +665,13 @@
         >
           <ul class="md:mx-10">
             <li>
-              <a class="footer-link" href="#who-am-i">Who am i?</a>
+              <a class="footer-link" href="./about.html">Who am I?</a>
             </li>
             <li>
-              <a class="footer-link" href="#works">Selected works</a>
+              <a class="footer-link" href="./projects.html">Selected works</a>
             </li>
             <li>
-              <a class="footer-link" href="#what-i-do">What I do?</a>
+              <a class="footer-link" href="./servces.html">What I do?</a>
             </li>
             <li>
               <a class="footer-link" href="./contact.html">Contact</a>
@@ -687,13 +679,17 @@
           </ul>
           <ul class="md:mx-10">
             <li>
-              <a class="footer-link" href="#!">Tutorials</a>
+              <a class="footer-link" href="./coming-soon.html">Tutorials</a>
             </li>
             <li>
-              <a class="footer-link" href="#!">Blog</a>
+              <a class="footer-link" href="./blog.html">Blog</a>
             </li>
             <li>
-              <a class="footer-link" href="#!">Sources</a>
+              <a
+                class="footer-link"
+                href="https://github.com/mukhammadxuja/avr.studio"
+                >Source</a
+              >
             </li>
           </ul>
         </div>
@@ -810,8 +806,6 @@
         const menu = document.getElementById("menu");
         menu.classList.toggle("translate-x-0");
       }
-
-      console.log("woking", Matter.Engine);
     </script>
 
     <script src="js/useState.js"></script>
