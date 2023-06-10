@@ -68,4 +68,8 @@
   .next {
     @apply absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-10 text-[2.5rem] md:text-[4rem] text-black leading-none font-medium border-b-2 border-black duration-200 mix-blend-difference
   }
+
+  .horizontal-title {
+    @apply cursor-pointer text-center text-[18px] md:text-[25px] text-black whitespace-nowrap font-semibold leading-[28px] tracking-[-.35px]
+  }
 }

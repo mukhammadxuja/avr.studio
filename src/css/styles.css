@@ -143,44 +143,60 @@ active {
 }
 
 #right {
-	 position: relative;
+  position: relative;
 }
- #right img {
-	 max-width: 40%;
-	 display: block;
+#right img {
+  max-width: 40%;
+  display: block;
 }
- #right .sticky {
-	 height: 86vh;
-	 position: sticky;
-	 top: 7vh;
-   right: 0;
-   bottom: 2rem;
-   border-radius: 10px;
-	 overflow: hidden;
+#right .sticky {
+  height: 86vh;
+  position: sticky;
+  top: 7vh;
+  right: 0;
+  bottom: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
 }
- #right .sticky-wrapper {
-	 position: relative;
-	 z-index: 1;
-	 height: calc(2*100vh);
+#right .sticky-wrapper {
+  position: relative;
+  z-index: 1;
+  height: calc(2 * 100vh);
 }
- #right .sticky .wipe-stack {
-	 height: 100vh;
-	 position: relative;
-	 overflow: hidden;
+#right .sticky .wipe-stack {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
- #right .sticky-wipe {
-	 height: 100vh;
-	 width: 100%;
-	 position: absolute;
-	 background-position: center center;
-	 background-repeat: no-repeat;
-	 background-size: cover;
+#right .sticky-wipe {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
- #right .sticky-wipe.item-1 {
-	 z-index: 2;
+#right .sticky-wipe.item-1 {
+  z-index: 2;
 }
- #right .sticky-wipe.item-2 {
-	 z-index: 3;
-	 clip-path: inset(0% 0px 0px);
+#right .sticky-wipe.item-2 {
+  z-index: 3;
+  clip-path: inset(0% 0px 0px);
 }
- 
+
+/* horizontal scroll */
+
+.main {
+  overflow-x: hidden;
+}
+.horizontal-sliders {
+  display: flex;
+  flex-wrap: no-wrap;
+  width: calc(70% * 3);
+  height: 80vh;
+  overflow-x: hidden;
+}
+.slide {
+  height: 300px;
+  width: 70%;
+}

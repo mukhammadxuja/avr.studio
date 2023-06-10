@@ -203,18 +203,18 @@
           <h2
             class="text-[20px] lg:text-[30px] font-[600] leading-[145%] lg:leading-[158%] tracking-[-1] text-black"
           >
-            We are <span class="badge">creative</span> and
-            <span class="badge">strategic</span> thinkers,
+            Anvarov is a Creative Developer. Focusing on
+            <span class="badge">cutting-edge</span>
             <br class="hidden lg:block" />
-            building for the <span class="badge">metaverse</span>.
+            projects, he pushes the boundaries of
+            <span class="badge">development</span> and
+            <span class="badge">design</span> to
             <br class="hidden lg:block" />
-            We help brands to explore new playgrounds,
+            create <span class="badge">forward‑thinking</span>, innovative
+            solutions for agencies,
             <br class="hidden lg:block" />
-            connect with
-            <span class="badge"><span class="badge">strategic</span></span> and
-            craft
-            <br class="hidden lg:block" />
-            cool experiences.
+            <span class="badge">brands</span> and
+            <span class="badge">products</span>.
           </h2>
           <button class="btn">Contact me</button>
         </div>
@@ -308,7 +308,7 @@
                   class="text-[33px] font-medium leading-[145%] md:leading-[140%] tracking-[-1] text-black"
                 >
                   Creative web agency, <br />
-                  based Uzbekistan.
+                  based in Uzbekistan.
                 </p>
                 <div class="flex items-center space-x-2">
                   <span class="text-sm blog-badge">Website</span>
@@ -413,33 +413,28 @@
       </section>
 
       <!-- Services -->
-      <section
-        id="what-i-do"
-        class="my-reel max-w-[95rem] mx-auto my-10 h-[50vh] w-[100vw] mt-20 md:mt-0"
-      >
-        <div
-          class="my-reel-wrap flex items-center justify-between w-full h-full"
-        >
-          <div class="my-reel-item">
-            <h2
-              class="horizontal-title cursor-pointer text-center text-[25px] text-black whitespace-nowrap font-semibold leading-[28px] tracking-[-.35px]"
-            >
+      <section class="main overflow-x-hidden">
+        <div class="horizontal-sliders flex items-center justify-center">
+          <div class="slide flex items-center justify-center">
+            <h2 class="horizontal-title">
               No Monthly Service Fees, <br />
               Transaction Fee from 0%
             </h2>
           </div>
-          <div class="my-reel-item">
-            <h2
-              class="horizontal-title cursor-pointer text-center text-[25px] text-black whitespace-nowrap font-semibold leading-[28px] tracking-[-.35px]"
-            >
+          <div class="slide flex items-center justify-center">
+            <h2 class="horizontal-title">
               No Monthly Service Fees, <br />
               Transaction Fee from 0%
             </h2>
           </div>
-          <div class="my-reel-item">
-            <h2
-              class="horizontal-title cursor-pointer text-center text-[25px] text-black whitespace-nowrap font-semibold leading-[28px] tracking-[-.35px]"
-            >
+          <div class="slide flex items-center justify-center">
+            <h2 class="horizontal-title">
+              No Monthly Service Fees, <br />
+              Transaction Fee from 0%
+            </h2>
+          </div>
+          <div class="slide flex items-center justify-center">
+            <h2 class="horizontal-title">
               No Monthly Service Fees, <br />
               Transaction Fee from 0%
             </h2>
@@ -806,6 +801,21 @@
         const menu = document.getElementById("menu");
         menu.classList.toggle("translate-x-0");
       }
+
+      gsap.registerPlugin(ScrollTrigger);
+      let sections = gsap.utils.toArray(".slide");
+
+      gsap.to(sections, {
+        xPercent: -100 * (sections.length - 1),
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".horizontal-sliders",
+          pin: ".main",
+          pinSpacing: true,
+          scrub: 1,
+          end: "+=3000",
+        },
+      });
     </script>
 
     <script src="js/useState.js"></script>
