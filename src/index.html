@@ -155,7 +155,7 @@
     </div>
 
     <!-- Preloader -->
-    <div
+    <!-- <div
       id="preloader"
       class="fixed top-0 left-0 z-[9999] bg-white h-screen w-full flex items-center justify-center"
     >
@@ -178,6 +178,11 @@
           </h3>
         </div>
       </div>
+    </div> -->
+
+    
+    <div id="preloader" class="fixed top-0 left-0 w-full bg-white z-[100000] h-screen flex items-center justify-center">
+      <p id="percent" class="text-5xl font-bold text-black">0%</p>
     </div>
 
     <main>
@@ -904,6 +909,7 @@
       });
     </script>
 
+    <script src="js/preloader.js"></script>
     <script src="js/useState.js"></script>
     <script src="js/smoothScroll.js"></script>
     <script src="js/blurryLoad.js"></script>
