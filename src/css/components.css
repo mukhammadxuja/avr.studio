@@ -6,7 +6,7 @@
   }
 
   .card {
-    @apply rounded-[30px] py-[30px] px-[30px] md:py-[40px] md:px-[60px] lg:py-[70px] lg:px-[120px] bg-secondary backdrop-filter backdrop-blur-sm bg-opacity-80 space-y-2 md:space-y-4;
+    @apply rounded-[30px] py-[30px] px-[30px] md:py-[40px] md:px-[60px] lg:py-[70px] lg:px-[120px] bg-[#f1f0f1] backdrop-filter backdrop-blur-sm bg-opacity-80 space-y-2 md:space-y-4;
   }
 
   .title {

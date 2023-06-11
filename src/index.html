@@ -614,15 +614,15 @@
       </section>
 
       <!-- Contact me -->
-      <section class="container mx-auto">
+      <section id="cursorContainer" class="container mx-auto">
         <div
           id="contact"
-          class="relative my-10 h-[300px] md:h-[400px] lg:h-[500px] card w-full space-y-0 overflow-hidden"
+          class="relative my-10 h-[300px] md:h-[400px] lg:h-[500px] bg-[#f1f0f1] card w-full space-y-0 overflow-hidden"
         >
           <div class="absolute z-10 -translate-y-1/2 top-1/2 w-fit">
             <h5 class="title">/Contact me</h5>
             <h2
-              class="text-[20px] md:text-[30px] font-[600] leading-[120%] md:leading-[158%] tracking-[-1] text-black mb-2"
+              class="text-[20px] md:text-[30px] font-[600] leading-[120%] md:leading-[158%] tracking-[-1] text-black mb-2 mix-blend-color-dodge"
             >
               When was the last time you tried something <br />
               new with your brand? Let’s get in touch, <br />
@@ -631,8 +631,9 @@
             <button class="btn">mukhammadxuja@gmail.com</button>
           </div>
           <video
-            class="absolute z-0 top-0 right-0 w-full h-full object-cover rounded-[30px]"
-            src="./assets/videos/contact-medium.mp4"
+            id="cursorVideo"
+            class="absolute z-0 top-0 left-0 -translate-y-1/2 -translate-x-1/2 w-[200px] h-auto object-contain ]duration-100 pointer-events-none opacity-0 p-5 rounded-full"
+            src="./assets/videos/3.webm"
             autoplay
             loop
             muted
@@ -852,6 +853,73 @@
           end: "+=3000",
         },
       });
+
+      const cursorContainer = document.getElementById("cursorContainer");
+
+      gsap.utils.toArray(cursorContainer).forEach((el) => {
+        const video = el.querySelector("#cursorVideo"),
+          setX = gsap.quickSetter(video, "x", "px"),
+          setY = gsap.quickSetter(video, "y", "px"),
+          align = (e) => {
+            const top = el.getBoundingClientRect().top;
+            setX(e.clientX);
+            setY(e.clientY - top);
+          },
+          startFollow = () => document.addEventListener("mousemove", align),
+          stopFollow = () => document.removeEventListener("mousemove", align),
+          fade = gsap.to(video, {
+            autoAlpha: 1,
+            ease: "none",
+            paused: true,
+            onReverseComplete: stopFollow,
+          });
+
+        el.addEventListener("mouseenter", (e) => {
+          fade.play();
+          startFollow();
+          align(e);
+        });
+
+        el.addEventListener("mouseleave", () => fade.reverse());
+      });
+
+      // let mouseX;
+      // let mouseY;
+
+      // window.addEventListener("mousemove", (e) => {
+      //   mouseX = e.clientX;
+      //   mouseY = e.clientY;
+      // });
+
+      // cursorContainer.addEventListener("mouseenter", () => {
+      //   gsap.to(cursorVideo, 1, {
+      //     scale: 1,
+      //     opacity: 1,
+      //     top: "-75px",
+      //     left: "-75px",
+      //     rotate: 0,
+      //     ease: Elastic.easeOut.config(1, 0.3),
+      //     autoAlpha: 1,
+      //   });
+      // });
+
+      // cursorContainer.addEventListener("mousemove", () => {
+      //   gsap.to(cursorVideo, 1, {
+      //     x: mouseX,
+      //     y: mouseY,
+      //   });
+      // });
+
+      // cursorContainer.addEventListener("mouseleave", () => {
+      //   gsap.to(cursorVideo, 0.2, {
+      //     scale: 0,
+      //     opacity: 0,
+      //     top: "10",
+      //     left: "40",
+      //     rotate: 45,
+      //     autoAlpha: 0,
+      //   });
+      // });
 
       const next = document.getElementById("nextText");
 
