@@ -16,6 +16,7 @@ module.exports = {
         },
       },
       colors: {
+        background: "var(--bg)",
         primary: "var(--primary)",
         secondary: "var(--secondary)",
         "inreport-primary": "var(--inreport-primary)",

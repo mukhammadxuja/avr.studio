@@ -2,11 +2,11 @@
 
 @layer components {
   .heading {
-    @apply absolute top-1/2 -translate-y-1/2 text-[3rem] sm:text-[4.5rem] md:text-[6rem] bg-gradient-to-r from-[#ac90d9] via-white to-[#C8BCDC] inline-block text-transparent bg-clip-text bg-opacity-60 leading-none text-center font-bold md:font-extrabold;
+    @apply absolute top-1/2 -translate-y-1/2 text-[3rem] sm:text-[4.5rem] md:text-[6rem] bg-gradient-to-r from-[#fff] via-[#878c8c] to-[#fff] inline-block text-transparent bg-clip-text bg-opacity-60 leading-none text-center font-bold md:font-extrabold;
   }
 
   .card {
-    @apply rounded-[30px] py-[30px] px-[30px] md:py-[40px] md:px-[60px] lg:py-[70px] lg:px-[120px] bg-[#f1f0f1] backdrop-filter backdrop-blur-sm bg-opacity-80 space-y-2 md:space-y-4;
+    @apply rounded-[30px] py-[30px] px-[30px] md:py-[40px] md:px-[60px] lg:py-[70px] lg:px-[120px] bg-[#fff] backdrop-filter backdrop-blur-sm bg-opacity-80 space-y-2 md:space-y-4;
   }
 
   .title {
@@ -50,7 +50,7 @@
   }
 
   .badge {
-    @apply px-2 py-1 text-black bg-white rounded-full shadow-sm;
+    @apply px-2 py-1 text-black bg-[#c6ff97] rounded-full shadow-sm;
   }
 
   .contact-input {

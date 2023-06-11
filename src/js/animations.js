@@ -2,7 +2,7 @@ const timeline = gsap.timeline();
 
 gsap.registerPlugin(ScrollTrigger);
 
-const item2 = document.getElementsByClassName("item-2")
+const item2 = document.getElementsByClassName("item-2");
 console.log(item2);
 
 ScrollTrigger.create({
@@ -12,13 +12,18 @@ ScrollTrigger.create({
   pin: ".right",
 });
 
+gsap.to("#works", {
+  scrollTrigger: "#works", // start the animation when ".section" enters the viewport (once)
+  backgroundColor: "white",
+});
+
 gsap.from(item2, {
   scrollTrigger: {
     trigger: ".sticky-wrapper",
     scrub: true,
     start: "top top",
     end: "+=100%",
-    pin: ".sticky"
+    pin: ".sticky",
   },
   clipPath: "inset(100% 0px 0px)",
   ease: "none",
@@ -142,16 +147,4 @@ scroll.on("scroll", function () {
     });
   });
 });
-
-const openNav = () => {
-  // animateOpenNav();
-  const toggleBtn = document.getElementById("menu-toggle-btn");
-  console.log(toggleBtn);
-  toggleBtn.onclick = (e) => {
-    toggleBtn.classList.toggle(".show-menu");
-    timeline.reversed(!timeline.reversed());
-  };
-};
-
-openNav();
 

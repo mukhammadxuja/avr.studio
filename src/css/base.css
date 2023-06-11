@@ -2,8 +2,9 @@
 
 @layer base {
   :root {
-    --primary: #ac90d9;
-    --secondary: #faeaff;
+    --bg: #f1f0f1;
+    --primary: #0d0d0d;
+    --secondary: #fff;
     --inreport-primary: #3b82f6;
     --inreport-lighter: #00b5ff;
     --inreport-secondary: #e8efff;
