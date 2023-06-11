@@ -1,3 +1,9 @@
+#heading {
+  perspective: 100px;
+  transform-style: preserve-3d;
+  display: inline-flex;
+}
+
 header.reveal {
   transform: none;
 }
@@ -200,3 +206,24 @@ active {
   height: 300px;
   width: 60%;
 }
+/* 
+#wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  height: 200px;
+  margin-top: 100vh;
+}
+.parallax {
+  position: relative;
+  height: 100vh;
+  width: 30vw;
+  margin: 10px;
+  overflow: hidden;
+}
+.img {
+  position: absolute;
+  height: 200%;
+  top: -75%;
+} */

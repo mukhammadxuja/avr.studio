@@ -29,6 +29,16 @@ gsap.from(item2, {
   ease: "none",
 });
 
+// timeline.to('.parallax img', {
+//   y:100,
+//   scrollTrigger:{
+//     trigger:'#wrapper',
+//     start:'top 80%',
+//     end:'bottom 20%',
+//     scrub:'0.3',
+//     markers:true
+//   }
+// })
 isAnimating = false;
 
 window.addEventListener("load", () => {
@@ -147,4 +157,3 @@ scroll.on("scroll", function () {
     });
   });
 });
-

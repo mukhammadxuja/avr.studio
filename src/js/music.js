@@ -14,7 +14,7 @@ let opt = {
   stretch: 10,
   sinHeight: 0,
   speed: -0.1,
-  strokeColor: "#AC90D9",
+  strokeColor: "#000",
   strokeWidth: 1.5,
   power: false,
 };
