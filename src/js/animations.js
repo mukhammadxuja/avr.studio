@@ -41,7 +41,7 @@ window.addEventListener("load", () => {
     .to("#preloader", {
       opacity: 0,
       duration: 0.5,
-      delay: 4,
+      delay: 4.5,
       onComplete: () => {
         document.querySelector("#preloader").style.display = "none";
       },

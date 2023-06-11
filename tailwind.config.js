@@ -35,7 +35,7 @@ module.exports = {
       },
       animation: {
         handAnimation: "handAnimation 2s linear infinite",
-        spinWord: "spinWord 7s",
+        spinWord: "spinWord 8s",
       },
       keyframes: {
         handAnimation: {
@@ -69,13 +69,16 @@ module.exports = {
             transform: "translateY(-200%)",
           },
           "60%": {
-            transform: "translateY(-300%)",
+            transform: "translateY(-297%)",
           },
           "70%": {
-            transform: "translateY(-300%)",
+            transform: "translateY(-297%)",
           },
           "80%": {
-            transform: "translateY(-300%)",
+            transform: "translateY(-297%)",
+          },
+          "90%": {
+            transform: "translateY(-297%)",
           },
           "100%": {
             transform: "translateY(-0%)",

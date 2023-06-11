@@ -415,29 +415,65 @@
       <!-- Services -->
       <section class="main overflow-x-hidden">
         <div class="horizontal-sliders flex items-center justify-center">
-          <div class="slide flex items-center justify-center">
-            <h2 class="horizontal-title">
+          <div class="slide relative">
+            <h2
+              id="nextText"
+              class="horizontal-title absolute z-10 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 mix-blend-difference"
+            >
               No Monthly Service Fees, <br />
               Transaction Fee from 0%
             </h2>
+            <img
+              id="nextImg"
+              class="absolute z-0 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[250px] h-[350px] rounded-[9px] opacity-0 invisible pointer-events-none object-cover"
+              src="./assets/gif/missy.gif"
+              alt="Missy cooper"
+            />
           </div>
-          <div class="slide flex items-center justify-center">
-            <h2 class="horizontal-title">
+          <div class="slide relative">
+            <h2
+              id="nextText"
+              class="horizontal-title absolute z-10 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 mix-blend-difference"
+            >
               No Monthly Service Fees, <br />
               Transaction Fee from 0%
             </h2>
+            <img
+              id="nextImg"
+              class="absolute z-0 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[250px] h-[350px] rounded-[9px] opacity-0 invisible pointer-events-none object-cover"
+              src="./assets/gif/missy.gif"
+              alt="Missy cooper"
+            />
           </div>
-          <div class="slide flex items-center justify-center">
-            <h2 class="horizontal-title">
+          <div class="slide relative">
+            <h2
+              id="nextText"
+              class="horizontal-title absolute z-10 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 mix-blend-difference"
+            >
               No Monthly Service Fees, <br />
               Transaction Fee from 0%
             </h2>
+            <img
+              id="nextImg"
+              class="absolute z-0 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[250px] h-[350px] rounded-[9px] opacity-0 invisible pointer-events-none object-cover"
+              src="./assets/gif/missy.gif"
+              alt="Missy cooper"
+            />
           </div>
-          <div class="slide flex items-center justify-center">
-            <h2 class="horizontal-title">
+          <div class="slide relative">
+            <h2
+              id="nextText"
+              class="horizontal-title absolute z-10 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 mix-blend-difference"
+            >
               No Monthly Service Fees, <br />
               Transaction Fee from 0%
             </h2>
+            <img
+              id="nextImg"
+              class="absolute z-0 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[250px] h-[350px] rounded-[9px] opacity-0 invisible pointer-events-none object-cover"
+              src="./assets/gif/missy.gif"
+              alt="Missy cooper"
+            />
           </div>
         </div>
       </section>
@@ -815,6 +851,22 @@
           scrub: 1,
           end: "+=3000",
         },
+      });
+
+      const next = document.getElementById("nextText");
+
+      const image = document.getElementById("nextImg");
+
+      next.addEventListener("mouseenter", (e) => {
+        gsap.to(image, { autoAlpha: 1 });
+      });
+
+      next.addEventListener("mouseleave", (e) => {
+        gsap.to(image, { autoAlpha: 0 });
+      });
+
+      next.addEventListener("mousemove", (e) => {
+        gsap.set(image, { x: e.offsetX - 100, y: e.offsetY - 0 });
       });
     </script>
 
