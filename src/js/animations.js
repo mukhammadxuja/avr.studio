@@ -29,16 +29,41 @@ gsap.from(item2, {
   ease: "none",
 });
 
-// timeline.to('.parallax img', {
-//   y:100,
-//   scrollTrigger:{
-//     trigger:'#wrapper',
-//     start:'top 80%',
-//     end:'bottom 20%',
-//     scrub:'0.3',
-//     markers:true
-//   }
-// })
+gsap.set(".follower", {
+  xPercent: -50,
+  yPercent: -50,
+  opacity: 1,
+});
+
+window.addEventListener("mousemove", (e) => {
+  gsap.to(".follower", {
+    duration: 1.5,
+    overwrite: "auto",
+    x: e.clientX,
+    y: e.clientY,
+    stagger: 0.15,
+    ease: "power3.out",
+  });
+
+  let timeline = gsap.timeline({
+    defaults: { duration: 0.5, ease: "none" },
+  });
+
+  timeline.to(".follower", {
+    scale: 1,
+    overwrite: "auto",
+    stagger: { amount: 0.15, from: "start", ease: "none" },
+  });
+  timeline.to(
+    ".follower",
+    {
+      overwrite: "auto",
+      stagger: { amount: 0.15, from: "end", ease: "none" },
+    },
+    "<+=2.5"
+  );
+});
+
 isAnimating = false;
 
 window.addEventListener("load", () => {

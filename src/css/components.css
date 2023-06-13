@@ -37,8 +37,12 @@
     @apply text-[21px] font-[500] leading-[158%] tracking-[-1] hover:text-primary duration-200;
   }
 
+  .footer-contact {
+    @apply flex items-center justify-center md:items-start md:justify-start text-white md:text-black text-[2.5rem] md:text-[4rem] text-black leading-none font-medium md:border-b-2 underline md:no-underline md:border-[#120E0E] duration-300 hover:text-[#5A5858] hover:border-[#5A5858] !text-center w-full md:w-fit
+  }
+
   .btn {
-    @apply text-[12px] bg-primary shadow duration-200 font-medium text-white py-[12px] px-[18px] md:py-[17px] md:px-[25px] rounded-[9px] whitespace-nowrap text-center disabled:opacity-50 disabled:hover:bg-primary disabled:cursor-not-allowed;
+    @apply text-[12px] bg-primary hover:bg-[#252525] shadow duration-200 font-medium text-white py-[12px] px-[18px] md:py-[17px] md:px-[25px] rounded-[9px] whitespace-nowrap text-center disabled:opacity-50 disabled:hover:bg-primary disabled:cursor-not-allowed;
   }
 
   .btn-outline {
