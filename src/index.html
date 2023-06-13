@@ -69,7 +69,7 @@
       </div>
       <div
         onclick="toggleMenu()"
-        class="block md:hidden bg-[#AC90D9] hover:bg-[#866CB0] w-[40px] h-[40px] inline-flex items-center justify-center rounded-[9px] py-[20px] px-[18px] cursor-pointer duration-200"
+        class="md:hidden bg-black w-[40px] h-[40px] inline-flex items-center justify-center rounded-[9px] py-[20px] px-[18px] cursor-pointer duration-200"
       >
         <div class="space-y-1">
           <div class="w-6 h-[.20rem] bg-white rounded-full"></div>
@@ -635,7 +635,7 @@
           </div>
           <video
             id="cursorVideo"
-            class="absolute z-0 top-0 left-0 -translate-y-1/2 -translate-x-1/2 w-[200px] md:w-[300px] h-auto object-contain ]duration-100 pointer-events-none opacity-0 p-5 rounded-full"
+            class="absolute z-0 top-0 left-0 -translate-y-1/2 -translate-x-1/2 w-[200px] md:w-[300px] h-auto object-contain duration-200 pointer-events-none opacity-0 p-5 rounded-full"
             src="./assets/videos/3.webm"
             autoplay
             loop
@@ -648,7 +648,7 @@
       <section
         class="fixed bottom-[30px] right-5 md:right-10 z-[1000] w-[70px] h-[70px] rounded-full cursor-pointer bg-transparent"
       >
-        <a title="Contact me" href="#contact">
+        <a title="Contact me" href="./contact.html">
           <video
             class="w-[60px] h-[60px] md:w-[80px] md:h-[80px] rounded-full cursor-pointer hover:scale-105 duration-200"
             src="./assets/videos/man.mp4"
@@ -672,7 +672,7 @@
       </section>
     </main>
 
-    <footer class="bg-white mt-20 md:mt-0">
+    <footer class="bg-black md:bg-white mt-20 md:mt-0">
       <div class="md:mx-auto md:max-w-[95rem] py-10">
         <div
           class="flex flex-col md:flex-row justify-between py-[40px] md:pt-[90px] md:pb-8"
@@ -859,7 +859,7 @@
           stopFollow = () => document.removeEventListener("mousemove", align),
           fade = gsap.to(video, {
             autoAlpha: 1,
-            ease: "none",
+            ease: "power3.out",
             paused: true,
             onReverseComplete: stopFollow,
           });

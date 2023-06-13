@@ -81,11 +81,11 @@ buttons.forEach((button) => {
       values = values.filter((value) => value !== button.value);
 
       button.style.background = "transparent";
-      button.style.color = "#ac90d9";
+      button.style.color = "#000";
     } else {
       // if it isn't, add it to the array
       values.push(button.value);
-      button.style.background = "#ac90d9";
+      button.style.background = "#000";
       button.style.color = "#fff";
     }
   });

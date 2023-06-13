@@ -35,7 +35,9 @@ gsap.set(".follower", {
   opacity: 1,
 });
 
-window.addEventListener("mousemove", (e) => {
+const preloader = document.getElementById("preloader");
+
+preloader.addEventListener("mousemove", (e) => {
   gsap.to(".follower", {
     duration: 1.5,
     overwrite: "auto",
