@@ -4,7 +4,7 @@
   :root {
     --bg: #f1f0f1;
     --primary: #0d0d0d;
-    --secondary: #fff;
+    --secondary: #c6ff97;
     --inreport-primary: #3b82f6;
     --inreport-lighter: #00b5ff;
     --inreport-secondary: #e8efff;
@@ -22,8 +22,8 @@
   }
 
   ::selection {
-    color: var(--primary);
-    background: var(--secondary);
+    color: white;
+    background: var(--primary);
   }
 
   /* width */
