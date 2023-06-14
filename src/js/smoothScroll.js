@@ -4,10 +4,13 @@ window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.querySelector("nav").style.top = "1.5rem";
+    document.getElementById("social").style.bottom = "1.5rem";
   } else if (prevScrollpos === 0) {
     document.querySelector("nav").style.top = "1.5rem";
+    document.getElementById("social").style.bottom = "1.5rem";
   } else {
     document.querySelector("nav").style.top = "-70px";
+    document.getElementById("social").style.bottom = "-70px";
   }
   prevScrollpos = currentScrollPos;
 };
