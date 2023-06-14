@@ -34,7 +34,7 @@
   <body>
     <nav
       id="projectsNav"
-      class="fixed left-0 right-0 z-50 -translate-y-10 opacity-0 flex items-center justify-between mx-5 duration-300 md:mx-8 top-4"
+      class="fixed left-0 right-0 z-[100] -translate-y-10 opacity-0 flex items-center justify-between mx-5 duration-300 md:mx-8 top-4"
     >
       <div>
         <a href="/">
@@ -513,6 +513,11 @@
       next.addEventListener("mousemove", (e) => {
         gsap.set(image, { x: e.offsetX - 100, y: e.offsetY - 0 });
       });
+      // Toggle open
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("translate-x-0");
+      }
     </script>
 
     <script src="./js/useState.js"></script>

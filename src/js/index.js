@@ -1,5 +1,13 @@
-const blurryImageLoad = new BlurryImageLoad();
-blurryImageLoad.load();
+// Copy to clipboard
+const copyToClipboard = () => {
+  const copy = document.getElementById("copy");
+  const copySpan = document.getElementById("copySpan");
+
+  console.log("copied");
+
+  navigator.clipboard.writeText(copy.value);
+  copySpan.textContent = "Copied!";
+};
 
 const nameInput = document.getElementById("name");
 const btn = document.getElementById("btn");
@@ -90,16 +98,3 @@ buttons.forEach((button) => {
     }
   });
 });
-
-const copyToClipboard = async () => {
-  const copy = document.getElementById("copy");
-  const copySpan = document.getElementById("copySpan");
-
-  navigator.clipboard.writeText(copy.value);
-  copySpan.textContent = "Copied!";
-};
-
-function toggleMenu() {
-  const menu = document.getElementById("menu");
-  menu.classList.toggle("translate-x-0");
-}

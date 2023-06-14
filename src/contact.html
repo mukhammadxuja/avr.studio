@@ -48,7 +48,7 @@
       </div>
       <div class="items-center hidden space-x-1 md:inline-flex">
         <ul
-          class="flex items-center space-x-2 bg-secondary backdrop-filter backdrop-blur-sm bg-opacity-80 w-fit rounded-[9px] py-0 px-[27px]"
+          class="flex items-center space-x-2 bg-gray-100 backdrop-filter backdrop-blur-sm bg-opacity-80 w-fit rounded-[9px] py-0 px-[27px]"
         >
           <li title="Who am I?" class="link">
             <a href="./about.html">Who am I?</a>
@@ -260,32 +260,16 @@
             Project budget (USD)
           </p>
           <div>
-            <button
-              id="budgetBtn"
-              value="100-300"
-              class="btn-contact"
-            >
+            <button id="budgetBtn" value="100-300" class="btn-contact">
               100-300
             </button>
-            <button
-              id="budgetBtn"
-              value="300-500"
-              class="btn-contact"
-            >
+            <button id="budgetBtn" value="300-500" class="btn-contact">
               300-500
             </button>
-            <button
-              id="budgetBtn"
-              value="500-1000"
-              class="btn-contact"
-            >
+            <button id="budgetBtn" value="500-1000" class="btn-contact">
               500-1000
             </button>
-            <button
-              id="budgetBtn"
-              value="1000+"
-              class="btn-contact"
-            >
+            <button id="budgetBtn" value="1000+" class="btn-contact">
               1000+
             </button>
           </div>
@@ -453,6 +437,12 @@
       (function () {
         emailjs.init("77VLn3jKfKy5LJPvj");
       })();
+
+      // Toggle open
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("translate-x-0");
+      }
     </script>
 
     <script src="./js/useState.js"></script>

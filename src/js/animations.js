@@ -2,72 +2,6 @@ const timeline = gsap.timeline();
 
 gsap.registerPlugin(ScrollTrigger);
 
-const item2 = document.getElementsByClassName("item-2");
-console.log(item2);
-
-ScrollTrigger.create({
-  trigger: ".gallery",
-  start: "top top",
-  end: "bottom bottom",
-  pin: ".right",
-});
-
-gsap.to("#works", {
-  scrollTrigger: "#works", // start the animation when ".section" enters the viewport (once)
-  backgroundColor: "white",
-});
-
-gsap.from(item2, {
-  scrollTrigger: {
-    trigger: ".sticky-wrapper",
-    scrub: true,
-    start: "top top",
-    end: "+=100%",
-    pin: ".sticky",
-  },
-  clipPath: "inset(100% 0px 0px)",
-  ease: "none",
-});
-
-gsap.set(".follower", {
-  xPercent: -50,
-  yPercent: -50,
-  opacity: 1,
-});
-
-const preloader = document.getElementById("preloader");
-
-preloader.addEventListener("mousemove", (e) => {
-  gsap.to(".follower", {
-    duration: 1.5,
-    overwrite: "auto",
-    x: e.clientX,
-    y: e.clientY,
-    stagger: 0.15,
-    ease: "power3.out",
-  });
-
-  let timeline = gsap.timeline({
-    defaults: { duration: 0.5, ease: "none" },
-  });
-
-  timeline.to(".follower", {
-    scale: 1,
-    overwrite: "auto",
-    stagger: { amount: 0.15, from: "start", ease: "none" },
-  });
-  timeline.to(
-    ".follower",
-    {
-      overwrite: "auto",
-      stagger: { amount: 0.15, from: "end", ease: "none" },
-    },
-    "<+=2.5"
-  );
-});
-
-isAnimating = false;
-
 window.addEventListener("load", () => {
   gsap
     .timeline({
@@ -153,6 +87,71 @@ window.addEventListener("load", () => {
       0
     );
 });
+
+const item2 = document.getElementsByClassName("item-2");
+
+ScrollTrigger.create({
+  trigger: ".gallery",
+  start: "top top",
+  end: "bottom bottom",
+  pin: ".right",
+});
+
+gsap.to("#works", {
+  scrollTrigger: "#works", // start the animation when ".section" enters the viewport (once)
+  backgroundColor: "white",
+});
+
+gsap.from(item2, {
+  scrollTrigger: {
+    trigger: ".sticky-wrapper",
+    scrub: true,
+    start: "top top",
+    end: "+=100%",
+    pin: ".sticky",
+  },
+  clipPath: "inset(100% 0px 0px)",
+  ease: "none",
+});
+
+gsap.set(".follower", {
+  xPercent: -50,
+  yPercent: -50,
+  opacity: 1,
+});
+
+const preloader = document.getElementById("preloader");
+
+preloader.addEventListener("mousemove", (e) => {
+  gsap.to(".follower", {
+    duration: 1.5,
+    overwrite: "auto",
+    x: e.clientX,
+    y: e.clientY,
+    stagger: 0.15,
+    ease: "power3.out",
+  });
+
+  let timeline = gsap.timeline({
+    defaults: { duration: 0.5, ease: "none" },
+  });
+
+  timeline.to(".follower", {
+    scale: 1,
+    overwrite: "auto",
+    stagger: { amount: 0.15, from: "start", ease: "none" },
+  });
+  timeline.to(
+    ".follower",
+    {
+      overwrite: "auto",
+      stagger: { amount: 0.15, from: "end", ease: "none" },
+    },
+    "<+=2.5"
+  );
+});
+
+isAnimating = false;
 
 const scroll = new LocomotiveScroll({
   el: document.querySelector("[data-scroll-container]"),

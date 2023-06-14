@@ -17,9 +17,6 @@
       rel="stylesheet"
     />
 
-    <!-- JQuery -->
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.0.6/dist/locomotive-scroll.min.js"></script>
-
     <!-- TweenMax - GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
 
@@ -28,6 +25,8 @@
 
     <!-- include ScrollTrigger -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+
+    <!-- css file -->
     <link rel="stylesheet" href="./css/tailwind.css" />
   </head>
 
@@ -171,6 +170,30 @@
         loading...
       </p>
     </div>
+
+    <!-- Scroll top -->
+    <!-- <div
+      id="scrollTop"
+      class="go-top-btn fixed bottom-[45px] right-[calc(1.25rem_+_60px)] md:right-[calc(2.5rem_+_80px)] z-[1000] hidden"
+    >
+      <span
+      class="cursor-pointer p-2 rounded-[10px] hover:bg-gray-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6 d:w-10 md:h-10"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75"
+          />
+        </svg>
+      </span>
+    </div> -->
 
     <main>
       <header
@@ -907,14 +930,49 @@
 
         el.addEventListener("mouseleave", () => fade.reverse());
       });
+
+      // Scroll top
+      const goTopBtn = document.querySelector(".go-top-btn");
+
+      window.addEventListener("scroll", checkHeight);
+
+      function checkHeight() {
+        if (window.scrollY > 200) {
+          goTopBtn.style.display = "flex";
+        } else {
+          goTopBtn.style.display = "none";
+        }
+      }
+
+      goTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+
+      // Toggle open
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("translate-x-0");
+      }
+
+      // Copy to clipboard
+      const copyToClipboard = () => {
+        const copy = document.getElementById("copy");
+        const copySpan = document.getElementById("copySpan");
+
+        console.log("copied");
+
+        navigator.clipboard.writeText(copy.value);
+        copySpan.textContent = "Copied!";
+      };
     </script>
 
     <script src="js/preloader.js"></script>
-    <script src="js/useState.js"></script>
     <script src="js/smoothScroll.js"></script>
-    <script src="js/blurryLoad.js"></script>
-    <script src="js/animations.js"></script>
     <script src="js/music.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
