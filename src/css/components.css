@@ -50,7 +50,7 @@
   }
 
   .btn-contact {
-    @apply btn-outline text-sm md:text-lg py-[12px] px-[18px] ml-1 my-1 md:my-0 md:ml-2;
+    @apply btn-outline bg-gray-100 border-none text-sm md:text-lg py-[12px] px-[18px] ml-1 my-1 md:my-0 md:ml-2;
   }
 
   .badge {

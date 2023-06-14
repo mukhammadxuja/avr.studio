@@ -165,7 +165,11 @@
       >
         0%
       </p>
-      <p class="follower hidden md:block fixed top-10 left-20 opacity-0 text-xl text-black font-normal pointer-events-none duration-200 overflow-hidden cursor-none">loading...</p>
+      <p
+        class="follower hidden md:block fixed top-10 left-20 opacity-0 text-xl text-black font-normal pointer-events-none duration-200 overflow-hidden cursor-none"
+      >
+        loading...
+      </p>
     </div>
 
     <main>
@@ -418,17 +422,21 @@
       <!-- Services -->
       <section class="main overflow-x-hidden">
         <div
-          class="horizontal-sliders flex items-center justify-center h-screen"
+          class="horizontal-sliders w-[calc(100%_*_3)] md:w-[calc(60%_*_3)] flex flex-nowrap overflow-x-hidden items-center justify-center h-screen"
         >
-          <div id="nextText" class="slide relative">
+          <div
+            id="nextText"
+            class="slide w-[100%] md:w-[60%] md:h-[300px] relative"
+          >
             <div
               class="absolute z-10 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2"
             >
               <h2 class="horizontal-title mix-blend-difference">Send brief</h2>
               <p
-                class="text-lg font-medium text-gray-500 text-center mix-blend-difference"
+                class="text-sm md:text-lg font-medium text-gray-500 text-center mix-blend-difference"
               >
-                Send us a complete brief along with documents & <br />
+                Send us a complete brief along with documents &
+                <br class="hidden md:block" />
                 requirements to estimate the project.
               </p>
             </div>
@@ -439,7 +447,10 @@
               alt="Missy cooper"
             />
           </div>
-          <div id="nextText" class="slide relative">
+          <div
+            id="nextText"
+            class="slide w-[100%] md:w-[60%] md:h-[300px] relative"
+          >
             <div
               class="absolute z-10 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2"
             >
@@ -447,9 +458,10 @@
                 Stay in touch
               </h2>
               <p
-                class="text-lg font-medium text-gray-500 text-center mix-blend-difference"
+                class="text-sm md:text-lg font-medium text-gray-500 text-center mix-blend-difference"
               >
-                Review preliminary results and leave your <br />
+                Review preliminary results and leave your
+                <br class="hidden md:block" />
                 feedback for us to continue or make corrections.
               </p>
             </div>
@@ -460,15 +472,19 @@
               alt="Missy cooper"
             />
           </div>
-          <div id="nextText" class="slide relative">
+          <div
+            id="nextText"
+            class="slide w-[100%] md:w-[60%] md:h-[300px] relative"
+          >
             <div
               class="absolute z-10 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2"
             >
               <h2 class="horizontal-title mix-blend-difference">Approve</h2>
               <p
-                class="text-lg font-medium text-gray-500 text-center mix-blend-difference"
+                class="text-sm md:text-lg font-medium text-gray-500 text-center mix-blend-difference"
               >
-                Approve the draft version of the services you <br />
+                Approve the draft version of the services you
+                <br class="hidden md:block" />
                 like and want us to deliver.
               </p>
             </div>
@@ -479,16 +495,21 @@
               alt="Missy cooper"
             />
           </div>
-          <div id="nextText" class="slide relative">
+          <div
+            id="nextText"
+            class="slide w-[100%] md:w-[60%] md:h-[300px] relative"
+          >
             <div
               class="absolute z-10 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2"
             >
               <h2 class="horizontal-title mix-blend-difference">Get results</h2>
               <p
-                class="text-lg font-medium text-gray-500 text-center mix-blend-difference"
+                class="text-sm md:text-lg font-medium text-gray-500 text-center mix-blend-difference"
               >
-                Receive the perfect quality of your services on time & <br />
-                leave us a review if you like.
+                Receive the perfect quality of your services on time<br
+                  class="hidden md:block"
+                />
+                & leave us a review if you like.
               </p>
             </div>
             <img
@@ -683,11 +704,7 @@
             >
               Have an idea?
             </h1>
-            <a
-              class="footer-contact"
-              href="./contact.html"
-              >Contact me</a
-            >
+            <a class="footer-contact" href="./contact.html">Contact me</a>
             <img
               class="hidden md:block p-3 mt-8 bg-gray-100 rounded-[9px] w-40 h-auto"
               src="./assets/images/scan.png"
@@ -813,13 +830,13 @@
       let serviceSection = gsap.utils.toArray(".slide");
 
       gsap.to(serviceSection, {
-        xPercent: -100 * (serviceSection.length - 1),
+        xPercent: -100 * (serviceSection.length - 2),
         ease: "none",
         scrollTrigger: {
           trigger: ".horizontal-sliders",
           pin: ".main",
           scrub: 1,
-          end: "+=2500",
+          end: "+=3000",
         },
       });
 

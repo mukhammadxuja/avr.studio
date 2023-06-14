@@ -192,20 +192,7 @@ active {
 
 /* horizontal scroll */
 
-.main {
-  overflow-x: hidden;
-}
 
-.horizontal-sliders {
-  display: flex;
-  flex-wrap: no-wrap;
-  width: calc(60% * 3);
-  overflow-x: hidden;
-}
-.slide {
-  height: 300px;
-  width: 60%;
-}
 /* 
 #wrapper {
   display: flex;
