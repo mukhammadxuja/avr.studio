@@ -41,7 +41,7 @@ active {
   border: 2px solid var(--primary);
   border-radius: 10px;
   padding: 14px 10px;
-  background-color: var(--secondary);
+  background-color: white;
   color: var(--primary);
   z-index: 1;
   left: 50%;
