@@ -54,7 +54,7 @@
   }
 
   .badge {
-    @apply px-2 py-1 text-black bg-secondary rounded-full shadow-sm;
+    @apply px-2 py-1 text-black bg-secondary rounded-full shadow-sm whitespace-nowrap;
   }
 
   .contact-input {
