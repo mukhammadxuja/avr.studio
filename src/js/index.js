@@ -9,16 +9,18 @@ const copyToClipboard = () => {
   copySpan.textContent = "Copied!";
 };
 
-const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
 const btn = document.getElementById("btn");
 
-nameInput.addEventListener("keyup", () => {
+emailInput.addEventListener("keyup", () => {
   // disabling the button if a input field value is empty
-  if (nameInput.value.trim() === "") {
+  if (emailInput.value.trim() === "") {
     btn.disabled = true;
+    btn.title = "You should add email first)";
   } else {
     // enabling the button
     btn.disabled = false;
+    btn.title = "Send request";
   }
 });
 
