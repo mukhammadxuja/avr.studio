@@ -42,7 +42,7 @@
   }
 
   .btn {
-    @apply text-[12px] bg-primary hover:bg-[#252525] shadow duration-200 font-medium text-white py-[12px] px-[18px] md:py-[17px] md:px-[25px] rounded-[9px] whitespace-nowrap text-center disabled:opacity-50 disabled:hover:bg-primary disabled:cursor-not-allowed;
+    @apply text-[12px] bg-primary hover:bg-[#252525] shadow duration-200 font-medium text-white py-[12px] px-[18px] md:py-[17px] md:px-[25px] rounded-[9px] whitespace-nowrap text-center disabled:opacity-30 disabled:hover:bg-primary disabled:cursor-not-allowed;
   }
 
   .btn-outline {
@@ -58,7 +58,7 @@
   }
 
   .contact-input {
-    @apply w-full mb-5 md:mb-10 text-[16px] md:text-[20px] lg:text-[30px] text-black placeholder:text-grayscale font-medium border-2 rounded-[9px] md:rounded-none md:border-x-0 md:border-t-0 md:border-b-2 duration-200 border-primary md:border-grayscale outline-none py-[8px] md:py-[12px] px-[18px] md:px-0 hover:border-primary focus:border-primary;
+    @apply w-full mb-5 md:mb-10 text-sm md:text-[20px] lg:text-[30px] text-black md:placeholder:text-grayscale font-medium bg-background placeholder:text-black rounded-[9px] md:rounded-none md:border-x-0 md:border-t-0 md:border-b-2 duration-200 md:border-grayscale outline-none py-[12px] md:py-[12px] px-[18px] md:px-0 hover:border-primary focus:border-primary
   }
 
   .tools-badge {
