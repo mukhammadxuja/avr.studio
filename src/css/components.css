@@ -58,7 +58,7 @@
   }
 
   .contact-input {
-    @apply w-full mb-5 md:mb-10 text-sm md:text-[20px] lg:text-[30px] text-black md:placeholder:text-grayscale font-medium bg-background placeholder:text-black rounded-[9px] md:rounded-none md:border-x-0 md:border-t-0 md:border-b-2 duration-200 md:border-grayscale outline-none py-[12px] md:py-[12px] px-[18px] md:px-0 hover:border-primary focus:border-primary
+    @apply w-full mb-5 md:mb-10 text-sm md:text-[20px] lg:text-[30px] text-black md:placeholder:text-grayscale font-medium bg-background md:bg-transparent placeholder:text-black rounded-[9px] md:rounded-none md:border-x-0 md:border-t-0 md:border-b-2 duration-200 md:border-grayscale outline-none py-[12px] md:py-[12px] px-[18px] md:px-0 hover:border-primary focus:border-primary
   }
 
   .tools-badge {

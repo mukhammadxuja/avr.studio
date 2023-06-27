@@ -102,6 +102,7 @@ gsap.to("#works", {
   backgroundColor: "white",
 });
 
+
 gsap.from(item2, {
   scrollTrigger: {
     trigger: ".sticky-wrapper",
