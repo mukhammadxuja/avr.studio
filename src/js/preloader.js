@@ -1,7 +1,12 @@
+
+
 window.addEventListener("load", () => {
   gsap.to("#preloader", {
     delay: 4.5,
     opacity: 0,
+    onComplete: () => {
+      document.querySelector("#preloader").style.display = "none";
+    },
     easing: Power3.inOut,
   });
 });

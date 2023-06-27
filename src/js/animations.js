@@ -14,14 +14,6 @@ window.addEventListener("load", () => {
     .addLabel("start", 0);
 
   timeline
-    .to("#preloader", {
-      opacity: 0,
-      duration: 0.5,
-      delay: 4.5,
-      onComplete: () => {
-        document.querySelector("#preloader").style.display = "none";
-      },
-    })
     .from(
       "#heading",
       {
@@ -117,6 +109,7 @@ gsap.set(".follower", {
   yPercent: -50,
   opacity: 1,
 });
+
 const preloader = document.getElementById("preloader");
 
 function startCounter() {
