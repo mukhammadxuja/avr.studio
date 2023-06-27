@@ -25,24 +25,22 @@ window.addEventListener("load", () => {
     .from(
       "#heading",
       {
-        delay: 0.5,
         duration: 0.8,
         skewY: 10,
         y: 100,
         x: -199,
         opacity: 0,
       },
-      4
+      4.8
     )
     .from(
       "#video",
       {
-        delay: 0.5,
         duration: 0.8,
         y: 100,
         opacity: 0,
       },
-      4
+      4.8
     )
     .from(
       "#navbar",
@@ -52,7 +50,7 @@ window.addEventListener("load", () => {
         ease: Power0,
         opacity: 0,
       },
-      4
+      4.6
     )
     .to(
       "#entrance",
@@ -102,7 +100,6 @@ gsap.to("#works", {
   backgroundColor: "white",
 });
 
-
 gsap.from(item2, {
   scrollTrigger: {
     trigger: ".sticky-wrapper",
@@ -120,8 +117,36 @@ gsap.set(".follower", {
   yPercent: -50,
   opacity: 1,
 });
-
 const preloader = document.getElementById("preloader");
+
+function startCounter() {
+  let percent = document.getElementById("percent")
+  let currentPercent = 1;
+
+  function updateCounter() {
+    if (currentPercent === 100) return;
+
+    currentPercent += Math.floor(Math.random() * 10) + 1;
+
+    if (currentPercent > 100) {
+      currentPercent = 100;
+    }
+
+    percent.textContent = currentPercent + '%';
+
+    let delay = Math.floor(Math.random() * 200) + 50;
+    setTimeout(updateCounter, delay);
+  }
+
+  updateCounter();
+}
+
+startCounter();
+
+timeline.to("#percent", 0.25, {
+  delay: 4.5,
+  opacity: 0
+})
 
 preloader.addEventListener("mousemove", (e) => {
   gsap.to(".follower", {
