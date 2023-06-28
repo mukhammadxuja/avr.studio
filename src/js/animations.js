@@ -23,7 +23,7 @@ window.addEventListener("load", () => {
         x: -199,
         opacity: 0,
       },
-      4.8
+      5.5
     )
     .from(
       "#video",
@@ -32,7 +32,7 @@ window.addEventListener("load", () => {
         y: 100,
         opacity: 0,
       },
-      4.8
+      5.5
     )
     .from(
       "#navbar",
@@ -42,7 +42,7 @@ window.addEventListener("load", () => {
         ease: Power0,
         opacity: 0,
       },
-      4.6
+      5.5
     )
     .to(
       "#entrance",
@@ -112,34 +112,34 @@ gsap.set(".follower", {
 
 const preloader = document.getElementById("preloader");
 
-function startCounter() {
-  let percent = document.getElementById("percent")
-  let currentPercent = 1;
+// function startCounter() {
+//   let percent = document.getElementById("percent")
+//   let currentPercent = 1;
 
-  function updateCounter() {
-    if (currentPercent === 100) return;
+//   function updateCounter() {
+//     if (currentPercent === 100) return;
 
-    currentPercent += Math.floor(Math.random() * 10) + 1;
+//     currentPercent += Math.floor(Math.random() * 10) + 1;
 
-    if (currentPercent > 100) {
-      currentPercent = 100;
-    }
+//     if (currentPercent > 100) {
+//       currentPercent = 100;
+//     }
 
-    percent.textContent = currentPercent + '%';
+//     percent.textContent = currentPercent + '%';
 
-    let delay = Math.floor(Math.random() * 200) + 50;
-    setTimeout(updateCounter, delay);
-  }
+//     let delay = Math.floor(Math.random() * 200) + 50;
+//     setTimeout(updateCounter, delay);
+//   }
 
-  updateCounter();
-}
+//   updateCounter();
+// }
 
-startCounter();
+// startCounter();
 
-timeline.to("#percent", 0.25, {
-  delay: 4.5,
-  opacity: 0
-})
+// timeline.to("#percent", 0.25, {
+//   delay: 4.5,
+//   opacity: 0
+// })
 
 preloader.addEventListener("mousemove", (e) => {
   gsap.to(".follower", {

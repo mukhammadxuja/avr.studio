@@ -1,14 +1,25 @@
-
-
 window.addEventListener("load", () => {
-  gsap.to("#preloader", {
-    delay: 4.5,
-    opacity: 0,
-    onComplete: () => {
-      document.querySelector("#preloader").style.display = "none";
-    },
-    easing: Power3.inOut,
-  });
+  let loading = 0;
+  gsap
+    .to("#preloader", {
+      duration: 5.2,
+      easing: Power3.inOut,
+      onUpdate: function () {
+        loading = Math.floor(this.progress() * 100);
+        document.querySelector("#percent").innerHTML = loading + "%";
+      },
+      onComplete: () => {
+        document.querySelector("#preloader").style.display = "none";
+      },
+    })
+    .to("#percent", {
+      opacity: 0,
+      duration: 0.5,
+      delay: 4,
+      onComplete: () => {
+        document.querySelector("#percent").style.display = "none";
+      },
+    });
 });
 
 let lastMouseX = 0,
