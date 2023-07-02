@@ -2,7 +2,7 @@
 
 @layer components {
   .heading {
-    @apply absolute top-1/2 -translate-y-1/2 text-[3rem] sm:text-[4.5rem] md:text-[6rem] bg-gradient-to-r from-[#fff] via-[#878c8c] to-[#fff] inline-block text-transparent bg-clip-text bg-opacity-60 leading-none text-center font-bold md:font-extrabold;
+    @apply absolute top-1/2 -translate-y-1/2 text-[3rem] sm:text-[4.5rem] xl:text-[6rem] bg-gradient-to-r from-[#fff] via-[#878c8c] to-[#fff] inline-block text-transparent bg-clip-text bg-opacity-60 leading-none text-center font-bold md:font-extrabold;
   }
 
   .card {
