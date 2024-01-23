@@ -23,7 +23,7 @@ window.addEventListener("load", () => {
         x: -199,
         opacity: 0,
       },
-      5.5
+      0
     )
     .from(
       "#video",
@@ -32,7 +32,7 @@ window.addEventListener("load", () => {
         y: 100,
         opacity: 0,
       },
-      5.5
+      0
     )
     .from(
       "#navbar",
@@ -42,7 +42,7 @@ window.addEventListener("load", () => {
         ease: Power0,
         opacity: 0,
       },
-      5.5
+      0
     )
     .to(
       "#entrance",
